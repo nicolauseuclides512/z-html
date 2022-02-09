@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <title>Invoice Kilat - Instant Invoice</title>
+
+    <link href="assets/css/core.min.css" rel="stylesheet">
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body class="fixed-left">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <div class="topbar">
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="index.html" class="logo"><img src="assets/images/logo_Zuragan_web.png" height="38" width="38"> <span class="putih">Zuragan </span></a>
+                </div>
+            </div>
+
+            <div  role="navigation" class="navbar navbar-default">
+                <div  class="container">
+                    <div class="">
+                        <div  class="pull-left">
+                            <button class="button-menu-mobile open-left">
+                                <i  class="fa fa-bars"></i>
+                            </button> 
+                            <span  class="clearfix"></span>
+                        </div> 
+                        <ul  class="nav navbar-nav navbar-right pull-right">
+                            <li  class="dropdown pull-left open">
+                                <li class="dropdown">
+                                 <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true">
+                                    <p class="profile-email">agnesshinta@ontelstudio.com</p>
+                                    <i  class="fa fa-gear"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="profile.html"><i class="fa fa-user"></i> Account</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="setting_new.html"><i class="fa fa-cog"></i> Settings</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="help.html"><i class="md md-help"></i> Help</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="javascript:void(0)" tag="li" id="nav-top-logout"><i class="md md-settings-power"></i>Logout</a></li>
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                    <form  role="search" class="navbar-form pull-left" style="position: relative;">
+                        <div  class="input-group">
+                            <div  class="input-group-btn">
+                                <div class="btn-group">
+                                    <button class="btn btn-clear dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-search"></i> 
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li ><a href="search_page.html">Contacts</a></li>
+                                        <li><a href="search_page.html">Items</a></li>
+                                        <li><a href="search_page.html">Sales Orders</a></li> 
+                                    </ul>
+                                </div>
+                            </div> 
+                            <input  type="search" id="nav-top-search" placeholder="Type here for search..." class="form-control search-bar">
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="left side-menu">
+        <div class="left side-menu">
+            <div id="sidebar-menu">
+                <ul>
+                    <li class="">
+                        <a href="help_general(english).html" class="waves-effect"><span>General Guidlines</span></a>
+                    </li>
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect"><span>Services</span> <span class="pull-right"><i class="md md-add"></i></span></a>
+                        <ul style="">
+                            <li><a href="help_so(english).html"><span>Sales Orders</span></a></li>                                    
+                            <li><a href="help_item(english).html"><span>Items</span></a></li>
+                            <li><a href="help_contact(english).html"><span>Contacts</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="help_account(english).html" class="waves-effect"><span>Manage Accounts</span></a>
+                    </li>
+                    <li class="">
+                        <a href="help_faq(english).html" class="waves-effect"><span>FAQ</span></a>
+                    </li>
+                </ul>  
+                <div class="clearfix">
+
+                </div>
+            </div> 
+            <div class="clearfix">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content-page ">
+        <div class="content sahito-profile">
+
+            <div class="wraper container-fluid">
+                <div class="row sahito-profile-tabs-content">
+                    <div class="col-lg-12"> 
+                        <div class="tab-pane" id="change-pass">
+                            <div class="row sahito-profile-tabs--password">
+                                <div class="col-md-12">
+                                        <div class="panel-heading"> 
+                                            <h4>Frequently Asked Questions</h4> 
+                                        </div> 
+                                        <div class="panel-body"> 
+                                            <div class="row">
+
+
+                                            <!--<div class="row"> 
+                                            <div class="col-lg-6"> -->
+                                <div class="panel-group" id="accordion-test-2"> 
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseOne-2" aria-expanded="false" class="collapsed">
+                                                    What is Invoice Kilat?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseOne-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                Invoice Kilat is online software that can help you create invoices, store information about clients (customer) and products item.
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseTwo-2" class="collapsed" aria-expanded="false">
+                                                    What are the benefits I get by using the Invoice Kilat service?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseTwo-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                Users (sellers) can rapidly plan billings to customers without studying complex accounting and wasting longer time. Users can do it anywhere.
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseThree-2" class="collapsed" aria-expanded="false">
+                                                    How do I create my first invoice?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseThree-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                You can read the user manual describing the steps to create invoices to the customer.
+                                            </div> 
+                                        </div> 
+                                    </div> 
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseFour-2" class="collapsed" aria-expanded="false">
+                                                    Can I use Invoice Kilat without login?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseFour-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                You can use Invoice Kilat Free feature without login first.
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseFive-2" class="collapsed" aria-expanded="false">
+                                                    Is the Invoice Kilat Free really free?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseFive-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                You can use Invoice Kilat Free for free at no charge and can print directly.
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseSix-2" class="collapsed" aria-expanded="false">
+                                                    Does Invoice Kilat have several different templates to use?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseSix-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                Invoice Kilat is currently available in one tamplate. But in its development can be increased.
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseSeven-2" class="collapsed" aria-expanded="false">
+                                                    Can I use Invoice Kilat if I only have some customers?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseSeven-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                You can still use Invoice Kilat no matter how many customers you have.
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseEight-2" class="collapsed" aria-expanded="false">
+                                                    How to send invoice to customer's email?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseEight-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                You can send invoice to customer, by:
+                                                <ol>
+                                                    <li>Open the invoice details you want to send.</li>
+                                                    <li>Click <b>Sent</b> (envelope icon) at the top left of the invoice details.</li>
+                                                    <li>Enter information (such as: destination address, title, message) as needed. </li>
+                                                    <li>Click <b>Send</b> to send to the destination email.</li>
+                                                </ol>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseNine-2" class="collapsed" aria-expanded="false">
+                                                    Can I change the price on the invoice without changing the actual price of the product?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseNine-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                You can change the different price as long as the invoice is still a draft, by:
+                                                <ol>
+                                                    <li>Create an invoice as usual by first entering the invoice and due date, selecting the customer, and adding the product.</li>
+                                                    <li>Product details will be displayed and you can change the price of the product by changing it in the <b>Rate</b> column. </li>
+                                                    <li>After changing as needed you can save it again.</li>
+                                                </ol>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseTen-2" class="collapsed" aria-expanded="false">
+                                                    How do I update my payment status?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseTen-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                You only need to open the invoice details that will be changed status. Then click <b>Save and Pay</b> when it's paid.
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <div class="panel panel-info panel-color"> 
+                                        <div class="panel-heading"> 
+                                            <h4 class="panel-title"> 
+                                                <a data-toggle="collapse" data-parent="#accordion-test-2" href="#collapseEleven-2" class="collapsed" aria-expanded="false">
+                                                    What payment methods are available?
+                                                </a> 
+                                            </h4> 
+                                        </div> 
+                                        <div id="collapseEleven-2" class="panel-collapse collapse"> 
+                                            <div class="panel-body">
+                                                You can choose the method of payment through cash or bank transfer.
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                </div> 
+                           <!-- </div>
+                        </div>-->
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div> <!-- container -->
+
+    </div> <!-- content -->
+
+    <footer class="footer text-right">
+        2017 © Zuragan
+    </footer>
+
+</div>
+</div>
+
+<script>
+    var resizefunc = [];
+</script>
+
+<script type="text/javascript" src="assets/scripts/scripts.min.js"></script>
+<script type="text/javascript">
+    $.fn.editable.defaults.mode = 'inline';
+    $('#full-name, #nickname, #emails').editable();
+    $('.select2').select2();
+</script>
+</body>
+</html>

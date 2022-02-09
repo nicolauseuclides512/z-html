@@ -1,0 +1,22 @@
+{
+  "name": "landingpagedefault",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dayanramly/Landing-Page-Default",
+  "authors": [
+    "Dayan Ramly Ramadhan <dayanramly@gmail.com>"
+  ],
+  "description": "Landing Page Default",
+  "main": "index.html",
+  "keywords": [
+    "html",
+    "bootstrap"
+  ],
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "^4.5.0",
+    "Ionicons": "ionicons#^2.0.1",
+    "chartist": "^0.9.7"
+  }
+}

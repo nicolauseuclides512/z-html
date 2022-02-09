@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+	<meta name="author" content="Coderthemes">
+
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<title>Invoice Kilat by Zuragan</title>
+
+	<link href="assets/css/core.min.css" rel="stylesheet">
+	<link href="assets/css/custom.min.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body class="fixed-left">
+
+	<!-- Begin page -->
+	<div id="wrapper">
+
+		<div class="topbar">
+			<div class="topbar-left">
+				<div class="text-center">
+					<a href="index.html" class="logo">
+						<span class="putih">invoicekilat.com</span>
+					</a>
+				</div>
+			</div>
+
+			<div role="navigation" class="navbar navbar-default">
+				<div class="container">
+					<div class="">
+						<div class="pull-left">
+							<button class="button-menu-mobile open-left">
+								<i class="fa fa-bars"></i>
+							</button>
+							<span class="clearfix"></span>
+						</div>
+						<ul class="nav navbar-nav navbar-right pull-right">
+							<li class="dropdown pull-left open">
+								<li class="dropdown">
+									<a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true">
+										<p class="profile-email">agnesshinta@ontelstudio.com</p>
+										<i class="fa fa-gear"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="profile.html">
+												<i class="fa fa-user"></i> Account</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="setting_new.html">
+												<i class="fa fa-cog"></i> Settings</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="javascript:void(0)" tag="li" id="nav-top-logout">
+												<i class="md md-settings-power"></i>Logout</a>
+										</li>
+									</ul>
+								</li>
+							</li>
+						</ul>
+						<form role="search" class="navbar-form pull-left" style="position: relative; margin: 0">
+							<div class="input-group">
+								<div class="input-group-btn">
+									<div class="btn-group">
+										<button class="btn btn-clear dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+											<i class="fa fa-search"></i>
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li>
+												<a href="search_page.html">Contacts</a>
+											</li>
+											<li>
+												<a href="search_page.html">Items</a>
+											</li>
+											<li>
+												<a href="search_page.html">Sales Orders</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<input type="search" id="nav-top-search" placeholder="Type here for search..." class="form-control search-bar">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="left side-menu">
+			<div class="left side-menu">
+				<div id="sidebar-menu">
+					<ul>
+						<li class="" id="nev-left-orders">
+							<a href="sales_order.html" class="waves-effect waves-light active">
+								<i class="md-shopping-cart"></i>
+								Sales Orders
+							</a>
+						</li>
+						<li class="" id="nev-left-items">
+							<a href="items.html" class="waves-effect">
+								<i class="ion-folder"></i>
+								<span> Items </span>
+							</a>
+						</li>
+						<li>
+							<a href="contact.html" class="waves-effect waves-light" id="nev-left-contacts">
+								<i class="md md-perm-contact-cal"></i>
+								<span> Contacts </span>
+							</a>
+						</li>
+						<li class="router-link-exact-active router-link-active" id="nev-left-settings">
+							<a href="report.html" class="waves-effect waves-light">
+								<i class="md md-assessment"></i>
+								<span>Report</span>
+							</a>
+						</li>
+						<li class="router-link-exact-active router-link-active" id="nev-left-settings">
+							<a href="setting_new.html" class="waves-effect waves-light">
+								<i class="md md-settings"></i>
+								<span>Settings</span>
+							</a>
+						</li>
+					</ul>
+					<div class="clearfix">
+
+					</div>
+				</div>
+				<div class="clearfix">
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- ============================================================== -->
+		<!-- Start right Content here -->
+		<!-- ============================================================== -->
+		<div class="content-page-invoice-maker">
+			<div class="content sahito-user full-width bgr-white">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10 pull-right">
+							<h1 class="pull-right page-title">INVOICE</h1>
+						</div>
+						<div class="col-md-2 pull-left">
+							<form action="#" class="dropzone" id="dropzone">
+								<div class="fallback">
+									<input name="file" type="image">
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="row m-b-20">
+						<div class="col-md-2 pull-right">
+							<input type="text" class="form-control" placeholder="Invoice Number">
+						</div>
+					</div>
+					<div class="row m-b-20  bt-1">
+						<div class="col-md-2 pull-right">
+							<div class="form-group">
+								<label>Due Date</label>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="dd MMM YYYY" id="duedatepicker">
+									<span class="input-group-addon">
+										<i class="fa fa-calendar"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 pull-right">
+							<div class="form-group">
+								<label>Invoie Date</label>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="dd MMM YYYY" id="invoicedatepicker">
+									<span class="input-group-addon">
+										<i class="fa fa-calendar"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<form action="#" class="form-horizontal">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group form-general m-b-20">
+									<label class="col-md-10 control-label text-left">Invoice from:</label>
+								</div>
+								<div class="form-group form-general m-b-20">
+									<div class="col-md-10">
+										<input type="text" class="form-control" placeholder="Your Name">
+									</div>
+								</div>
+								<div class="form-group form-general m-b-20">
+									<div class="col-md-10">
+										<textarea class="form-control" placeholder="Your address"></textarea>
+									</div>
+								</div>
+								<div class="form-group form-general m-b-20">
+									<div class="col-md-10">
+										<input type="text" class="form-control" placeholder="Your Phone">
+									</div>
+								</div>
+								<div class="form-group form-general m-b-20">
+									<div class="col-md-10">
+										<input type="text" class="form-control" placeholder="Your Email">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group form-general m-b-20">
+									<label class="col-md-10 control-label text-left">Invoice to:</label>
+								</div>
+								<div class="form-group form-general m-b-20">
+									<div class="col-md-10">
+										<input type="text" class="form-control" placeholder="Your Client's Name">
+									</div>
+								</div>
+								<div class="form-group form-general m-b-20">
+									<div class="col-md-10">
+										<textarea class="form-control" placeholder="Your client's address"></textarea>
+									</div>
+								</div>
+								<div class="form-group form-general m-b-20">
+									<div class="col-md-10">
+										<input type="text" class="form-control" placeholder="Your Client's Phone">
+									</div>
+								</div>
+								<div class="form-group form-general m-b-20">
+									<div class="col-md-10">
+										<input type="text" class="form-control" placeholder="Your Client's Email">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="container">
+						<div class="row">
+							<div class="form-horizontal">
+								<div class="col-md-6">
+									<div class="form-group form-general m-b-20">
+										<label class="col-md-3 control-label text-left">
+											<b>Order Details</b>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row m-b-20 p-b-20 bt-1">
+							<div class="col-md-12">
+								<div class="sahito-table-new-order border-1 table-responsive">
+									<table class="table table-striped">
+										<thead>
+											<tr class="">
+												<th id="item">Item Details</th>
+												<th id="quantity">Quantity
+													<span>(pcs/box)</span>
+												</th>
+												<th id="rate">Rate</th>
+												<th id="discount">Discount</th>
+												<th id="amount">Amount</th>
+												<th id="delete"></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<input type="text" class="form-control form-white">
+												</td>
+												<td id="quantity">
+													<input type="text" class="form-control form-white">
+												</td>
+												<td id="rate">
+													<input type="text" class="form-control form-white">
+												</td>
+												<td id="discount">
+													<input type="text" class="form-control form-white">
+													<select class="form-control">
+														<option>Rp</option>
+														<option>%</option>
+													</select>
+												</td>
+												<td id="amount">
+													<input type="text" class="form-control form-white">
+												</td>
+												<td>
+													<a href="#" class="text-danger">
+														<i class="ion-close-circled"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="text" class="form-control form-white">
+												</td>
+												<td id="quantity">
+													<input type="text" class="form-control form-white">
+												</td>
+												<td id="rate">
+													<input type="text" class="form-control form-white">
+												</td>
+												<td id="discount">
+													<input type="text" class="form-control form-white">
+													<select class="form-control">
+														<option>Rp</option>
+														<option>%</option>
+													</select>
+												</td>
+												<td id="amount">
+													<input type="text" class="form-control form-white">
+												</td>
+												<td>
+													<a href="#" class="text-danger">
+														<i class="ion-close-circled"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="text" class="form-control form-white">
+												</td>
+												<td id="quantity">
+													<input type="text" class="form-control form-white">
+												</td>
+												<td id="rate">
+													<input type="text" class="form-control form-white">
+												</td>
+												<td id="discount">
+													<input type="text" class="form-control form-white">
+													<select class="form-control">
+														<option>Rp</option>
+														<option>%</option>
+													</select>
+												</td>
+												<td id="amount">
+													<input type="text" class="form-control form-white">
+												</td>
+												<td>
+													<a href="#" class="text-danger">
+														<i class="ion-close-circled"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="7">
+													<button type="button" class="btn btn-default waves-effect">+ Add More Item</button>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="3" class="no-bgr"></td>
+												<td colspan="1" align="right">Sub Total</td>
+												<td colspan="2" id="amount">
+													<input type="text" class="form-control form-white" placeholder="350.000">
+												</td>
+											</tr>
+
+											<tr>
+												<td colspan="3" class="no-bgr"></td>
+												<td colspan="1" align="right">
+													<input type="text" class="form-control form-white" placeholder="adjustment">
+												</td>
+												<td colspan="2" id="amount">
+													<input type="text" class="form-control form-white" placeholder="350.000">
+												</td>
+											</tr>
+											<tr class="total">
+												<td colspan="3" class="no-bgr"></td>
+												<td colspan="1" class="text-bold" align="right">Total(IDR)</td>
+												<td colspan="2" class="text-bold" id="amount">IDR0.00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="container">
+							<div class="row m-b-20">
+								<div class="col-md-6 pl-pr-0">
+									<div class="form-group col-md-12 form-general-newOrder m-b-20">
+										<label class="col-md-3 control-label text-left">Customer Notes</label>
+										<textarea class="form-control" rows="5" v-model="form.customer_notes" maxlength="500"></textarea>
+										<div class="">Will be displayed in invoice</div>
+										<div class="help-text">Maximum characters is 500.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row m-b-20">
+								<div class="col-md-6 pl-pr-0">
+									<div class="form-group col-md-12 form-general-newOrder m-b-20">
+										<label class="col-md-12 control-label text-left">Terms & Conditions</label>
+										<textarea class="form-control" rows="5" v-model="form.internal_notes" maxlength="500"></textarea>
+										<div class="">Will be displayed in invoice</div>
+										<div class="help-text">Maximum characters is 500.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="float-save" style="padding-left: 20px">
+						<div class="row">
+							<div class="col-md-6 text-left">
+								<button class="btn btn-default waves-effect" type="button">Cancel</button>
+							</div>
+							<div class="col-md-6 text-right">
+								<div class="col-md-6 col-md-offset-6">
+									<button type="submit" class="btn btn-info waves-effect waves-light">Create Invoice</button>
+									<!--<select class="form-control">
+			                            <option>Save and Close</option>
+			                            <option>Save as Draft</option>
+			                            <option>Save and Preview Invoice</option>
+			                            <option>Save and Send Invoice</option>
+			                            <option>Save and Pay</option>
+			                        </select> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-info waves-effect waves-light">Save</button>
+                                von class="btn btn-default waves-effect" type="button">Cancel</button>
+                            </div>-->
+				</form>
+				<footer class="footer text-right">
+					2017 © Zuragan
+				</footer>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var resizefunc = [];
+	</script>
+
+	<script type="text/javascript">
+		// Date Picker
+		jQuery('#invoicedatepicker').datepicker();
+		jQuery('#duedatepicker').datepicker();
+	</script>
+
+
+	<script type="text/javascript" src="assets/scripts/scripts.min.js"></script>
+	<script type="text/javascript">
+		$('.select2').select2();
+	</script>
+</body>
+
+</html>

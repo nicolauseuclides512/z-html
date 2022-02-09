@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <title>Invoice Kilat - Instant Invoice</title>
+
+    <link href="assets/css/core.min.css" rel="stylesheet">
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body class="fixed-left">
+
+    <div id="wrapper">
+
+        <div class="topbar">
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="index.html" class="logo"><img src="assets/images/logo_Zuragan_web.png" height="38" width="38"> <span class="putih">Zuragan </span></a>
+                </div>
+            </div>
+
+            <div  role="navigation" class="navbar navbar-default">
+                <div  class="container">
+                    <div class="">
+                        <div  class="pull-left">
+                            <button class="button-menu-mobile open-left">
+                                <i  class="fa fa-bars"></i>
+                            </button> 
+                            <span  class="clearfix"></span>
+                        </div> 
+                        <ul  class="nav navbar-nav navbar-right pull-right">
+                            <li  class="dropdown pull-left open">
+                                <li class="dropdown">
+                                   <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true">
+                                    <p class="profile-email">agnesshinta@ontelstudio.com</p>
+                                    <i  class="fa fa-gear"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="profile.html"><i class="fa fa-user"></i> Account</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="setting_new.html"><i class="fa fa-cog"></i> Settings</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="javascript:void(0)" tag="li" id="nav-top-logout"><i class="md md-settings-power"></i>Logout</a></li>
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                    <form  role="search" class="navbar-form pull-left" style="position: relative;">
+                        <div  class="input-group">
+                            <div  class="input-group-btn">
+                                <div class="btn-group">
+                                    <button class="btn btn-clear dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-search"></i> 
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li ><a href="search_page.html">Contacts</a></li>
+                                        <li><a href="search_page.html">Items</a></li>
+                                        <li><a href="search_page.html">Sales Orders</a></li> 
+                                    </ul>
+                                </div>
+                            </div> 
+                            <input  type="search" id="nav-top-search" placeholder="Type here for search..." class="form-control search-bar">
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="left side-menu">
+        <div class="left side-menu">
+            <div id="sidebar-menu">
+                <ul>
+                    <li class="" id="nev-left-orders">
+                        <a href="sales_order.html" class="waves-effect waves-light">
+                            <i class="md-shopping-cart"></i>
+                            Sales Orders
+                        </a>
+                    </li> 
+                    <li class="" id="nev-left-items">
+                        <a href="items.html" class="waves-effect active">
+                            <i class="ion-folder"></i><span> Items </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="waves-effect waves-light" id="nev-left-contacts">
+                            <i class="md md-perm-contact-cal"></i><span> Contacts </span>
+                        </a>
+                    </li> 
+                    <li class="router-link-exact-active router-link-active" id="nev-left-settings">
+                        <a href="report.html" class="waves-effect waves-light">
+                            <i class="md md-assessment"></i> <span>Report</span>
+                        </a>
+                    </li>
+                    <li class="router-link-exact-active router-link-active" id="nev-left-settings">
+                        <a href="setting_new.html" class="waves-effect waves-light">
+                            <i class="md md-settings"></i> <span>Settings</span>
+                        </a>
+                    </li>
+                </ul> 
+                <div class="clearfix">
+
+                </div>
+            </div> 
+            <div class="clearfix">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->                      
+    <div class="content-page">
+        <!-- Start content-->
+        <div class="content">
+            <!-- Page-Title Section 1-->
+            <div id="full-list">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <a href="#" class="dropdown-toggle pull-left page-title" data-toggle="dropdown" aria-expanded="false"><h4>Active Items <span class="caret"></span></h4> </a>
+                    <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                        <li class="active"><a href="#">Active Items</a></li>
+                        <li><a href="#">Low Stock Items</a></li>
+                        <li><a href="#">Inactive Items</a></li>
+                        <li><a href="#">Ungrouped Items</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">Purchases</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Inventory Items</a></li>
+                        <li><a href="#">Non-Inventory Items</a></li>
+
+                    </ul>
+                    <div class="pull-right">
+                        <a href="item-new-add-rev1.html" class="btn btn-info waves-effect waves-light m-b-5" > <span>New </span> <i class="ion-plus"></i> </a>
+                        <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-bars"></i> </button>
+                        <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                            <li class="dropdown-header">SORT BY</li>
+                            <li class="active"><a href="#">Created Time</a></li>
+                            <li><a href="#">Name</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="md-file-download"></i> Import Items</a></li>
+                            <li><a href="#"><i class="md-file-upload"></i> Export Items</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="md-refresh"></i> Refresh List</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ============================================START OF TABLE============================================ -->        
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <table class="table table-hover table-striped sahito-list-contact--table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="col-checkbox">
+                                                        <div class="checkbox checkbox-single checkbox-success">
+                                                            <input type="checkbox" id="all">
+                                                            <label></label>
+                                                        </div>
+                                                    </th>
+                                                    <th>Name <i class="fa fa-sort"></i></th>
+                                                    <th>SKU</th>
+                                                    <th>AVAILABLE</th>
+                                                    <th>AWAITING</th>
+                                                    <th>REORDER LEVEL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-checkbox">
+                                                        <div class="checkbox checkbox-single checkbox-success">
+                                                            <input type="checkbox" id="list-1">
+                                                            <label></label>
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="#" onclick="customer()">Baju Guess-red/X</a></td>
+                                                    <td>1</td>
+                                                    <td>0.00</td>
+                                                    <td></td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-checkbox">
+                                                        <div class="checkbox checkbox-single checkbox-success">
+                                                            <input type="checkbox" id="list-2">
+                                                            <label></label>
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="#" onclick="customer()">Baju Guess-red/L</a></td>
+                                                    <td>2</td>
+                                                    <td>9.00</td>
+                                                    <td></td>
+                                                    <td>0</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pr-20 text-right">
+                                    <div class="pull-right">
+                                        <ul class="pagination m-b-5">
+                                            <li><a href="#" aria-label="Previous"><i class="fa fa-angle-left"></i></a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li class="active"><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li class="disabled"><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#" aria-label="Next"><i class="fa fa-angle-right"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page-Titel Section 2-->
+
+            <div id="half-list" style="display: none;">
+
+                <div class="row bgr-white">
+                    <div class="col-md-4 col-sm-4 col-xs-12 left-side">
+
+                        <div class="row p-20">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                            <a href="#" class="dropdown-toggle pull-left page-title" data-toggle="dropdown" aria-expanded="false"><h4>All Items <span class="caret"></span></h4> </a>
+                                <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                                    <li class="active"><a href="#">Active Items</a></li>
+                                            <li><a href="#">Low Stock Items</a></li>
+                                            <li><a href="#">Inactive Items</a></li>
+                                            <li><a href="#">Ungrouped Items</a></li>
+                                            <li><a href="#">Sales</a></li>
+                                            <li><a href="#">Purchases</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Inventory Items</a></li>
+                                            <li><a href="#">Non-Inventory Items</a></li>
+
+                                </ul>
+                                <div class="pull-right">
+                                    <a href="item_add.html" class="btn btn-info waves-effect waves-light m-b-5" > <span>New </span> <i class="ion-plus"></i> </a>
+                                    <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-bars"></i> </button>
+                                    <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                                        <li class="dropdown-header">SORT BY</li>
+                                        <li class="active"><a href="#">Created Time</a></li>
+                                        <li><a href="#">Name</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="md-file-download"></i> Import Items</a></li>
+                                        <li><a href="#"><i class="md-file-upload"></i> Export Items</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#"><i class="md-refresh"></i> Refresh List</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container p-0">
+                            <div class="row sahito-list">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="sahito-list-contact table-responsive">
+                                        <table class="table table-hover default-table sahito-list-contact--table">
+                                            <tbody>
+                                                <tr class="active">
+                                                    <td class="col-checkbox">
+                                                        <div class="checkbox checkbox-single checkbox-success">
+                                                            <input type="checkbox" id="list-1">
+                                                            <label></label>
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="#" onclick="customer()">Baju Guess-red/X</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-checkbox">
+                                                        <div class="checkbox checkbox-single checkbox-success">
+                                                            <input type="checkbox" id="list-2">
+                                                            <label></label>
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="#" onclick="customer()">Baju Guess-red/L</a></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-8 col-sm-8 col-xs-12 right-side">
+
+                        <div class="row p-20">
+                            <div class="col-md-12">
+                                <h3 class="pull-left page-title">Baju Guess-red/X</h3>
+                                <span class="label label-inactive">Inactive</span>
+
+                                <div class="pull-right">
+                                    <a href="item_edit.html" class="btn btn-default waves-effect waves-light m-b-5" > <span>Edit </span></a>
+                                    <div class="btn-group">
+                                        <button class="btn btn-info waves-effect waves-light m-b-5"> New Transaction</button>
+                                    </div>
+
+                                    <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false"> More </button>
+                                    <ul class="dropdown-menu" role="menu" style="top: 35px;right: 15px;">
+                                        <li><a href="#">Mark as Inactive</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+
+                                    <a href="#" id="close-btn" class="close-btn">
+                                        <i class="ion-android-close"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 p-0">
+                                <ul class="nav nav-tabs nav-tabs-clear btp-1 tabs">
+                                    <li class="active tab">
+                                        <a href="#overview" data-toggle="tab" aria-expanded="false"> 
+                                            <span class="hidden-xs">Overview</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#purchases" data-toggle="tab" aria-expanded="false"> 
+                                            <span class="hidden-xs">Purchases</span> 
+                                        </a> 
+                                    </li>
+                                    <li class="tab"> 
+                                        <a href="#transactions" data-toggle="tab" aria-expanded="false"> 
+                                            <span class="hidden-xs">Transactions</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#recent" data-toggle="tab" aria-expanded="true"> 
+                                            <span class="hidden-xs">Recent History</span> 
+                                        </a> 
+                                    </li>  
+                                </ul> 
+
+                                <div class="tab-content p-0 tab-content-clear tab-content--contact"> 
+                                    <div class="tab-pane active" id="overview"> 
+                                        <div class="container p-25">
+                                            <div class="row r-ml-mt items-details-overview-tab">
+
+                                                <div class="col-md-8 items-details-overview-tab-left">
+                                                    <div class="form-horizontal m-b-20">
+                                                        <h4>Primary Details</h4>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Item Group Name</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Baju Guess</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Item Type</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Inventory Items</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Size</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>L</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">SKU</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>8</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">UOM</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>pcs</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Created Source</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>User</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Inventory Account</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Inventory Asset</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-horizontal mbt-20 pt-25">
+                                                        <h4>Purchase Information</h4>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Purchase Cost</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>IDR0.00</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Purchase Account</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Cost of Goods Sold</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-horizontal mbt-20 pt-25">
+                                                        <h4>Sales Information</h4>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Selling Price</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>IDR0.00</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Sales Account</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Sales</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 items-details-overview-tab-right">
+                                                    <form action="#" class="dropzone custom-dropzone" id="dropzone">
+                                                        <div class="fallback">
+                                                            <input name="file" type="file" multiple="multiple">
+                                                        </div>
+                                                    </form>
+
+                                                    <div class="row mt-25 p-10 right-side--stock">
+                                                        <div class="col-md-12 bgr-grey p-15">
+                                                            <div class="form-group form-general mb-25">
+                                                                <label class="control-label pl-0 text-left">Initial Stock</label>
+                                                                <p class="form-control-static">0.00</p>
+                                                            </div>
+                                                            <div class="form-group form-general mb-25">
+                                                                <label class="control-label pl-0 text-left">Available</label>
+                                                                <p class="form-control-static">9.00</p>
+                                                            </div>
+                                                            <div class="form-group form-general mb-25">
+                                                                <label class="control-label pl-0 text-left">Quantity to be Shipped</label>
+                                                                <p class="form-control-static">0.00</p>
+                                                            </div>
+                                                            <div class="form-group form-general mb-25">
+                                                                <label class="control-label pl-0 text-left">Quantity to be Received</label>
+                                                                <p class="form-control-static">0.00</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row r-ml-mt items-details-overview-tab">
+                                                <div class="col-md-12">
+                                                    <div class="border-chart">
+                                                        <div class="top-chart text-center">
+                                                            <p>Sales Order Summary (in IDR)</p>
+                                                        </div>
+                                                        <div class="ct-chart ct-perfect-fifth" id="chart1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div> 
+
+                                    <div class="tab-pane" id="purchases">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12 pt-pb-20">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="transactions">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12 pt-pb-20">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="tab-pane" id="recent">
+                                        <div class="container p-0">
+                                            <div class="row sahito-list">
+                                                <div class="col-md-12">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <footer class="footer text-right">
+                2017 © Zuragan
+            </footer>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var resizefunc = [];
+</script>
+
+<script type="text/javascript" src="assets/scripts/scripts.min.js"></script>
+<script type="text/javascript">
+    function customer()
+    {
+        $('#full-list').toggle();
+        $('#half-list').toggle();
+        $('.full-width').toggleClass("half-column");
+    }
+    $('#close-btn').on('click', function(){
+        $('#full-list').toggle();
+        $('#half-list').toggle();
+        $('.full-width').toggleClass("half-column");
+    });
+    new Chartist.Line('#chart1', {
+        labels: ["satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan"],
+        series: [
+        [5, 9, 7, 8, 5, 3, 5, 4]
+        ]
+    }, {
+        low: 0,
+        showArea: true,
+        width: '600px',
+        height: '400px'
+    });
+</script>
+<script type="text/javascript">
+    $( document ).ready(function() {
+
+        $(".dropzone").dropzone({ 
+            maxFiles : 1,
+            dictDefaultMessage : "<i class='ion-image'></i> Drag here to upload<p class='text-blue'>or Browse</p>"
+        });
+    });
+</script>
+
+</body>
+</html>

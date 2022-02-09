@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <title>Totokoko - Administration Page</title>
+
+    <link href="assets/css/core.min.css" rel="stylesheet">
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body class="fixed-left">
+
+    <div id="wrapper">
+
+        <div class="topbar">
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="index.html" class="logo"><img src="assets/images/logo_totokoko_web.png" height="38" width="38"> <span class="putih">Totokoko </span></a>
+                </div>
+            </div>
+
+            <div  role="navigation" class="navbar navbar-default">
+                <div  class="container">
+                    <div class="">
+                        <div  class="pull-left">
+                            <button class="button-menu-mobile open-left">
+                                <i  class="fa fa-bars"></i>
+                            </button> 
+                            <span  class="clearfix"></span>
+                        </div> 
+                        <ul  class="nav navbar-nav navbar-right pull-right">
+                            <li  class="dropdown pull-left open">
+                                <li class="dropdown">
+                                         <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true">
+                                        <i  class="fa fa-gear"></i>
+                                        <p class="profile-email">agnesshinta@ontelstudio.com</p>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="profile.html"><i class="fa fa-user"></i> Account</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="setting_new.html"><i class="fa fa-cog"></i> Settings</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)" tag="li" id="nav-top-logout"><i class="md md-settings-power"></i>Logout</a></li>
+                                    </ul>
+                                </li>
+                            </li>
+                        </ul>
+                        <form  role="search" class="navbar-form pull-left" style="position: relative;">
+                            <div  class="input-group">
+                                <div  class="input-group-btn">
+                                    <div class="btn-group">
+                                        <button class="btn btn-clear dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-search"></i> 
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li ><a href="search_page.html">Contacts</a></li>
+                                            <li><a href="search_page.html">Items</a></li>
+                                            <li><a href="search_page.html">Sales Orders</a></li> 
+                                        </ul>
+                                    </div>
+                                </div> 
+                                <input  type="search" id="nav-top-search" placeholder="Type here for search..." class="form-control search-bar">
+                            </div> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="left side-menu">
+            <div data-v-fc23dc60="" class="left side-menu">
+                <div data-v-fc23dc60="" id="sidebar-menu">
+                    <ul data-v-fc23dc60="">
+                        <li data-v-fc23dc60="" class="" id="nev-left-orders">
+                            <a data-v-fc23dc60="" href="sales_order.html" class="waves-effect waves-light">
+                                <i data-v-fc23dc60="" class="md-shopping-cart"></i>
+                                Sales Orders
+                            </a>
+                        </li> 
+                        <li data-v-fc23dc60="" class="" id="nev-left-items">
+                          <a data-v-fc23dc60="" href="item-new-rev1.html" class="waves-effect waves-light">
+                              <i data-v-fc23dc60="" class="ion-folder"></i>
+                              Items
+                          </a>
+                      </li> 
+                      <li data-v-fc23dc60="">
+                          <a data-v-fc23dc60="" href="contact.html" class="waves-effect waves-light" id="nev-left-contacts">
+                              <i data-v-fc23dc60="" class="md md-perm-contact-cal"></i><span data-v-fc23dc60=""> Contacts </span>
+                          </a>
+                      </li> 
+                      <li data-v-fc23dc60="" class="router-link-exact-active router-link-active" id="nev-left-settings">
+                          <a data-v-fc23dc60="" href="setting_new.html" class="waves-effect waves-light">
+                              <i data-v-fc23dc60="" class="md md-settings"></i> <span data-v-fc23dc60="">Settings</span>
+                          </a>
+                      </li>
+                  </ul> 
+                  <div data-v-fc23dc60="" class="clearfix">
+
+                  </div>
+              </div> 
+              <div data-v-fc23dc60="" class="clearfix">
+
+              </div>
+          </div>
+      </div>
+
+      <div class="content-page ">
+        <div class="content full-width sahito-user sahito-item-groupbgr-white">
+            <!-- full list -->
+            <div id="full-list">
+
+                <div class="container full-width-header p-b-10">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="mark_default">
+                            <a href="#" class="dropdown-toggle pull-left page-title" data-toggle="dropdown" aria-expanded="false"><h4>All Item Group <span class="caret"></span></h4> </a>
+                            <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                                <li class="active"><a href="#">All Item Group</a></li>
+                                <li><a href="#">Active Item Group</a></li>
+                                <li><a href="#">Inactive Item Group</a></li>
+
+                            </ul>
+                            <div class="pull-right">
+                                <a href="item-new-add.html" class="btn btn-info waves-effect waves-light m-b-5" > <span>New </span> <i class="ion-plus"></i> </a>
+                                <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-bars"></i> </button>
+                                <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                                    <li class="dropdown-header">SORT BY</li>
+                                    <li class="active"><a href="#">Created Time</a></li>
+                                    <li><a href="#">Name</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="md-settings"></i> Item Preferences</a></li>
+                                    <li><a href="#"><i class="md-settings"></i> Pricelist Settings</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="md-refresh"></i> Refresh List</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="mark_active" style="display: none;">
+                            <div class="pull-left">
+                                <a href="item_add.html" class="btn btn-default waves-effect waves-light m-b-5">Mark as Active</a>
+                                <div class="btn-group">
+                                    <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false"> More Actions <i class="caret"></i> </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Merge</a></li>
+                                        <li><a href="#">Mark as Inactive</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pull-right pt-10">
+                                <a href="#" id="close-btn" class="close-btn">
+                                    <i class="ion-android-close"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container p-0">
+                    <div class="row sahito-list">
+                        <div class="col-md-12">
+                            <div class="sahito-list-item-group border-1 table-responsive">
+                                <table class="table table-hover default-table sahito-list-item-group-list--table">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-checkbox">
+                                                <div class="checkbox checkbox-single checkbox-success">
+                                                    <input type="checkbox" id="all">
+                                                    <label></label>
+                                                </div>
+                                            </th>
+                                            <th id="icon_collapse">
+                                                <div class="placeholder-collapse"></div>
+                                            </th>
+                                            <th id="name">Name <i class="fa fa-sort"></i></th>
+                                            <th id="sku">SKU</th>
+                                            <th id="price">Price</th>
+                                            <th id="available">Qty Available</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-checkbox">
+                                                <div class="checkbox checkbox-single checkbox-success">
+                                                    <input type="checkbox" id="list-1">
+                                                    <label></label>
+                                                </div>
+                                            </td>
+                                            <td><a data-toggle="collapse" href="#item_list1" aria-expanded="false" class="collapsed"><i class="ion-chevron-right"></i></a></td>
+                                            <td><a href="#" onclick="item_group()">Baju Guess</a></td>
+
+                                        </tr>
+                                        <tr id="item_list1" class="panel-collapse collapse"> 
+                                            <td colspan="6" class="p-0 bt-0">
+                                                <table class="table table-hover list-inner">
+                                                    <tr>
+                                                        <td class="col-checkbox">
+                                                        </td>
+                                                        <td id="icon_collapse">
+                                                            <div class="placeholder-collapse"></div>
+                                                        </td>
+                                                        <td id="name"><a href="#" onclick="item_group()" class="text-grey"> Pencil</a></td>
+                                                        <td id="sku">125123</td>
+                                                        <td id="price">
+                                                            <a href="#" id="price2" data-type="number" data-pk="1" data-title="Enter Price" class="editable editable-click" style="display: inline-block;">100,000</a>
+                                                        </td>
+                                                        <td id="available">
+                                                            <a href="#" id="stock1" data-type="number" data-pk="2" data-title="Enter Stock" class="editable editable-click" style="display: inline-block;">100</a>
+                                                        </td>
+                                                    </tr>
+                                                    <td class="col-checkbox">
+                                                    </td>
+                                                    <td id="icon_collapse">
+                                                        <div class="placeholder-collapse"></div>
+                                                    </td>
+                                                    <td id="name"><a href="#" onclick="item_group()" class="text-grey"> Pencil</a></td>
+                                                    <td id="sku">123151</td>
+                                                    <td id="price">
+                                                        <a href="#" id="price3" data-type="number" data-pk="1" data-title="Enter Price" class="editable editable-click" style="display: inline-block;">100,000</a>
+                                                    </td>
+                                                    <td id="available">
+                                                        <a href="#" id="stock2" data-type="number" data-pk="2" data-title="Enter Stock" class="editable editable-click" style="display: inline-block;">100</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-checkbox">
+                                            <div class="checkbox checkbox-single checkbox-success">
+                                                <input type="checkbox" id="list-1">
+                                                <label></label>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td><a href="#" onclick="items()">Baju Guess</a></td>
+                                        <td>1125123</td>
+                                        <td>
+                                            <a href="#" id="price4" data-type="number" data-pk="1" data-title="Enter Price" class="editable editable-click" style="display: inline-block;">100,000</a>
+                                        </td>
+                                        <td>
+                                            <a href="#" id="stock3" data-type="number" data-pk="2" data-title="Enter Stock" class="editable editable-click" style="display: inline-block;">100</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- half list -->
+        <div id="half-list" style="display: none;">
+
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12 left-side">
+
+                        <div class="container full-width-header bt-1 p-b-10">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <a href="#" class="dropdown-toggle pull-left page-title" data-toggle="dropdown" aria-expanded="false"><h4>All Contacts <span class="caret"></span></h4> </a>
+                                    <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                                        <li class="active"><a href="#">Active Items</a></li>
+                                        <li><a href="#">Low Stock Items</a></li>
+                                        <li><a href="#">Inactive Items</a></li>
+                                        <li><a href="#">Ungrouped Items</a></li>
+                                        <li><a href="#">Sales</a></li>
+                                        <li><a href="#">Purchases</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Inventory Items</a></li>
+                                        <li><a href="#">Non-Inventory Items</a></li>
+
+                                    </ul>
+                                    <div class="pull-right">
+                                        <a href="item-new-add.html" class="btn btn-info waves-effect waves-light m-b-5" > <span>New </span> <i class="ion-plus"></i> </a>
+                                        <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-bars"></i> </button>
+                                        <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                                            <li class="dropdown-header">SORT BY</li>
+                                            <li class="active"><a href="#">Created Time</a></li>
+                                            <li><a href="#">Name</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#"><i class="md-file-download"></i> Import Items</a></li>
+                                            <li><a href="#"><i class="md-file-upload"></i> Export Items</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#"><i class="md-refresh"></i> Refresh List</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container p-0">
+                            <div class="row sahito-list">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="sahito-list-contact table-responsive">
+                                        <table class="table table-hover default-table sahito-list-item-group-list--table table-half">
+                                            <tbody>
+                                                <tr class="active">
+                                                    <td class="col-checkbox">
+                                                        <div class="checkbox checkbox-single checkbox-success">
+                                                            <input type="checkbox" id="list-1">
+                                                            <label></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-collapse"><a data-toggle="collapse" href="#item_list3" aria-expanded="false" class="collapsed"><i class="ion-chevron-right"></i></a></td>
+                                                    <td><a href="#">Baju Guess</a></td>
+                                                </tr>
+                                                <tr id="item_list3" class="panel-collapse collapse"> 
+                                                    <td colspan="3" class="p-0 bt-0">
+                                                        <table class="table table-hover list-inner">
+                                                            <tr>
+                                                                <td class="col-checkbox">
+                                                                </td>
+                                                                <td id="icon_collapse">
+                                                                    <div class="placeholder-collapse"></div>
+                                                                </td>
+                                                                <td id="name"><a href="#" onclick="items()" class="text-grey"> Pencil</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-checkbox">
+                                                                </td>
+                                                                <td id="icon_collapse">
+                                                                    <div class="placeholder-collapse"></div>
+                                                                </td>
+                                                                <td id="name" onclick="items()" class="text-grey">Pencil</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-checkbox">
+                                                        <div class="checkbox checkbox-single checkbox-success">
+                                                            <input type="checkbox" id="list-1">
+                                                            <label></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-collapse"><a data-toggle="collapse" href="#item_list4" aria-expanded="false" class="collapsed"><i class="ion-chevron-right"></i></a></td>
+                                                    <td><a href="#">Baju Guess</a></td>
+                                                </tr>
+                                                <tr id="item_list4" class="panel-collapse collapse"> 
+                                                    <td colspan="3" class="p-0 bt-0">
+                                                        <table class="table table-hover list-inner">
+                                                            <tr>
+                                                                <td class="col-checkbox">
+                                                                </td>
+                                                                <td id="icon_collapse">
+                                                                    <div class="placeholder-collapse"></div>
+                                                                </td>
+                                                                <td id="name"><a href="#" onclick="items()" class="text-grey"> Pencil</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-checkbox">
+                                                                </td>
+                                                                <td id="icon_collapse">
+                                                                    <div class="placeholder-collapse"></div>
+                                                                </td>
+                                                                <td id="name" onclick="items()" class="text-grey">Pencil</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-8 col-sm-8 col-xs-12 right-side">
+
+                        <div class="row p-20">
+                            <div class="col-md-12">
+                                <h3 class="pull-left page-title">Baju Guess-red/X</h3>
+
+                                <div class="pull-right">
+                                    <a href="item_edit.html" class="btn btn-default waves-effect waves-light m-b-5" > <span>Edit </span></a>
+                                    <div class="btn-group">
+                                        <button class="btn btn-info waves-effect waves-light m-b-5"> New Transaction</button>
+                                    </div>
+
+                                    <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false"> More </button>
+                                    <ul class="dropdown-menu" role="menu" style="top: 35px;right: 15px;">
+                                        <li><a href="#">Mark as Inactive</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+
+                                    <a href="#" id="close-btn" class="close-btn">
+                                        <i class="ion-android-close"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 p-0">
+                                <ul class="nav nav-tabs nav-tabs-clear btp-1 tabs">
+                                    <li class="active tab">
+                                        <a href="#overview" data-toggle="tab" aria-expanded="false"> 
+                                            <span class="hidden-xs">Overview</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#purchases" data-toggle="tab" aria-expanded="false"> 
+                                            <span class="hidden-xs">Purchases</span> 
+                                        </a> 
+                                    </li>
+                                    <li class="tab"> 
+                                        <a href="#transactions" data-toggle="tab" aria-expanded="false"> 
+                                            <span class="hidden-xs">Transactions</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#recent" data-toggle="tab" aria-expanded="true"> 
+                                            <span class="hidden-xs">Recent History</span> 
+                                        </a> 
+                                    </li>  
+                                </ul> 
+
+                                <div class="tab-content p-0 tab-content-clear tab-content--contact"> 
+                                    <div class="tab-pane active" id="overview"> 
+                                        <div class="container p-25">
+                                            <div class="row r-ml-mt items-details-overview-tab">
+
+                                                <div class="col-md-8 items-details-overview-tab-left">
+                                                    <div class="form-horizontal m-b-20">
+                                                        <h4>Primary Details</h4>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Item Name</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Baju Guess</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Item Type</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Inventory Items</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">SKU</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>8</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">UOM</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>pcs</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Created Source</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>User</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Inventory Account</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Inventory Asset</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Item Category</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Fashion</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Weight</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>500 gram</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-horizontal mbt-20 pt-25">
+                                                        <h4>Purchase Information</h4>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Purchase Cost</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>IDR0.00</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Purchase Account</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Cost of Goods Sold</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-horizontal mbt-20 pt-25">
+                                                        <h4>Sales Information</h4>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Selling Price</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>IDR0.00</strong>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group form-general m-b-5">
+                                                            <label class="col-md-4 control-label text-left">Sales Account</label>
+                                                            <div class="col-md-8 pt-7">
+                                                                <strong>Sales</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 items-details-overview-tab-right">
+                                                    <form action="#" class="dropzone custom-dropzone" id="dropzone">
+                                                        <div class="fallback">
+                                                            <input name="file" type="file" multiple="multiple">
+                                                        </div>
+                                                    </form>
+
+                                                    <div class="row mt-25 p-10 right-side--stock">
+                                                        <div class="col-md-12 bgr-grey p-15">
+                                                            <div class="form-group form-general mb-25">
+                                                                <label class="control-label pl-0 text-left">Initial Stock</label>
+                                                                <p class="form-control-static">0.00</p>
+                                                            </div>
+                                                            <div class="form-group form-general mb-25">
+                                                                <label class="control-label pl-0 text-left">Available</label>
+                                                                <p class="form-control-static">9.00</p>
+                                                            </div>
+                                                            <div class="form-group form-general mb-25">
+                                                                <label class="control-label pl-0 text-left">Quantity to be Shipped</label>
+                                                                <p class="form-control-static">0.00</p>
+                                                            </div>
+                                                            <div class="form-group form-general mb-25">
+                                                                <label class="control-label pl-0 text-left">Quantity to be Received</label>
+                                                                <p class="form-control-static">0.00</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row r-ml-mt items-details-overview-tab">
+                                                <div class="col-md-12">
+                                                    <div class="border-chart">
+                                                        <div class="top-chart text-center">
+                                                            <p>Sales Order Summary (in IDR)</p>
+                                                        </div>
+                                                        <div class="ct-chart ct-perfect-fifth" id="chart1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div> 
+
+                                    <div class="tab-pane" id="purchases">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12 pt-pb-20">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="transactions">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12 pt-pb-20">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="tab-pane" id="recent">
+                                        <div class="container p-0">
+                                            <div class="row sahito-list">
+                                                <div class="col-md-12">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- item group half list -->
+        <div id="half-list-item-group" style="display: none;">
+
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12 left-side">
+
+                        <div class="container full-width-header bt-1 p-b-10">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <a href="#" class="dropdown-toggle pull-left page-title" data-toggle="dropdown" aria-expanded="false"><h4>All Contacts <span class="caret"></span></h4> </a>
+                                    <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                                        <li class="active"><a href="#">Active Items</a></li>
+                                        <li><a href="#">Low Stock Items</a></li>
+                                        <li><a href="#">Inactive Items</a></li>
+                                        <li><a href="#">Ungrouped Items</a></li>
+                                        <li><a href="#">Sales</a></li>
+                                        <li><a href="#">Purchases</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Inventory Items</a></li>
+                                        <li><a href="#">Non-Inventory Items</a></li>
+
+                                    </ul>
+                                    <div class="pull-right">
+                                        <a href="item-new-add.html" class="btn btn-info waves-effect waves-light m-b-5" > <span>New </span> <i class="ion-plus"></i> </a>
+                                        <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false"> <i class="fa fa-bars"></i> </button>
+                                        <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                                            <li class="dropdown-header">SORT BY</li>
+                                            <li class="active"><a href="#">Created Time</a></li>
+                                            <li><a href="#">Name</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#"><i class="md-file-download"></i> Import Items</a></li>
+                                            <li><a href="#"><i class="md-file-upload"></i> Export Items</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#"><i class="md-refresh"></i> Refresh List</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container p-0">
+                            <div class="row sahito-list">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="sahito-list-contact table-responsive">
+                                        <table class="table table-hover default-table sahito-list-item-group-list--table  table-half">
+                                            <tbody>
+                                                <tr class="active">
+                                                    <td class="col-checkbox">
+                                                        <div class="checkbox checkbox-single checkbox-success">
+                                                            <input type="checkbox" id="list-1">
+                                                            <label></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-collapse"><a data-toggle="collapse" href="#item_list5" aria-expanded="false" class="collapsed"><i class="ion-chevron-right"></i></a></td>
+                                                    <td><a href="#">Baju Guess</a></td>
+                                                </tr>
+                                                <tr id="item_list5" class="panel-collapse collapse"> 
+                                                    <td colspan="3" class="p-0 bt-0">
+                                                        <table class="table table-hover list-inner">
+                                                            <tr>
+                                                                <td class="col-checkbox">
+                                                                </td>
+                                                                <td id="icon_collapse">
+                                                                    <div class="placeholder-collapse"></div>
+                                                                </td>
+                                                                <td id="name"><a href="#" onclick="items()" class="text-grey"> Pencil</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-checkbox">
+                                                                </td>
+                                                                <td id="icon_collapse">
+                                                                    <div class="placeholder-collapse"></div>
+                                                                </td>
+                                                                <td id="name" onclick="items()" class="text-grey">Pencil</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-checkbox">
+                                                        <div class="checkbox checkbox-single checkbox-success">
+                                                            <input type="checkbox" id="list-1">
+                                                            <label></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-collapse"><a data-toggle="collapse" href="#item_list6" aria-expanded="false" class="collapsed"><i class="ion-chevron-right"></i></a></td>
+                                                    <td><a href="#">Baju Guess</a></td>
+                                                </tr>
+                                                <tr id="item_list6" class="panel-collapse collapse"> 
+                                                    <td colspan="3" class="p-0 bt-0">
+                                                        <table class="table table-hover list-inner">
+                                                            <tr>
+                                                                <td class="col-checkbox">
+                                                                </td>
+                                                                <td id="icon_collapse">
+                                                                    <div class="placeholder-collapse"></div>
+                                                                </td>
+                                                                <td id="name"><a href="#" onclick="items()" class="text-grey"> Pencil</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="col-checkbox">
+                                                                </td>
+                                                                <td id="icon_collapse">
+                                                                    <div class="placeholder-collapse"></div>
+                                                                </td>
+                                                                <td id="name" onclick="items()" class="text-grey">Pencil</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-8 col-sm-8 col-xs-12 right-side">
+
+                        <div class="row p-20">
+                            <div class="col-md-12">
+                                <div class="pull-left">
+                                    <h3 class="pull-left page-title">Baju Guess</h3>
+                                    <p class="text-blue text-small"> 9 item(s)</p>
+                                </div>
+
+                                <div class="pull-right">
+                                    <a href="item_edit.html" class="btn btn-default waves-effect waves-light m-b-5" > <span>Edit </span></a>
+                                    <div class="btn-group">
+                                        <button class="btn btn-info waves-effect waves-light m-b-5"> New Transaction</button>
+                                    </div>
+
+                                    <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false"> More </button>
+                                    <ul class="dropdown-menu" role="menu" style="top: 35px;right: 15px;">
+                                        <li><a href="#">Mark as Inactive</a></li>
+                                        <li><a href="#">Delete</a></li>
+                                    </ul>
+
+                                    <a href="#" id="close-btn" class="close-btn">
+                                        <i class="ion-android-close"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row p-15 pt-0 bt-1">
+                            <div class="form-horizontal m-b-20">
+                                <div class="col-md-6">
+                                    <div class="form-group form-general mb-15">
+                                        <label class="col-md-4 control-label text-left">UOM</label>
+                                        <div class="col-md-8 pt-7">
+                                            <strong>Baju Guess</strong>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-general mb-15">
+                                        <label class="col-md-4 control-label text-left">Tax</label>
+                                        <div class="col-md-8 pt-7">
+                                            <strong>10%</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group form-general mb-15">
+                                        <label class="col-md-4 control-label text-left">Brand</label>
+                                        <div class="col-md-8 pt-7">
+                                            <strong>Guess</strong>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-general mb-15">
+                                        <label class="col-md-4 control-label text-left">Manufacture</label>
+                                        <div class="col-md-8 pt-7">
+                                            <strong>Guest Star</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group form-general mb-15">
+                                        <label class="col-md-2 control-label text-left">Size</label>
+                                        <div class="col-md-8 pt-7">
+                                            <span class="label label-info">Info</span> <span class="label label-info">Info</span> <span class="label label-info">Info</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-general mb-15">
+                                        <label class="col-md-2 control-label text-left">Color</label>
+                                        <div class="col-md-8 pt-7">
+                                            <span class="label label-info">Info</span> <span class="label label-info">Info</span> <span class="label label-info">Info</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 p-0">
+                                <div class="row sahito-list">
+                                    <div class="col-md-12">
+                                        <div class="sahito-list-contact border-1 table-responsive">
+                                            <table class="table table-hover default-table sahito-list-contact-transaction--table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>NAME# <i class="fa fa-sort"></i></th>
+                                                        <th>PURCHASE COST</th>
+                                                        <th>SELLING PRICE</th>
+                                                        <th>Availability</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#">Baju Guest - M</a></td>
+                                                        <td>IDR0.00</td>
+                                                        <td>IDR20,000.00</td>
+                                                        <td>50.0</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#">Baju Guest - XL</a></td>
+                                                        <td>IDR0.00</td>
+                                                        <td>IDR10,000.00</td>
+                                                        <td>20.0</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer text-right">
+            2015 © Sahito.
+        </footer>
+    </div>
+</div>
+
+<script>
+    var resizefunc = [];
+</script>
+
+<script type="text/javascript" src="assets/scripts/scripts.min.js"></script>
+<script type="text/javascript">
+    $( document ).ready(function() {
+        $.fn.editable.defaults.mode = 'inline';
+        $('#price2, #price3, #price4, #stock1, #stock2, #stock3').editable();
+        $('#list-1, #list-2').on("click", function(){
+            $('#mark_default').toggle();
+            $('#list-1').parent('tr').addClass('active');
+            $('#mark_active').toggle();
+        });
+    });
+    function item_group(){
+        $('#full-list').toggle();
+        $('#half-list-item-group').toggle();
+        $('.full-width').toggleClass("half-column");
+    }
+    function items()
+    {
+        $('#full-list').toggle();
+        $('#half-list').toggle();
+        $('.full-width').toggleClass("half-column");
+    }
+    $('#close-btn').on('click', function(){
+        $('#full-list').toggle();
+        $('#half-list').toggle();
+        $('.full-width').toggleClass("half-column");
+    });
+    new Chartist.Line('#chart1', {
+        labels: ["satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan"],
+        series: [
+        [5, 9, 7, 8, 5, 3, 5, 4]
+        ]
+    }, {
+        low: 0,
+        showArea: true,
+        width: '600px',
+        height: '400px'
+    });
+</script>
+</body>
+</html>

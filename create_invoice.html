@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <title>Invoice Kilat by Zuragan</title>
+
+    <link href="assets/css/core.min.css" rel="stylesheet">
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body class="fixed-left">
+
+    <!-- Begin page -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <div class="text-center">
+                <a href="index.html" class="logo">
+                    <span class="putih">invoicekilat.com</span>
+                </a>
+            </div>
+        </div>
+
+        <div role="navigation" class="navbar navbar-default">
+            <div class="container">
+                <div class="">
+                    <div class="pull-left">
+                        <button class="button-menu-mobile open-left">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <span class="clearfix"></span>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right pull-right">
+                        <li class="dropdown pull-left open">
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true">
+                                    <p class="profile-email">agnesshinta@ontelstudio.com</p>
+                                    <i class="fa fa-gear"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="profile.html">
+                                            <i class="fa fa-user"></i> Account</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="setting_new.html">
+                                            <i class="fa fa-cog"></i> Settings</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="javascript:void(0)" tag="li" id="nav-top-logout">
+                                            <i class="md md-settings-power"></i>Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                    <form role="search" class="navbar-form pull-left" style="position: relative; margin: 0">
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <div class="btn-group">
+                                    <button class="btn btn-clear dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-search"></i>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="search_page.html">Contacts</a>
+                                        </li>
+                                        <li>
+                                            <a href="search_page.html">Items</a>
+                                        </li>
+                                        <li>
+                                            <a href="search_page.html">Sales Orders</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="search" id="nav-top-search" placeholder="Type here for search..." class="form-control search-bar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="left side-menu">
+        <div class="left side-menu">
+            <div id="sidebar-menu">
+                <ul>
+                    <li class="" id="nev-left-orders">
+                        <a href="sales_order.html" class="waves-effect waves-light active">
+                            <i class="md-shopping-cart"></i>
+                            Invoices
+                        </a>
+                    </li>
+                    <li class="" id="nev-left-items">
+                        <a href="items.html" class="waves-effect">
+                            <i class="ion-folder"></i>
+                            <span> Items </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="waves-effect waves-light" id="nev-left-contacts">
+                            <i class="md md-perm-contact-cal"></i>
+                            <span> Contacts </span>
+                        </a>
+                    </li>
+                    <li class="router-link-exact-active router-link-active" id="nev-left-settings">
+                        <a href="report.html" class="waves-effect waves-light">
+                            <i class="md md-assessment"></i>
+                            <span>Report</span>
+                        </a>
+                    </li>
+                    <li class="router-link-exact-active router-link-active" id="nev-left-settings">
+                        <a href="setting_new.html" class="waves-effect waves-light">
+                            <i class="md md-settings"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="clearfix">
+
+                </div>
+            </div>
+            <div class="clearfix">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page-invoice-maker" style=" height: 1161px; width: 1351px; ">
+        <form action="#" class="form-horizontal">
+            <div class="content sahito-user bgr-white" style="height: 1200px">
+                <div class="container" style="margin-right: 10px; margin-left: 10px">
+                    <div class="row">
+                        <div class="col-md-6 pull-left" style="margin-top:35px;">
+                            <div class="media m-b-30">
+                                <a href="#" class="pull-left">
+                                    <img alt="" src="assets/images/usd.png" class="media-object thumb-sm" style="width:80px; height:80px; margin-top:25px;">
+                                </a>
+                                <div class="media-body" style="padding-top:15px;">
+                                    <h4>Dhanson Corp.</h4>
+                                    <small class="text-muted">Jl. Padjadjaran No. 45</small>
+                                    <br>
+                                    <small class="text-muted">Kota Baru, Sulawesi Tengah 63827</small>
+                                    <br>
+                                    <small class="text-muted">081211334585 | </small>
+                                    <small class="text-muted">jonathan@moltran.com</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-md-3 pull-right" style="margin-top:45px; padding-left: 15px;">
+                            <h1 class="page-title" style="font-size: 32pt; font-weight: normal">INVOICE</h1>
+                        </div>
+                    </div>
+
+                    <div class="row m-b-30" style="margin-left: 3px">
+                        <div class="col-md-5 pull-left" style="padding-left: 0px">
+                            <div class="form-group" style="margin-bottom: 5px">
+                                <label class="col-md-10 control-label text-left" style="font-weight: normal">Invoice to:</label>
+                            </div>
+                            <div id="insert-contact">
+                                <select id="customer" class="form-control form-group" style="margin-bottom: 5px;width: 82%;margin-left: -5px;">
+                                    <option selected="active"></option>
+                                    <option>Andi</option>
+                                    <option onclick="showDetails()">Dia</option>
+                                    <option>Charlie</option>
+                                </select>
+                                <button type="button" class="btn btn-block waves-effect" style="margin-bottom: 5px;width: 82%;margin-left: -5px;height: 100px;background: #ffffff;border: 1pt solid #2FA3E6; border-style:  dashed; color:#2FA3E6"
+                                    onclick="addContact()">+ Add New Contact</button>
+                            </div>
+                            <div id="detailContact" style="display: none">
+                                <button type="button" class="btn btn-danger btn-block waves-effect" style="margin-bottom: 5px;width: 82%;margin-left: -5px;"
+                                    onclick="addContact()">
+                                    <i class="ion-trash-b"></i>
+                                </button>
+                                <label>Dia Andira Anda</label>
+                                <label>Jl. Parangtritis No. 56 Block C</label>
+                                <label>Kota Baru, Gunung Bamega</label>
+                            </div>
+                            <div id="addNew-contact" style="display:none">
+                                <button type="button" class="btn btn-danger btn-custom waves-effect pull-right" style="margin-bottom: 5px;margin-left: -5px;"
+                                    onclick="addContact()">
+                                    X
+                                </button>
+                                <div class="form-group" style="margin-bottom: 5px">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" placeholder="Your Client's Name">
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 5px">
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" placeholder="Your client's address"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 5px">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" placeholder="Your Client's Phone">
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 5px">
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" placeholder="Your Client's Email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 pull-right">
+                            <div class="form-group" style="margin-bottom: 5px">
+                                <div class="col-md-5">
+                                    <label></label>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" placeholder="INV/2017/9876" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 5px">
+                                <div class="col-md-5" style="margin-left: 25px; margin-right: -25px">
+                                    <label style=" padding-top: 10px; font-weight: normal">Invoice Date</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="dd MMM YYYY" id="duedatepicker">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 5px">
+                                <div class="col-md-5" style="margin-left: 25px; margin-right: -25px">
+                                    <label style=" padding-top: 10px; font-weight: normal">Due Date</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="dd MMM YYYY" id="invoicedatepicker">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="sahito-table-new-order border-1 table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="">
+                                            <th id="item" style="font-weight: normal; font-size: 14px; padding-left: 0px;">Description</th>
+                                            <th id="quantity" style="font-weight: normal; font-size: 14px;">Qty</th>
+                                            <th id="rate" style="font-weight: normal; font-size: 14px;">Rate</th>
+                                            <th id="discount" style="font-weight: normal; font-size: 14px;">Discount</th>
+                                            <th id="amount" style="font-weight: normal; font-size: 14px;">Amount</th>
+                                            <th id="delete"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control form-white">
+                                            </td>
+                                            <td id="quantity">
+                                                <input type="text" class="form-control form-white">
+                                            </td>
+                                            <td id="rate">
+                                                <input type="text" class="form-control form-white">
+                                            </td>
+                                            <td id="discount">
+                                                <select class="form-control" style="width: 35%; padding-left: 0">
+                                                    <option>Rp</option>
+                                                    <option>%</option>
+                                                </select>
+                                                <input type="text" class="form-control form-white" style="width: 60%">
+                                            </td>
+                                            <td id="amount">
+                                                <input type="text" class="form-control form-white">
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-danger">
+                                                    <i class="ion-close-circled"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr id="moreitem">
+                                            <td>
+                                                <input type="text" class="form-control form-white">
+                                            </td>
+                                            <td id="quantity">
+                                                <input type="text" class="form-control form-white">
+                                            </td>
+                                            <td id="rate">
+                                                <input type="text" class="form-control form-white">
+                                            </td>
+                                            <td id="discount">
+                                                <select class="form-control" style="width: 35%; padding-left: 0">
+                                                    <option>Rp</option>
+                                                    <option>%</option>
+                                                </select>
+                                                <input type="text" class="form-control form-white" style="width: 60%">
+                                            </td>
+                                            <td id="amount">
+                                                <input type="text" class="form-control form-white">
+                                            </td>
+                                            <td>
+                                                <a href="#" class="text-danger">
+                                                    <i class="ion-close-circled"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="7" style=" border-top-color: white; padding-top: 15px; padding-left: 0px; padding-right: 0px">
+                                                <button type="button" class="btn btn-block waves-effect" style="background: #ffffff;border: 1pt solid #2FA3E6; border-style:  dashed; color: #2FA3E6"
+                                                    onclick="addItem()">+ Add More Item</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table">
+                                    <thead>
+                                        <th style="width: 60%; border-bottom: 0px"></th>
+                                        <th style="width: 20%; border-bottom: 0px"></th>
+                                        <th style="width: 20%; border-bottom: 0px"></th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="no-bgr" style=" border-top-color: white; "></td>
+                                            <td align="left" style=" border-top-color: white; padding-bottom: 10px">Sub Total</td>
+                                            <td id="amount" style=" border-top-color: white; padding-bottom: 10px; padding-right: 0px">350.000</td>
+                                        </tr>
+                                        <!-- <tr>
+                                                <td colspan="3" class="no-bgr" style=" border-top-color: white; "></td>
+                                                <td colspan="1" align="right">Tax</td>
+                                                <td colspan="2" id="amount">35.000</td>
+                                            </tr> -->
+                                        <tr>
+                                            <td class="no-bgr" style=" border-top-color: white; "></td>
+                                            <td align="right" style="padding: 15px 0 15px 0">
+                                                <input type="text" class="form-control form-white" placeholder="adjustment">
+                                            </td>
+                                            <td id="amount" style="padding-right: 0px">
+                                                <input type="text" class="form-control form-white text-right" placeholder="">
+                                            </td>
+                                        </tr>
+                                        <tr style="font-size: 20px;">
+                                            <td class="no-bgr" style="border-top-color: white; "></td>
+                                            <td>Total</td>
+                                            <td id="amount" style="padding-right: 0px">385.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row m-b-20">
+                            <div class="col-md-6 pl-pr-0">
+                                <div class="form-group col-md-12 form-general-newOrder m-b-20">
+                                    <label class="col-md-12 control-label text-left">Customer Notes</label>
+                                    <textarea class="form-control" rows="3" v-model="form.customer_notes" maxlength="500" placeholder="Will be displayed in invoice."
+                                        style="padding-left: 6px"></textarea>
+                                    <!-- <div class="">Will be displayed in invoice</div>
+                                        <div class="help-text">Maximum characters is 500.</div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row m-b-20">
+                            <div class="col-md-6 pl-pr-0">
+                                <div class="form-group col-md-12 form-general-newOrder m-b-20">
+                                    <label class="col-md-12 control-label text-left">Terms & Conditions</label>
+                                    <textarea class="form-control" rows="3" v-model="form.internal_notes" maxlength="500" placeholder="Will be displayed in invoice."
+                                        style="padding-left: 6px"></textarea>
+                                    <!-- <div class="">Will be displayed in invoice</div>
+                                        <div class="help-text">Maximum characters is 500.</div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="float-save" style="padding-left: 20px"> -->
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="row" style="margin-left: 200px">
+        <div class="col-md-6 text-left">
+            <button class="btn btn-default waves-effect" type="button">Cancel</button>
+        </div>
+        <div class="col-md-6 text-right">
+            <div class="col-md-6 col-md-offset-6">
+                <button type="submit" class="btn btn-info waves-effect waves-light">Create Invoice</button>
+                <!--<select class="form-control">
+                                			                            <option>Save and Close</option>
+                                			                            <option>Save as Draft</option>
+                                			                            <option>Save and Preview Invoice</option>
+                                			                            <option>Save and Send Invoice</option>
+                                			                            <option>Save and Pay</option>
+                                			                        </select> -->
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!--<div class="col-md-12 text-center">
+                                                                <button type="submit" class="btn btn-info waves-effect waves-light">Save</button>
+                                                                von class="btn btn-default waves-effect" type="button">Cancel</button>
+                                                            </div>-->
+    <!-- <footer class="footer text-right">
+            2017 © Zuragan
+        </footer> -->
+
+
+    <script>
+        var resizefunc = [];
+    </script>
+
+    <script type="text/javascript">
+        // Date Picker
+        jQuery('#invoicedatepicker').datepicker();
+        jQuery('#duedatepicker').datepicker();
+    </script>
+
+
+    <script type="text/javascript" src="assets/scripts/scripts.min.js"></script>
+    <script type="text/javascript">
+        $('.select2').select2();
+
+        function addContact() {
+            var x = document.getElementById("addNew-contact");
+            var y = document.getElementById("insert-contact");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+            } else {
+                x.style.display = "none";
+                y.style.display = "block";
+            }
+        }
+
+        function addItem() {
+            var x = document.getElementById("moreitem");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function showDetails() {
+            var x = document.getElementById("detailContact");
+            var y = document.getElementById("addNew-contact");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+            } else {
+                x.style.display = "none";
+                y.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

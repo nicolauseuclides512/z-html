@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <title>Totokoko - Administration Page</title>
+
+    <link href="assets/css/core.min.css" rel="stylesheet">
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body class="fixed-left">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <div class="topbar">
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="index.html" class="logo"><img src="assets/images/logo_totokoko_web.png" height="38" width="38"> <span class="putih">Totokoko </span></a>
+                </div>
+            </div>
+
+            <div  role="navigation" class="navbar navbar-default">
+                <div  class="container">
+                    <div class="">
+                        <div  class="pull-left">
+                            <button class="button-menu-mobile open-left">
+                                <i  class="fa fa-bars"></i>
+                            </button> 
+                            <span  class="clearfix"></span>
+                        </div> 
+                        <ul  class="nav navbar-nav navbar-right pull-right">
+                            <li  class="dropdown pull-left open">
+                                <li class="dropdown">
+                                         <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true">
+                                        <i  class="fa fa-gear"></i>
+                                        <p class="profile-email">agnesshinta@ontelstudio.com</p>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="profile.html"><i class="fa fa-user"></i> Account</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="setting_new.html"><i class="fa fa-cog"></i> Settings</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="javascript:void(0)" tag="li" id="nav-top-logout"><i class="md md-settings-power"></i>Logout</a></li>
+                                    </ul>
+                                </li>
+                            </li>
+                        </ul>
+                        <form  role="search" class="navbar-form pull-left" style="position: relative;">
+                            <div  class="input-group">
+                                <div  class="input-group-btn">
+                                    <div class="btn-group">
+                                        <button class="btn btn-clear dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-search"></i> 
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li ><a href="search_page.html">Contacts</a></li>
+                                            <li><a href="search_page.html">Items</a></li>
+                                            <li><a href="search_page.html">Sales Orders</a></li> 
+                                        </ul>
+                                    </div>
+                                </div> 
+                                <input  type="search" id="nav-top-search" placeholder="Type here for search..." class="form-control search-bar">
+                            </div> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="left side-menu">
+            <div class="left side-menu">
+                <div  id="sidebar-menu">
+                    <ul >
+                        <li  class="" id="nev-left-orders">
+                            <a  href="sales_order.html" class="waves-effect waves-light">
+                                <i  class="md-shopping-cart"></i>
+                                Sales Orders
+                            </a>
+                        </li> 
+                        <li  class="" id="nev-left-items">
+                          <a  href="items.html" class="waves-effect waves-light">
+                              <i  class="ion-folder"></i>
+                              Items
+                          </a>
+                      </li> 
+                      <li >
+                          <a  href="contact.html" class="waves-effect waves-light" id="nev-left-contacts">
+                              <i  class="md md-perm-contact-cal"></i><span > Contacts </span>
+                          </a>
+                      </li> 
+                      <li  class="router-link-exact-active router-link-active" id="nev-left-settings">
+                          <a  href="setting_new.html" class="waves-effect waves-light">
+                              <i  class="md md-settings"></i> <span >Settings</span>
+                          </a>
+                      </li>
+                  </ul> 
+                  <div  class="clearfix">
+
+                  </div>
+              </div> 
+              <div  class="clearfix">
+
+              </div>
+          </div>
+      </div>
+
+        <div class="content-page ">
+            <div class="content sahito-user full-width bgr-white">
+                <div class="container full-width-header bt-1 p-b-10 m-b-20">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="pull-left page-title">Edit Contact</h4>
+                        </div>
+                    </div>
+                </div>
+                <form action="#" class="form-horizontal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 p-b-20">
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">Primary Contact</label>
+                                    <div class="col-md-2">
+                                        <select class="form-control">
+                                            <option>Salutation</option>
+                                            <option>Mr.</option>
+                                            <option>Mrs.</option>
+                                            <option>Ms.</option>
+                                            <option>Miss.</option>
+                                            <option>Dr.</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">Company Name</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left text-danger">Contact Display Name</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">Contact Email</label>
+                                    <div class="col-md-4">
+                                        <input type="email" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">Contact Phone</label>
+                                    <div class="col-md-2">
+                                        <input type="text" class="form-control" placeholder="Work Phone">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="text" class="form-control" placeholder="Mobile">
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">Website</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left text-danger">Contact Type</label>
+                                    <div class="col-md-7">
+                                        <div class="radio radio-info radio-inline">
+                                            <input type="radio" id="customer" value="customer" name="contact-type" checked="checked">
+                                            <label for="customer"> Customer </label>
+                                        </div>
+                                        <div class="radio radio-info radio-inline">
+                                            <input type="radio" id="dropshipper" value="dropshipper" name="contact-type">
+                                            <label for="dropshipper"> Dropshipper / Reseller </label>
+                                        </div>
+                                        <div class="radio radio-info radio-inline">
+                                            <input type="radio" id="vendor" value="vendor" name="contact-type">
+                                            <label for="vendor"> Vendor </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End row -->
+
+                    </div>
+                    <div class="container bt-1 p-b-10 m-b-20">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="nav nav-tabs nav-tabs-clear btp-1 tabs">
+                                    <li class="active tab">
+                                        <a href="#payment-details" data-toggle="tab" aria-expanded="false"> 
+                                            <span class="hidden-xs">Payment Details</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#address" data-toggle="tab" aria-expanded="false"> 
+                                            <span class="hidden-xs">Address</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#notes" data-toggle="tab" aria-expanded="true"> 
+                                            <span class="hidden-xs">Notes</span> 
+                                        </a> 
+                                    </li>  
+                                </ul> 
+                                <div class="tab-content r-pl-pr tab-content-clear"> 
+                                    <div class="tab-pane active" id="payment-details"> 
+                                        <div class="form-group form-general m-b-20">
+                                            <label class="col-md-3 control-label text-left">Currency</label>
+                                            <div class="col-md-4">
+                                                <select class="select2 form-control " data-placeholder="Choose currency...">
+                                                    <option value="idr">IDR - Rupiah</option>
+                                                    <option value="inr">INR - Indian Rupee</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-general m-b-20">
+                                            <label class="col-md-3 control-label text-left">Payment Terms</label>
+                                            <div class="col-md-4">
+                                                <select class="select2 form-control " data-placeholder="Choose payment terms...">
+                                                    <option value="inr">Net 15</option>
+                                                    <option value="inr">Net 30</option>
+                                                    <option value="idr" selected>Due On Receipt</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="tab-pane" id="address">
+                                        <div class="col-md-6">
+                                            <p class="m-b-30" style="color: #aaa;">Billing Address</p>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">Street</label>
+                                                <div class="col-md-7">
+                                                    <textarea class="form-control" rows="2"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">City</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">State</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">Zip Code</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">Country</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">Fax</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">Phone</label>
+                                                <div class="col-md-7">
+                                                    <input type="number" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p class="m-b-30" style="display: inline-block;color: #aaa;">Shipping Address</p>
+                                            <a href="#" class="pull-right"><i class="ion-arrow-down-a"></i> Copy Billing Address</a>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">Street</label>
+                                                <div class="col-md-7">
+                                                    <textarea class="form-control" rows="2"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">City</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">State</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">Zip Code</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">Country</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">Fax</label>
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="col-md-4 control-label text-left">Phone</label>
+                                                <div class="col-md-7">
+                                                    <input type="number" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="tab-pane" id="notes">
+                                        <div class="col-md-7">
+                                            <div class="form-group form-general m-b-20">
+                                                <label class="control-label text-left">Notes <span style="color: #aaa">(For Internal Use)</span></label>
+                                                <textarea class="form-control m-l-15" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div> 
+                            </div>
+                        </div> <!-- End row -->
+
+                    </div>
+                    <div class="container p-b-10 m-b-20">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-info waves-effect waves-light">Save</button>
+                                <button class="btn btn-default waves-effect" type="button">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <footer class="footer text-right">
+                    2015 © Sahito.
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var resizefunc = [];
+    </script>
+
+    <script type="text/javascript" src="assets/scripts/scripts.min.js"></script>
+    <script type="text/javascript">
+        $('.select2').select2();
+    </script>
+</body>
+</html>

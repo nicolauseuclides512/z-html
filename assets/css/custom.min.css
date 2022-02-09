@@ -1,0 +1,2428 @@
+body,
+html {
+    background: #ECF0F1
+}
+
+::-webkit-scrollbar {
+    width: 8px
+}
+
+::-webkit-scrollbar-button {
+    width: 8px;
+    height: 0
+}
+
+::-webkit-scrollbar-track {
+    background: #fefefe
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eee;
+    border: thin solid eee
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d7d7d7
+}
+
+.bgr-white {
+    background: #fff!important
+}
+
+.bgr-light-grey {
+    background: #fcfcfc
+}
+
+.bgr-grey {
+    background: #fafafa
+}
+
+.text-blue {
+    color: #2FA3E6
+}
+
+.text-green {
+    color: #2FA3E6
+}
+
+.text-grey {
+    color: #555
+}
+
+.text-small {
+    font-size: .9em
+}
+
+.bt-0 {
+    border-top: 0!important
+}
+
+.bt-1 {
+    border-bottom: 1px solid #eee
+}
+
+.btop-1,
+.bttop-1 {
+    border-top: 1px solid #eee
+}
+
+.bttop-1 {
+    border-bottom: 1px solid #eee
+}
+
+.br-1 {
+    border-right: 1px solid #eee
+}
+
+.btp-1 {
+    border-top: 1px solid #eee
+}
+
+.fborder-1 {
+    border: 1px solid #eee
+}
+
+.p-0 {
+    padding: 0
+}
+
+.p-10 {
+    padding: 10px
+}
+
+.p-15 {
+    padding: 15px!important
+}
+
+.p-20 {
+    padding: 20px!important
+}
+
+.p-20-0 {
+    padding: 20px 0!important
+}
+
+.p-25 {
+    padding: 25px
+}
+
+.pnb-20 {
+    padding: 20px 20px 0
+}
+
+.m-10 {
+    margin: 10px
+}
+
+.m-15 {
+    margin: 15px
+}
+
+.mbt-15 {
+    margin-bottom: 15px;
+    margin-top: 15px
+}
+
+.mbt-20 {
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.mt-20 {
+    margin-top: 20px!important
+}
+
+.mt-25 {
+    margin-top: 25px!important
+}
+
+.m-b-5 {
+    margin-bottom: 5px!important
+}
+
+.m-b-10 {
+    margin-bottom: 10px!important
+}
+
+.mb-0 {
+    margin-bottom: 0!important
+}
+
+.mb-15 {
+    margin-bottom: 10px!important
+}
+
+.m-b-20 {
+    margin-bottom: 20px!important
+}
+
+.m-b-25 {
+    margin-bottom: 25px
+}
+
+.ml-20 {
+    margin-left: 20px!important
+}
+
+.text-left {
+    text-align: left!important
+}
+
+.text-center {
+    text-align: center!important
+}
+
+.pl-0 {
+    padding-left: 0!important
+}
+
+.pr-0 {
+    padding-right: 0!important
+}
+
+.pl-5 {
+    padding-left: 5px!important
+}
+
+.pl-10 {
+    padding-left: 10px!important
+}
+
+.pl-15 {
+    padding-left: 15px!important
+}
+
+.pl-20 {
+    padding-left: 20px!important
+}
+
+.pl-pr-0 {
+    padding-left: 0!important;
+    padding-right: 0!important
+}
+
+.pl-pr-15 {
+    padding-left: 15px!important;
+    padding-right: 15px!important
+}
+
+.pl-pr-25 {
+    padding-left: 25px!important;
+    padding-right: 25px!important
+}
+
+.pt-pb-10 {
+    padding-bottom: 10px!important;
+    padding-top: 10px!important
+}
+
+.pt-pb-20 {
+    padding-bottom: 20px!important;
+    padding-top: 20px!important
+}
+
+.p-b-20,
+.p-b-25 {
+    padding-bottom: 20px
+}
+
+.pt-0 {
+    padding-top: 0!important
+}
+
+.pb-0 {
+    padding-bottom: 0!important
+}
+
+.pt-7 {
+    padding-top: 7px!important
+}
+
+.pt-5 {
+    padding-top: 5px
+}
+
+.pt-10 {
+    padding-top: 10px
+}
+
+.pt-15 {
+    padding-top: 15px
+}
+
+.pt-20 {
+    padding-top: 20px
+}
+
+.pt-25 {
+    padding-top: 25px
+}
+
+.pl-15 {
+    padding-left: 15px
+}
+
+.pl-20 {
+    padding-left: 20px
+}
+
+.pr-15 {
+    padding-right: 15px
+}
+
+.pr-20 {
+    padding-right: 20px
+}
+
+.mr-15 {
+    margin-right: 15px
+}
+
+.mr-20 {
+    margin-right: 20px
+}
+
+.mr-25 {
+    margin-right: 25px
+}
+
+.r-ml-mt {
+    margin-left: 0!important;
+    margin-right: 0!important
+}
+
+.r-pl-pr {
+    padding-left: 0!important;
+    padding-right: 0!important
+}
+
+.wt-auto {
+    width: auto!important
+}
+
+.small-text {
+    font-size: .8em
+}
+
+.text-bold {
+    font-weight: 700
+}
+
+label.light {
+    font-weight: 100
+}
+
+input.form-white {
+    background: #fff
+}
+
+input.form-control {
+    background: #fff;
+    border: 1px solid #ddd
+}
+
+input.form-control:focus {
+    border-color: #c9c9c9
+}
+
+.tags-noBorder .tagsinput {
+    border: none!important;
+    overflow: hidden
+}
+
+textarea.form-control {
+    background: #fff;
+    border: 1px solid #ddd
+}
+
+textarea.form-control:focus {
+    border-color: #c9c9c9
+}
+
+select option.divider {
+    border-top: 1px solid #ccc
+}
+
+.select2.form-control,
+select.form-control {
+    background: #fff;
+    border: 1px solid #ddd
+}
+
+.select2.form-control:focus,
+select.form-control:focus {
+    border-color: #c9c9c9
+}
+
+.select2.select2-dropdown-open,
+select.select2-dropdown-open {
+    border-color: #c9c9c9!important
+}
+
+.toggles-payment {
+    margin-bottom: 15px
+}
+
+.toggles-payment .toggle,
+.toggles-payment label {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.toggles-payment label {
+    padding-left: 15px;
+    position: relative;
+    min-height: 20px;
+    margin-bottom: 0;
+    font-weight: 400
+}
+
+.help-text {
+    font-size: .85em;
+    color: #888
+}
+
+.note-text {
+    color: #888;
+    font-size: 1em
+}
+
+.label-inactive {
+    margin-left: 10px;
+    padding: 3px 7px;
+    vertical-align: bottom;
+    background-color: #bbb;
+    color: #fff;
+    font-weight: 100
+}
+
+.search-bar .btn-group,
+.search-bar .navbar-form {
+    display: inline-block
+}
+
+.text-orange {
+    color: #e07300
+}
+
+.text-black {
+    color: #333
+}
+
+.text-light-gray {
+    color: #777
+}
+
+.close-btn i {
+    color: #aaa;
+    font-size: 1.4em;
+    padding-left: 15px
+}
+
+.btn-top-search {
+    padding: 8px 10px;
+    color: #555
+}
+
+.btn-group.open .dropdown-toggle {
+    box-shadow: none
+}
+
+.dropdown-toggle.profile i {
+    vertical-align: middle
+}
+
+.dropdown-toggle.profile .profile-email {
+    display: inline-block;
+    padding-left: 5px;
+    margin-bottom: 0
+}
+
+.btn-clear {
+    background: none;
+    box-shadow: none;
+    color: #555
+}
+
+.btn-clear:active,
+.btn-clear:hover {
+    box-shadow: none;
+    color: #333
+}
+
+.nav-tabs-clear {
+    box-shadow: none
+}
+
+.nav-grey li,
+.nav-grey li.active a {
+    background-color: #fcfcfc!important
+}
+
+.border-chart {
+    border: 1px solid #ddd;
+    padding-top: 30px
+}
+
+.form-shipping .form-shipping-from .col-md-4 {
+    padding-left: 0
+}
+
+.form-shipping .form-shipping-from .col-md-7 {
+    border: 1px solid #ddd
+}
+
+.form-shipping .form-shipping-from .col-md-7 h5 {
+    display: inline-block;
+    margin-top: 0
+}
+
+.form-shipping .form-shipping-from .col-md-7 p {
+    margin-bottom: 0
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box {
+    text-align: center;
+    border: 1px solid #ddd;
+    height: 100px;
+    margin-bottom: 10px
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box label {
+    display: block;
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    padding-left: 0
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box input[type=checkbox] {
+    display: none
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box input:checked+label {
+    border: 1px solid #38bbf7
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box input:checked+label .checkbox-courier {
+    opacity: 1
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box input:checked+label:before {
+    content: "\2713"
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box .check {
+    visibility: hidden
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box input:checked+label .check {
+    visibility: visible
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box input.checkbox:checked+label:before {
+    content: ""
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box .checkbox-courier {
+    background-position: 0 -20px!important;
+    width: 100%;
+    height: 100%;
+    background-size: cover!important;
+    opacity: .5;
+    padding: 0
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box .checkbox-courier.jne {
+    background: url(../images/shipping/jne_id.jpg)
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box .checkbox-courier.tiki {
+    background: url(../images/shipping/tiki_id.jpg)
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box .checkbox-courier.pos {
+    background: url(../images/shipping/pos_id.jpg)
+}
+
+.form-shipping .form-shipping-courier .col-md-7 .row .col-md-4 .courier-box:hover {
+    background: #fafafa
+}
+
+.form-have-title h5 {
+    margin-bottom: 15px;
+    font-size: 1.1em
+}
+
+.form-have-title p {
+    font-size: .95em
+}
+
+.bgr-border {
+    background: #ffffec;
+    border: 1px solid #eee
+}
+
+.checkout-policy .checkout-policy-content {
+    margin-bottom: 20px
+}
+
+.checkout-policy .checkout-policy-content h5 {
+    display: inline-block
+}
+
+.custom-tags input#options_tag {
+    padding: 0
+}
+
+.custom-tags div.tagsinput {
+    overflow-y: hidden
+}
+
+.items-details-overview-tab .items-details-overview-tab-left .form-horizontal .form-group label,
+.items-details-overview-tab .items-details-overview-tab-left .form-horizontal .form-group strong,
+.items-details-overview-tab .items-details-overview-tab-right .right-side--stock .form-group label {
+    font-size: .95em
+}
+
+.items-details-overview-tab .items-details-overview-tab-right .right-side--stock .form-group p.form-control-static {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-top: 0;
+    margin-top: 0
+}
+
+.search-page-block p {
+    font-size: .95em
+}
+
+.search-page-block p#company_name,
+.search-page-block p#display_name,
+.search-page-block p#notes {
+    margin-bottom: 5px!important
+}
+
+.search-page-block p i {
+    padding-right: 10px
+}
+
+.search-page-block .close-btn i {
+    font-size: 1em
+}
+
+.custom-nestable {
+    width: 100%;
+    max-width: 100%
+}
+
+.custom-nestable .dd-list .dd-item .dd-handle {
+    margin: 0;
+    height: auto;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    border-top: 0
+}
+
+.custom-nestable .dd-list .dd-list {
+    padding-left: 0!important;
+    margin: 0
+}
+
+.checkbox-single input {
+    width: 17px;
+    height: 17px;
+    margin-top: 0
+}
+
+.checkbox-single label:after {
+    padding-left: 2px;
+    padding-right: 2px
+}
+
+.checkbox label:after {
+    padding-left: 2px
+}
+
+.content-page {
+    background: #EEEEEE;
+    padding: 20px;
+}
+
+.content-page-invoice-maker {
+    background: #EEEEEE;
+    padding: 30px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-left: 385px;
+    padding-right: 175px;
+}
+
+.content-page-new-item {
+    background: #EEEEEE;
+	padding-top: 90px;
+    padding-left: 260px;
+}
+
+.content-page .content {
+    min-height: 500px;
+    /*background: #fff!important;
+	border: 1px solid #ddd*/
+	background: #EEEEEE;
+}
+
+.table-div {
+    display: table;
+    width: 100%
+}
+
+.table-div .table-div--header {
+    display: table-row;
+    background: #fafafa;
+    width: 100%
+}
+
+.table-div .table-div--header .table-div-header--content {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd
+}
+
+.table-div .table-div--header .table-div-header--content ul {
+    padding-left: 0!important;
+    margin-bottom: 0!important
+}
+
+.table-div .table-div--header .table-div-header--content ul li {
+    display: table-cell;
+    padding: 8px;
+    line-height: normal;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: .9em;
+    color: #666
+}
+
+.table-div .table-div--header .table-div-header--content ul li.col-checkbox {
+    width: 5%;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: 0
+}
+
+.table-div .table-div--header .table-div-header--content ul li.col-checkbox .checkbox {
+    margin: 0
+}
+
+.table-div .table-div--header .table-div-header--content ul li#name {
+    width: 50%
+}
+
+.table-div .table-div--header .table-div-header--content ul li#sku {
+    width: 20%
+}
+
+.table-div .table-div--header .table-div-header--content ul li#available,
+.table-div .table-div--header .table-div-header--content ul li#reorder {
+    width: 15%
+}
+
+.table-div .table-div--header .table-div-header--content ul li i {
+    padding-left: 5px;
+    font-size: .9em;
+    color: #aaa
+}
+
+.table-div .table-div-row {
+    display: table-row
+}
+
+.custom-dropzone {
+    border: 1px dashed #ddd;
+    background: #fafafa;
+    padding: 10px 20px
+}
+
+.custom-dropzone .dz-message {
+    margin: 10px;
+    font-size: 1em
+}
+
+.custom-dropzone .dz-message span i {
+    display: block;
+    font-size: 3em;
+    color: #aaa
+}
+
+.custom-dropzone .dz-message span p.text-blue {
+    margin-top: 10px;
+    font-size: .9em
+}
+
+.custom-dropzone .dz-preview {
+    margin: 0;
+    background: none!important
+}
+
+.custom-dropzone .dz-preview .dz-image {
+    border-radius: 0!important
+}
+
+.radio-inline.radio-inline-input label:before {
+    top: 7px
+}
+
+.radio-inline.radio-inline-input label:after {
+    top: 10px
+}
+
+.tab-content-clear {
+    box-shadow: none
+}
+
+.tab-content--contact #overview-vendor .left-overview,
+.tab-content--contact #overview .left-overview {
+    border: 1px solid #eee;
+    background: #fafafa
+}
+
+.tab-content--contact #overview-vendor .left-overview img,
+.tab-content--contact #overview .left-overview img {
+    width: 100%
+}
+
+.tab-content--contact #overview-vendor .left-overview h4,
+.tab-content--contact #overview .left-overview h4 {
+    margin: 10px 0!important
+}
+
+.tab-content--contact #overview-vendor .left-overview span,
+.tab-content--contact #overview .left-overview span {
+    font-size: .85em;
+    color: #aaa
+}
+
+.tab-content--contact #overview-vendor .left-overview .row,
+.tab-content--contact #overview .left-overview .row {
+    margin-bottom: 10px
+}
+
+.tab-content--contact #overview-vendor .left-overview .row .col-md-10,
+.tab-content--contact #overview .left-overview .row .col-md-10 {
+    font-size: .9em;
+    word-wrap: break-word
+}
+
+.tab-content--contact #overview-vendor .left-overview .left-overview--content,
+.tab-content--contact #overview .left-overview .left-overview--content {
+    padding: 10px
+}
+
+.tab-content--contact #overview-vendor .right-overview .table-overview,
+.tab-content--contact #overview .right-overview .table-overview {
+    border: 1px solid #eee
+}
+
+.tab-content--contact #overview-vendor .right-overview .table-overview tr td,
+.tab-content--contact #overview .right-overview .table-overview tr td {
+    padding: 12px 8px
+}
+
+.tab-content--contact #overview-vendor .right-overview .table-overview tr td.receivable,
+.tab-content--contact #overview .right-overview .table-overview tr td.receivable {
+    border-right: 1px solid #eee
+}
+
+.tab-content--contact #overview-vendor .right-overview .table-overview tr td.receivable h2,
+.tab-content--contact #overview .right-overview .table-overview tr td.receivable h2 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0
+}
+
+.tab-content--contact #overview-vendor .right-overview .table-overview tr td.receivable h4,
+.tab-content--contact #overview .right-overview .table-overview tr td.receivable h4 {
+    font-size: 1.1em;
+    font-weight: 500
+}
+
+.tab-content--contact #overview-vendor .right-overview .table-overview tr td.receivable p,
+.tab-content--contact #overview .right-overview .table-overview tr td.receivable p {
+    font-size: .9em
+}
+
+.tab-content--contact #overview-vendor .right-overview .table-overview tr td.receivable-list,
+.tab-content--contact #overview .right-overview .table-overview tr td.receivable-list {
+    font-size: .95em
+}
+
+.tab-content--contact #overview-vendor .right-overview .table-overview tr td.receivable-list span,
+.tab-content--contact #overview .right-overview .table-overview tr td.receivable-list span {
+    font-weight: 600;
+    font-size: 1.1em
+}
+
+.tab-content--contact #overview-vendor .right-overview .table-recent-shipment,
+.tab-content--contact #overview .right-overview .table-recent-shipment {
+    font-size: .95em
+}
+
+.tab-content--contact #overview-vendor .right-overview .billing-address,
+.tab-content--contact #overview .right-overview .billing-address {
+    margin-top: 10px
+}
+
+.tab-content--contact #overview-vendor .right-overview .billing-address .col-md-6,
+.tab-content--contact #overview .right-overview .billing-address .col-md-6 {
+    font-size: .95em
+}
+
+.tab-content--contact #overview-vendor .right-overview .billing-address .col-md-6 p,
+.tab-content--contact #overview .right-overview .billing-address .col-md-6 p {
+    margin-bottom: 5px
+}
+
+.tab-content--contact #overview-vendor .right-overview .contact-persons h5,
+.tab-content--contact #overview .right-overview .contact-persons h5 {
+    border-bottom: 1px solid #eee;
+    padding: 10px
+}
+
+.tab-content--contact #overview-vendor .right-overview .contact-persons ul,
+.tab-content--contact #overview .right-overview .contact-persons ul {
+    padding-left: 0
+}
+
+.tab-content--contact #overview-vendor .right-overview .contact-persons ul li,
+.tab-content--contact #overview .right-overview .contact-persons ul li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #eee
+}
+
+.tab-content--contact #overview-vendor .right-overview .contact-persons ul li p,
+.tab-content--contact #overview .right-overview .contact-persons ul li p {
+    font-size: .95em;
+    margin-bottom: 5px
+}
+
+.tab-content--contact #recent-vendor .recent-user,
+.tab-content--contact #recent .recent-user {
+    font-style: italic
+}
+
+.sales-order-inner-table td p {
+    margin-bottom: 5px
+}
+
+.sales-order-inner-table .sahito-invoice-table-inside tr.balance-due td,
+.sales-order-inner-table .sahito-invoice-table-inside tr.sub-total td {
+    padding: 8px 6px!important
+}
+
+.sahito-invoice,
+.sahito-invoice-pdf {
+    position: relative;
+    border: 1px solid #ddd;
+    min-height: 500px
+}
+
+.sahito-invoice-pdf .ribbon,
+.sahito-invoice .ribbon {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right
+}
+
+.sahito-invoice-pdf .ribbon span,
+.sahito-invoice .ribbon span {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #79a70a;
+    background: linear-gradient(#9bc90d, #79a70a);
+    box-shadow: 0 3px 10px -5px #000;
+    position: absolute;
+    top: 19px;
+    left: -21px
+}
+
+.sahito-invoice-pdf .ribbon span:before,
+.sahito-invoice .ribbon span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #79a70a;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79a70a
+}
+
+.sahito-invoice-pdf .ribbon span:after,
+.sahito-invoice .ribbon span:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #79a70a;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #79a70a
+}
+
+.sahito-invoice-pdf .ribbon-draft,
+.sahito-invoice .ribbon-draft {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right
+}
+
+.sahito-invoice-pdf .ribbon-draft span,
+.sahito-invoice .ribbon-draft span {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #cccccc;
+    background: linear-gradient(#dddddd, #cccccc);
+    box-shadow: 0 3px 10px -5px #000;
+    position: absolute;
+    top: 19px;
+    left: -21px
+}
+
+.sahito-invoice-pdf .ribbon-draft span:before,
+.sahito-invoice .ribbon-draft span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #cccccc;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #cccccc
+}
+
+.sahito-invoice-pdf .ribbon-draft span:after,
+.sahito-invoice .ribbon-draft span:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #cccccc;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #cccccc
+}
+
+.sahito-invoice-pdf .ribbon-overdue,
+.sahito-invoice .ribbon-overdue {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right
+}
+
+.sahito-invoice-pdf .ribbon-overdue span,
+.sahito-invoice .ribbon-overdue span {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #ff0000;
+    background: linear-gradient(#ff2626, #ff0000);
+    box-shadow: 0 3px 10px -5px #000;
+    position: absolute;
+    top: 19px;
+    left: -21px
+}
+
+.sahito-invoice-pdf .ribbon-overdue span:before,
+.sahito-invoice .ribbon-overdue span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #ff0000;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #ff0000
+}
+
+.sahito-invoice-pdf .ribbon-overdue span:after,
+.sahito-invoice .ribbon-overdue span:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #ff0000;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #ff0000
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-4 img,
+.sahito-invoice .sahito-invoice-content .col-md-4 img {
+    height: 120px;
+    width: 160px;
+    object-fit: cover
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-4 .office-desc h4,
+.sahito-invoice .sahito-invoice-content .col-md-4 .office-desc h4 {
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 15px;
+    font-size: 1em
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-4 .office-desc p,
+.sahito-invoice .sahito-invoice-content .col-md-4 .office-desc p {
+    margin-bottom: 0;
+    font-size: .83em;
+    color: #aaa
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-4 .billto,
+.sahito-invoice .sahito-invoice-content .col-md-4 .billto {
+    margin-top: 20px
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-4 .billto p,
+.sahito-invoice .sahito-invoice-content .col-md-4 .billto p {
+    margin-bottom: 0;
+    color: #aaa;
+    font-size: .83em
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-4 .billto h4,
+.sahito-invoice .sahito-invoice-content .col-md-4 .billto h4 {
+    margin: 0;
+    color: #555;
+    font-size: 1em;
+    line-height: normal
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-8 .invoice-date,
+.sahito-invoice .sahito-invoice-content .col-md-8 .invoice-date {
+    margin-top: 70px;
+    padding-right: 0
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-8 .invoice-date .col-md-6,
+.sahito-invoice .sahito-invoice-content .col-md-8 .invoice-date .col-md-6 {
+    text-align: right;
+    font-size: .83em;
+    color: #aaa;
+    padding-bottom: 5px
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-8 .invoice-date .col-md-6.invoice-date-term,
+.sahito-invoice .sahito-invoice-content .col-md-8 .invoice-date .col-md-6.invoice-date-term {
+    color: #555
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-8 h1,
+.sahito-invoice .sahito-invoice-content .col-md-8 h1 {
+    margin-bottom: 0
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-8 p.inv-code,
+.sahito-invoice .sahito-invoice-content .col-md-8 p.inv-code {
+    color: #aaa
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-8 p.inv-balance,
+.sahito-invoice .sahito-invoice-content .col-md-8 p.inv-balance {
+    font-size: .9em;
+    color: #555;
+    margin-bottom: 0;
+    line-height: 1;
+    margin-top: 30px
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-8 h4,
+.sahito-invoice .sahito-invoice-content .col-md-8 h4 {
+    margin-top: 0;
+    line-height: normal;
+    font-weight: 600;
+    font-size: 1.2em
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-4 .office-desc h4 {
+    margin-top: 0
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-4 .billto {
+    margin-top: 30px
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .col-md-4 .billto h4 {
+    font-size: .9em
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .sahito-invoice-notes h3 {
+    font-size: 1.1em;
+    color: #888
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .sahito-invoice-notes p {
+    font-size: .83em;
+    margin-bottom: 0
+}
+
+.sahito-invoice-pdf .sahito-invoice-content .sahito-invoice-notes ol {
+    padding-left: 15px;
+    font-size: .83em
+}
+
+.sahito-invoice-table th {
+    font-size: .9em;
+    font-weight: 100
+}
+
+.sahito-invoice-table-inside thead th {
+    font-size: .9em;
+    font-weight: 100;
+    border-bottom: 0!important
+}
+
+.sahito-invoice-table-inside tbody tr {
+    border-bottom: 1px solid #ddd
+}
+
+.sahito-invoice-table-inside tbody tr td {
+    color: #555;
+    font-size: .87em;
+    font-weight: 600
+}
+
+.sahito-invoice-table-inside tbody tr.sub-total {
+    text-align: right;
+    border-bottom: 0!important
+}
+
+.sahito-invoice-table-inside tbody tr.sub-total td {
+    font-weight: 100;
+    border-top: 0
+}
+
+.sahito-invoice-table-inside tbody tr.total {
+    text-align: right;
+    border-bottom: 0!important
+}
+
+.sahito-invoice-table-inside tbody tr.total td {
+    border-top: 0
+}
+
+.sahito-invoice-table-inside tbody tr.balance-due {
+    text-align: right;
+    border-bottom: 0!important
+}
+
+.sahito-invoice-table-inside tbody tr.balance-due td {
+    background: #eee;
+    border-top: 0
+}
+
+.sahito-invoice-table-inside tbody tr.balance-due td.no-bgr {
+    background: none
+}
+
+.sahito-invoice-table-inside td#qty,
+.sahito-invoice-table-inside th#qty {
+    text-align: right
+}
+
+.sahito-invoice-table-inside td#qty p.qty-amount,
+.sahito-invoice-table-inside th#qty p.qty-amount {
+    margin-bottom: 0
+}
+
+.sahito-invoice-table-inside td#qty p.qty-type,
+.sahito-invoice-table-inside th#qty p.qty-type {
+    margin-bottom: 0;
+    font-weight: 100;
+    color: #888
+}
+
+.sahito-invoice-table-inside td#amount,
+.sahito-invoice-table-inside td#rate,
+.sahito-invoice-table-inside th#amount,
+.sahito-invoice-table-inside th#rate {
+    text-align: right
+}
+
+.form-general label {
+    padding-left: 15px;
+    font-weight: 100
+}
+
+.form-general-newOrder label {
+    padding-left: 0px;
+    font-weight: 100
+}
+
+.panel-custom-border {
+    border: 1px solid #eee;
+    box-shadow: none
+}
+
+.panel-custom-border .panel-custom-border--body {
+    padding: 0
+}
+
+.sahito-user a.page-title {
+    margin-bottom: 0
+}
+
+.sahito-user h3,
+.sahito-user h4 {
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+    line-height: 2
+}
+
+.sahito-user h4 {
+    font-size: 1.3em
+}
+
+.sahito-modal .modal-content .modal-header {
+    padding: 15px!important;
+    border-bottom-width: 1px!important
+}
+
+.sahito-modal .modal-content .modal-body {
+    padding: 15px!important
+}
+
+.sahito-modal .modal-content .modal-body .form-group label {
+    font-weight: 400;
+    color: #555
+}
+
+.full-width {
+    padding: 20px 0 15px!important
+}
+
+.full-width .full-width-header {
+    height: 50px
+}
+
+.full-width.half-column {
+    padding-bottom: 0!important;
+    padding-top: 0!important
+}
+
+.full-width.half-column #half-list,
+.full-width.half-column #half-list-item-group,
+.full-width.half-column #half-list-vendor {
+    min-height: 100vh;
+    position: relative
+}
+
+.full-width.half-column #half-list-item-group .container .row .left-side,
+.full-width.half-column #half-list-item-group .container .row .right-side,
+.full-width.half-column #half-list-vendor .container .row .left-side,
+.full-width.half-column #half-list-vendor .container .row .right-side,
+.full-width.half-column #half-list .container .row .left-side,
+.full-width.half-column #half-list .container .row .right-side {
+    position: absolute
+}
+
+.full-width.half-column #half-list-item-group .container .row .left-side,
+.full-width.half-column #half-list-vendor .container .row .left-side,
+.full-width.half-column #half-list .container .row .left-side {
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    height: 100%;
+    border-right: 1px solid #ccc
+}
+
+.full-width.half-column #half-list-item-group .container .row .right-side,
+.full-width.half-column #half-list-vendor .container .row .right-side,
+.full-width.half-column #half-list .container .row .right-side {
+    right: 0;
+    overflow-y: auto;
+    height: 100%
+}
+
+.panel-sign-in .panel-body {
+    padding: 15px 30px
+}
+
+.panel-sign-in .sign-in-social {
+    text-align: center;
+    margin-top: 10px
+}
+
+.panel-sign-in .sign-in-social span,
+.panel-sign-in .sign-in-social ul {
+    display: inline-block
+}
+
+.panel-sign-in .sign-in-social span {
+    font-size: .9em
+}
+
+.panel-sign-in .sign-in-social ul {
+    padding-left: 15px
+}
+
+.panel-sign-in .sign-in-social ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 10px;
+    border-right: 1px solid #ddd
+}
+
+.panel-sign-in .sign-in-social ul li a i {
+    vertical-align: middle;
+    font-size: 1.8em
+}
+
+.panel-sign-in .sign-in-social ul li a i.ion-social-facebook {
+    color: #3c5a98;
+    font-size: 1.7em
+}
+
+.panel-sign-in .sign-in-social ul li a i.ion-social-google {
+    color: #db3237
+}
+
+.panel-sign-in .sign-in-social ul li:last-child {
+    border-right: none
+}
+
+.select-trans {
+    background: none;
+    border: none
+}
+
+.select-trans a span {
+    padding-left: 0
+}
+
+.form-trans {
+    height: 42px;
+    background: none
+}
+
+.sahito-list-user .sahito-list-user--table table tr th {
+    font-size: .9em
+}
+
+.sahito-list-user .sahito-list-user--table table tr td {
+    vertical-align: middle
+}
+
+.sahito-list-user .sahito-list-user--table table tr td img,
+.sahito-list-user .sahito-list-user--table table tr td span.sahito-list-user--name {
+    display: inline-block
+}
+
+.sahito-list-user .sahito-list-user--table table tr td img {
+    max-height: 55px
+}
+
+.sahito-list-user .sahito-list-user--table table tr td span.sahito-list-user--name {
+    vertical-align: middle;
+    padding-left: 15px
+}
+
+.sahito-list-user .sahito-list-user--table table tr td span.sahito-list-user--name h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    display: inline-block
+}
+
+.sahito-list-user .sahito-list-user--table table tr td span.sahito-list-user--name h6 {
+    font-size: .9em;
+    margin-bottom: 0
+}
+
+.sahito-list-user .sahito-list-user--table table tr td span.sahito-list-user--name h6.user-status {
+    display: inline-block
+}
+
+.sahito-list-user .sahito-list-user--table table tr td span.sahito-list-user--name h6.green {
+    color: #2FA3E6
+}
+
+.sahito-list-user .sahito-list-user--table table tr td span.sahito-list-user--name h6.red {
+    color: #ef5350
+}
+
+.sahito-list-user .sahito-list-user--table table tr td span.sahito-list-user--name p {
+    font-size: .9em
+}
+
+.table-order-title tr td {
+    min-width: 150px
+}
+
+.sahito-sales-order-table th#customer,
+.sahito-sales-order-table th#date,
+.sahito-sales-order-table th#orderId,
+.sahito-sales-order-table th#ref,
+.sahito-sales-order-table th#status {
+    text-align: left
+}
+
+.sahito-sales-order-table th#total {
+    text-align: right
+}
+
+.sahito-sales-order-table th#action,
+.sahito-sales-order-table th#paid,
+.sahito-sales-order-table th#shipped {
+    text-align: center
+}
+
+.sahito-sales-order-table td#customer,
+.sahito-sales-order-table td#date,
+.sahito-sales-order-table td#orderId,
+.sahito-sales-order-table td#ref,
+.sahito-sales-order-table td#status {
+    text-align: left
+}
+
+.sahito-sales-order-table td#total {
+    text-align: right
+}
+
+.sahito-sales-order-table td#action,
+.sahito-sales-order-table td#paid,
+.sahito-sales-order-table td#shipped {
+    text-align: center
+}
+
+.sahito-table-new-order table tr th {
+    font-size: .9em;
+    /*border-bottom: 0px solid #ddd!important;*/
+    border-top: none;
+    vertical-align: middle
+}
+
+.sahito-table-new-order table tr th#item {
+    width: 35%
+}
+
+.sahito-table-new-order table tr th#quantity {
+    width: 7%;
+}
+
+.sahito-table-new-order table tr th#quantity span {
+    font-size: 11px;
+    font-weight: 100
+}
+
+.sahito-table-new-order table tr th#rate {
+    width: 15%;
+}
+
+.sahito-table-new-order table tr th#discount {
+    width: 25%
+}
+
+.sahito-table-new-order table tr th#amount {
+    width: 15%;
+}
+
+.sahito-table-new-order table tr th#delete {
+    width: 3%
+}
+
+.sahito-table-new-order table tr td {
+    vertical-align: middle
+}
+
+.sahito-table-new-order table tr td#discount input.form-control,
+.sahito-table-new-order table tr td#discount select.form-control {
+    display: table-cell;
+    width: auto
+}
+
+.sahito-table-new-order table tr td#amount,
+.sahito-table-new-order table tr td#rate {
+    text-align: right
+}
+
+.sahito-table-new-order table tr.shipping-charges td {
+    border-top: 0
+}
+
+.sahito-table-new-order table tr.shipping-charges p,
+.sahito-table-new-order table tr.shipping-charges select.form-control {
+    display: inline-block;
+    width: auto
+}
+
+.sahito-table-new-order table tr.shipping-charges select.form-control {
+    float: right
+}
+
+.sahito-table-new-order table tr.shipping-charges a,
+.sahito-table-new-order table tr.shipping-charges input.form-control {
+    display: inline-block
+}
+
+.sahito-table-new-order table tr.shipping-charges input.form-control {
+    max-width: 150px;
+    margin-right: 10px
+}
+
+.sahito-table-new-order table tr.adjusment td {
+    border-bottom: 1px solid #ddd
+}
+
+.sahito-table-new-order table tr.adjusment a,
+.sahito-table-new-order table tr.adjusment input.form-control {
+    display: inline-block
+}
+
+.sahito-table-new-order table tr.adjusment input.form-control {
+    max-width: 150px;
+    margin-right: 10px
+}
+
+.sahito-table-new-order table tr.total td {
+    background: #fafafa;
+    border-bottom: 1px solid #ddd
+}
+
+.sahito-table-new-order table tr.total td.no-bgr {
+    background: none;
+    border-bottom: none
+}
+
+.dropzone-order-attach {
+    height: auto;
+    min-height: 15px!important;
+    padding: 15px;
+    border: 1px dotted #aaa
+}
+
+.dropzone-order-attach .dz-message {
+    margin: 0;
+    font-size: 1em;
+    line-height: normal
+}
+
+.sahito-order-customer tr th {
+    font-size: .9em;
+    font-weight: 600;
+    text-align: left;
+    border-top: 0!important
+}
+
+.sahito-order-customer tr th a {
+    margin-left: 10px
+}
+
+.sahito-order-customer tr td {
+    border-top: 0!important
+}
+
+.sahito-order-customer tr td p {
+    font-size: .9em;
+    margin-bottom: 0
+}
+
+.default-table tr td {
+    padding: 14px 8px;
+    font-size: .95em
+}
+
+.grey-background {
+    background: #fafafa
+}
+
+.dark-grey-background {
+    background: #333
+}
+
+.dark-grey-background th {
+    color: #fff
+}
+
+.sahito-list .sahito-list-contact.border-1,
+.sahito-list .sahito-list-item-group.border-1 {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd
+}
+
+.sahito-list .sahito-list-contact table.table,
+.sahito-list .sahito-list-item-group table.table {
+    margin-bottom: 0!important
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact--table tr th,
+.sahito-list .sahito-list-contact .sahito-list-contact-recent--table tr th,
+.sahito-list .sahito-list-contact .sahito-list-contact-transaction--table tr th,
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr th,
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th,
+.sahito-list .sahito-list-item-group .sahito-list-contact--table tr th,
+.sahito-list .sahito-list-item-group .sahito-list-contact-recent--table tr th,
+.sahito-list .sahito-list-item-group .sahito-list-contact-transaction--table tr th,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr th,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th {
+    border-bottom: 1px solid #ddd!important;
+    font-size: .9em
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact--table tr th i,
+.sahito-list .sahito-list-contact .sahito-list-contact-recent--table tr th i,
+.sahito-list .sahito-list-contact .sahito-list-contact-transaction--table tr th i,
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr th i,
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th i,
+.sahito-list .sahito-list-item-group .sahito-list-contact--table tr th i,
+.sahito-list .sahito-list-item-group .sahito-list-contact-recent--table tr th i,
+.sahito-list .sahito-list-item-group .sahito-list-contact-transaction--table tr th i,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr th i,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th i {
+    padding-left: 5px;
+    font-size: .9em;
+    color: #aaa
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact--table tr th.col-checkbox,
+.sahito-list .sahito-list-contact .sahito-list-contact-recent--table tr th.col-checkbox,
+.sahito-list .sahito-list-contact .sahito-list-contact-transaction--table tr th.col-checkbox,
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr th.col-checkbox,
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact--table tr th.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact-recent--table tr th.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact-transaction--table tr th.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr th.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th.col-checkbox {
+    width: 5%;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-contact .sahito-list-contact-recent--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-contact .sahito-list-contact-transaction--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact-recent--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact-transaction--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th.col-checkbox .checkbox {
+    margin: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact--table tr td,
+.sahito-list .sahito-list-contact .sahito-list-contact-recent--table tr td,
+.sahito-list .sahito-list-contact .sahito-list-contact-transaction--table tr td,
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr td,
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr td,
+.sahito-list .sahito-list-item-group .sahito-list-contact--table tr td,
+.sahito-list .sahito-list-item-group .sahito-list-contact-recent--table tr td,
+.sahito-list .sahito-list-item-group .sahito-list-contact-transaction--table tr td,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr td,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr td {
+    padding: 14px 8px;
+    font-size: .95em;
+    vertical-align: middle
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact--table tr td p,
+.sahito-list .sahito-list-contact .sahito-list-contact-recent--table tr td p,
+.sahito-list .sahito-list-contact .sahito-list-contact-transaction--table tr td p,
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr td p,
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr td p,
+.sahito-list .sahito-list-item-group .sahito-list-contact--table tr td p,
+.sahito-list .sahito-list-item-group .sahito-list-contact-recent--table tr td p,
+.sahito-list .sahito-list-item-group .sahito-list-contact-transaction--table tr td p,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr td p,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr td p {
+    margin-bottom: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact--table tr td.col-checkbox,
+.sahito-list .sahito-list-contact .sahito-list-contact-recent--table tr td.col-checkbox,
+.sahito-list .sahito-list-contact .sahito-list-contact-transaction--table tr td.col-checkbox,
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr td.col-checkbox,
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr td.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact--table tr td.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact-recent--table tr td.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact-transaction--table tr td.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr td.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr td.col-checkbox {
+    width: 5%;
+    vertical-align: middle;
+    text-align: right;
+    padding: 18px 8px 10px
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-contact .sahito-list-contact-recent--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-contact .sahito-list-contact-transaction--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact-recent--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-contact-transaction--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr td.col-checkbox .checkbox {
+    margin: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact-transaction--table tr th,
+.sahito-list .sahito-list-item-group .sahito-list-contact-transaction--table tr th {
+    font-weight: 100
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact-transaction--table tr td,
+.sahito-list .sahito-list-item-group .sahito-list-contact-transaction--table tr td {
+    padding: 10px 8px
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact-recent--table tr td,
+.sahito-list .sahito-list-item-group .sahito-list-contact-recent--table tr td {
+    color: #333
+}
+
+.sahito-list .sahito-list-contact .sahito-list-contact-recent--table tr td span.recent-user,
+.sahito-list .sahito-list-item-group .sahito-list-contact-recent--table tr td span.recent-user {
+    color: #777
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th {
+    padding: 8px 4px;
+    font-weight: 100;
+    vertical-align: top
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th#item_name,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th#item_name {
+    width: 16%
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th#cost_price,
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th#setting_price,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th#cost_price,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th#setting_price {
+    width: 80px
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th#btn-order,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th#btn-order {
+    width: 130px
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th a,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th a {
+    font-size: .8em
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th p,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th p {
+    margin-bottom: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr th p#sub-title,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr th p#sub-title {
+    font-size: .8em;
+    color: #999
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr td,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr td {
+    padding: 8px 4px!important
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr td#item_name,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr td#item_name {
+    width: 16%
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr td#cost_price,
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr td#setting_price,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr td#cost_price,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr td#setting_price {
+    width: 80px
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group--table tr td#btn-order,
+.sahito-list .sahito-list-item-group .sahito-list-item-group--table tr td#btn-order {
+    width: 130px
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr th,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr th {
+    border-bottom: 1px solid #ddd!important
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table.table-half tr td.col-collapse,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table.table-half tr td.col-collapse {
+    width: 30px
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr th,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr th {
+    font-size: .9em
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr th i,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr th i {
+    padding-left: 5px;
+    font-size: .9em;
+    color: #aaa
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr th.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr th.col-checkbox {
+    width: 5%;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr th.col-checkbox .checkbox {
+    margin: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr th#icon_collapse,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr th#icon_collapse {
+    width: 3%
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr th#name,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr th#name {
+    width: 37%
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr th#price,
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr th#sku,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr th#price,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr th#sku {
+    width: 15%
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr th#available,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr th#available {
+    width: 25%
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr td,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr td {
+    padding: 14px 8px;
+    font-size: .95em
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr td.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr td.col-checkbox {
+    width: 5%;
+    vertical-align: middle;
+    text-align: right
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table tr td.col-checkbox .checkbox {
+    margin: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table table.list-inner,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table table.list-inner {
+    width: 100%;
+    margin-bottom: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table table.list-inner tr td.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table table.list-inner tr td.col-checkbox {
+    width: 5%;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table table.list-inner tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table table.list-inner tr td.col-checkbox .checkbox {
+    margin: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table table.list-inner tr td#icon_collapse,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table table.list-inner tr td#icon_collapse {
+    width: 3%
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table table.list-inner tr td#name,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table table.list-inner tr td#name {
+    width: 37%
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table table.list-inner tr td#price,
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table table.list-inner tr td#sku,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table table.list-inner tr td#price,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table table.list-inner tr td#sku {
+    width: 15%
+}
+
+.sahito-list .sahito-list-contact .sahito-list-item-group-list--table table.list-inner tr td#available,
+.sahito-list .sahito-list-item-group .sahito-list-item-group-list--table table.list-inner tr td#available {
+    width: 25%
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr th,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr th {
+    font-size: .9em;
+    border-bottom: 1px solid #ddd!important
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr th i,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr th i {
+    padding-left: 5px;
+    font-size: .9em;
+    color: #aaa
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr th.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr th.col-checkbox {
+    width: 5%;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr th.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr th.col-checkbox .checkbox {
+    margin: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr td,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr td {
+    padding: 14px 8px;
+    font-size: .95em;
+    vertical-align: middle
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr td a h4,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr td a h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.2em
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr td a p,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr td a p {
+    margin-bottom: 0;
+    color: #555;
+    font-size: .95em
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr td.col-checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr td.col-checkbox {
+    width: 5%;
+    vertical-align: middle;
+    text-align: right
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr td.col-checkbox .checkbox,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr td.col-checkbox .checkbox {
+    margin: 0
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr td#button-group,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr td#button-group {
+    text-align: right
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr.disable-row td#detail a h4,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr.disable-row td#detail a h4 {
+    text-decoration: line-through;
+    color: #aaa;
+    display: inline-block
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr.disable-row td#detail a p,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr.disable-row td#detail a p {
+    color: #aaa
+}
+
+.sahito-list .sahito-list-contact .sahito-list-discount-list--table tr.disable-row td#detail a span.label-inactive,
+.sahito-list .sahito-list-item-group .sahito-list-discount-list--table tr.disable-row td#detail a span.label-inactive {
+    vertical-align: middle
+}
+
+.add-grey {
+    background: #eaeaea
+}
+
+.sahito-profile .sahito-profile-tabs-content .sahito-profile-tabs--password .panel-body .sahito-personal-tabs-personal--content .form-group,
+.sahito-profile .sahito-profile-tabs-content .sahito-profile-tabs--personal .panel-body .sahito-personal-tabs-personal--content .form-group {
+    padding: 10px 0
+}
+
+.sahito-profile .sahito-profile-tabs-content .sahito-profile-tabs--password .panel-body .sahito-personal-tabs-personal--content .form-group .col-sm-6,
+.sahito-profile .sahito-profile-tabs-content .sahito-profile-tabs--personal .panel-body .sahito-personal-tabs-personal--content .form-group .col-sm-6 {
+    padding-left: 30px
+}
+
+.sahito-profile .sahito-profile-tabs-content .sahito-profile-tabs--password .panel-body .sahito-personal-tabs-personal--content .form-group .col-sm-6 a.editable,
+.sahito-profile .sahito-profile-tabs-content .sahito-profile-tabs--personal .panel-body .sahito-personal-tabs-personal--content .form-group .col-sm-6 a.editable {
+    border-bottom: 0;
+    color: #555
+}
+
+.dropdown-header {
+    color: #ccc
+}
+
+.setting-page {
+    padding-left: 0
+}
+
+.setting-page .full-width-header {
+    height: auto
+}
+
+.setting-page .setting-page-left {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    top: 70px;
+    background: #f9f9f9;
+    border-right: 1px solid #ddd
+}
+
+.setting-page .setting-page-left ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 30px
+}
+
+.setting-page .setting-page-left ul li {
+    padding: 8px 15px!important
+}
+
+.setting-page .setting-page-left ul li a {
+    color: #333!important;
+    line-height: 2
+}
+
+.setting-page .setting-page-left ul li a:active,
+.setting-page .setting-page-left ul li a:focus,
+.setting-page .setting-page-left ul li a:hover,
+.setting-page .setting-page-left ul li a:visited {
+    background: none;
+    color: #111
+}
+
+.setting-page .setting-page-left ul li.active a {
+    font-weight: 700
+}
+
+.setting-page .setting-page-right {
+    margin-left: 240px
+}
+
+.setting-page .setting-page-right .content {
+    position: relative;
+    top: 70px;
+    margin-bottom: 70px;
+    padding-bottom: 0!important
+}
+
+.setting-page .setting-page-right .content .setting-page-right-content {
+    min-height: 440px
+}
+
+.setting-page footer {
+    left: 0;
+    display: block;
+    position: relative
+}
+
+.email-template-list {
+    border: 1px solid #ddd
+}
+
+.email-template-list ul,
+.email-template-list ul.notification {
+    padding-left: 0
+}
+
+.email-template-list ul.notification li,
+.email-template-list ul li {
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding: 8px
+}
+
+.email-template-list ul.notification li .row .col-md-4,
+.email-template-list ul li .row .col-md-4 {
+    padding-left: 5px;
+    font-size: .95em
+}
+
+.email-template-list ul.notification li .row .col-md-8,
+.email-template-list ul li .row .col-md-8 {
+    font-size: .95em
+}
+
+.email-template-list ul.notification li:last-child,
+.email-template-list ul li:last-child {
+    border-bottom: none
+}
+
+.email-template-list ul.notification li .row .col-md-6 span a {
+    font-weight: 100;
+    font-size: .95em;
+    padding-right: 10px;
+    line-height: 2
+}
+
+.primary-contact .primary-contact--name {
+    border-right: 1px solid #ddd
+}
+
+.primary-contact .primary-contact--name h5 {
+    margin-bottom: 5px
+}
+
+.primary-contact .primary-contact--mail p {
+    margin-top: 5px
+}
+
+.primary-contact .primary-contact--mail p span {
+    color: #e27500;
+    margin-right: 5px
+}
+
+.organization-table tr th {
+    font-size: 1em;
+    font-weight: 100
+}
+
+.organization-table tr .show_button a {
+    visibility: hidden;
+    color: #2FA3E6
+}
+
+.organization-table tr:hover {
+    background: #fafafa
+}
+
+.organization-table tr:hover .show_button a {
+    visibility: visible
+}
+
+.organization-table tr td {
+    font-size: .95em
+}
+
+.organization-table tr td a {
+    border-bottom: 0;
+    color: #555
+}
+
+.organization-table tr td a:hover {
+    border-bottom: 0
+}
+
+.organization-table tr td a i {
+    padding: 5px 8px;
+    color: #888
+}
+
+.organization-table tr:last-child {
+    border-bottom: 1px solid #ddd
+}
+
+.table-bank tr td {
+    padding: 8px 8px 0;
+}
+
+.table-bank tr td.has_img {
+    text-align: center
+}
+
+.table-bank tr td.content {
+    vertical-align: middle;
+}
+
+.table-bank tr td.has_img img {
+    height: 35px
+}
+
+.custom-summernote .note-editor .note-toolbar {
+    margin: 0;
+    padding: 0 5px 5px
+}
+
+h5.title {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-transform: uppercase
+}
+
+.form-custom-link {
+    line-height: 2.5;
+    font-size: .95em
+}
+
+.url-handle .col-md-7 input,
+.url-handle .col-md-7 span.url-text {
+    display: inline-block;
+    width: auto
+}
+
+.url-text {
+    font-size: .95em;
+    line-height: 2.5
+}
+
+.hover-red:hover {
+    background-color: #ef5350!important;
+    border: 1px solid #ef5350!important;
+    color: #fff
+}
+
+.float-save {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    left: 0;
+    padding-left: 270px;
+    border-top: 1px solid #ddd
+}
+
+.float-save .col-md-6.text-left h5 {
+    display: inline-block;
+    margin-right: 50px
+}
+
+.float-save .col-md-6.text-left .checkbox label {
+    font-size: .95em
+}
+
+.float-save .col-md-6.text-left .publish-date,
+.float-save .col-md-6.text-left .publish-date .input-group.date {
+    display: inline-block
+}
+
+.float-save .col-md-6.text-left .publish-date .input-group.date p {
+    display: inline-block;
+    font-size: .8em;
+    margin-bottom: 0;
+    font-weight: 700;
+    padding-left: 8px
+}
+
+.float-save .col-md-6.text-left .publish-date .input-group.date input {
+    display: inline-block;
+    width: auto;
+    float: right;
+    padding: 0;
+    vertical-align: middle;
+    border: 0;
+    height: auto;
+    margin-left: 5px;
+    font-size: .8em;
+    font-weight: 700;
+    padding-top: 3px
+}
+
+.float-save .col-md-6.text-left .publish-date .input-group.date span.input-group-addon {
+    padding: 0;
+    line-height: normal;
+    background: none;
+    border: none;
+    display: inline-block;
+    float: left;
+    width: 20px;
+    margin-left: 15px
+}
+
+.float-save .col-md-6.text-left .publish-date .input-group.date span.input-group-addon i {
+    vertical-align: middle;
+    font-size: 1.3em
+}
+
+.bootstrap-touchspin {
+    z-index: 0!important
+}
+
+.seo-preview {
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px
+}
+
+.seo-preview .seo-preview-title {
+    color: #1a0dab;
+    font-size: 1.3em;
+    margin-bottom: 0
+}
+
+.seo-preview .seo-preview-url {
+    display: block;
+    word-wrap: break-word;
+    color: #006621;
+    font-size: 1em;
+    margin-bottom: 0
+}
+
+.seo-preview .seo-preview-meta {
+    color: #888;
+    font-size: .95em
+}

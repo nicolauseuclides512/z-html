@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <title>Invoice Kilat - Instant Invoice</title>
+
+    <style type="text/css" media="screen, print">
+        .content-page{
+            width: 650px;
+        }
+        .row{
+            display: flex;
+        }
+        .row:after, .row:before {
+            content: " ";
+            display: table;
+        }
+        .p-15{
+            padding: 15px;
+        }
+        .col-md-4{
+            width: 33.33333%;
+            position: relative;
+            float: left;
+            display: block;
+        }
+        .col-md-9{
+            width: 75%;
+            position: relative;
+            float: left;
+            display: block;
+        }
+        .col-md-6{
+            width: 50%;
+            position: relative;
+            float: left;
+            display: block;
+        }
+        .col-md-offset-3{
+            margin-left: 25%;
+        }
+        img.img-responsive{
+            height: 120px;
+            width: 160px;
+            object-fit: cover;
+        }
+        .col-md-8{
+            width: 66.66667%;
+            position: relative;
+            float: left;
+            display: block;
+        }
+        .col-md-12{
+            width: 100%;
+            position: relative;
+            float: left;
+            display: block;
+        }
+        .table{
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 100%;
+            background-color: transparent;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        .border-1{
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        .dark-grey-background{
+            background: #333333;
+            -webkit-print-color-adjust: exact;
+        }
+        .dark-grey-background th{
+            color: #fff;    
+        }
+        .sahito-invoice-table-inside thead th{
+            font-size: .9em;
+            font-weight: 100;
+            border-bottom: 0px !important;
+        }
+        .sahito-invoice-table-inside thead th,
+        .sahito-invoice-table-inside tbody tr>td{
+            padding: 8px;
+            line-height: 1.42857;
+            vertical-align: top;
+        }
+        .sahito-invoice-table-inside tbody tr{
+            border-bottom: 1px solid #ddd;
+        }
+        .sahito-invoice-table-inside tbody tr td{
+            color: #555;
+            font-size: .87em;
+            font-weight: 600;
+        }
+        .sahito-invoice-table-inside tbody tr.sub-total{
+            text-align: right;
+            border-bottom: 0px !important;
+        }
+        .sahito-invoice-table-inside tbody tr.sub-total td{
+            font-weight: 100;
+            border-top: 0;
+        }
+        .sahito-invoice-table-inside tbody tr.total{
+            text-align: right;
+            border-bottom: 0px !important;
+        }
+        .sahito-invoice-table-inside tbody tr.sub-total td{
+            border-top: 0;
+        }
+        .sahito-invoice-table-inside tbody tr.balance-due{
+            text-align: right;
+            border-bottom: 0px !important;
+        }
+        .sahito-invoice-table-inside tbody tr.balance-due td{
+            background: #eeeeee;
+            border-top: 0;
+            -webkit-print-color-adjust: exact;
+        }
+        .sahito-invoice-table-inside tbody tr.balance-due td.no-bgr{
+            background: none;
+        }
+        .sahito-invoice-table-inside thead tr th#qty, 
+        .sahito-invoice-table-inside tbody tr td#qty{
+            text-align: right;
+        }
+        .sahito-invoice-table-inside thead tr th#qty p.qty-amount, 
+        .sahito-invoice-table-inside tbody tr td#qty p.qty-amount{
+            margin-bottom: 0;
+        }
+        .sahito-invoice-table-inside thead tr th#qty p.qty-type,
+        .sahito-invoice-table-inside tbody tr td#qty p.qty-type{
+            margin-bottom: 0;
+            font-weight: 100;
+            color: #888;
+        }   
+        .sahito-invoice-table-inside tbody tr td#rate,
+        .sahito-invoice-table-inside thead tr th#rate{
+            text-align: right;
+        }
+        .sahito-invoice-table-inside tbody tr td#amount,
+        .sahito-invoice-table-inside thead tr th#amount{
+            text-align: right;
+        }
+        .invoice-date{
+            margin-top: 70px;
+            padding-right: 0;
+        }
+        .invoice-date .col-md-6{
+            text-align: right;
+            font-size: .83em;
+            color: #aaa;
+            padding-bottom: 5px;
+        }
+        .invoice-date .col-md-6.invoice-date-term{
+            color: #555;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .pt-20{
+            padding-top: 20px;
+        }
+        .sahito-invoice-pdf{
+            position: relative;
+            border: 1px solid #ddd;
+            min-height: 500px;
+        }
+        .ribbon {
+            position: absolute;
+            left: -5px; top: -5px;
+            z-index: 1;
+            overflow: hidden;
+            width: 75px; height: 75px;
+            text-align: right;
+        }
+        .ribbon span {
+            font-size: 10px;
+            font-weight: bold;
+            color: #FFF;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 20px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            width: 100px;
+            display: block;
+            background: #79A70A;
+            background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+            box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+            position: absolute;
+            -webkit-print-color-adjust: exact;
+            top: 19px; left: -21px;
+        }
+        .ribbon span::before {
+            content: "";
+            position: absolute; left: 0px; top: 100%;
+            z-index: -1;
+            border-left: 3px solid #79A70A;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #79A70A;
+        }
+        .ribbon span::after {
+            content: "";
+            position: absolute; right: 0px; top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid #79A70A;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #79A70A;
+        }
+
+        h1{
+            margin-bottom: 0;
+            line-height: 43px;
+            font-size: 36px;
+        }
+        p{
+            margin-top: 0;
+            line-height: normal;
+        }
+        p.inv-code{
+            color: #aaa;
+        }
+        p.inv-balance{
+            font-size: .9em;
+            color: #555;
+            margin-bottom: 0;
+            line-height: 1;
+            margin-top: 30px;
+        }
+        h4{
+            margin-top: 0;
+            line-height: normal;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        .office-desc h4{
+            margin-bottom: 0;
+            font-weight: 600;
+            line-height: normal;
+            font-size: 1em
+        }
+        .office-desc p{
+            margin-bottom: 0;
+            font-size: .83em;
+            color: #aaa;
+        }
+        .billto{
+            margin-top: 30px;
+        }
+        .billto p{
+            margin-bottom: 0;
+            color: #aaa;
+            font-size: .83em;
+        }
+        .billto h4{
+            font-size: .9em;
+            margin: 0;
+            color: #555;
+            font-weight: 100;
+            line-height: normal;
+        }
+        .sahito-invoice-notes{
+            margin-bottom: 20px;
+        }
+        .sahito-invoice-notes h3{
+            font-size: 1.1em;
+            color: #888;
+            font-weight: 100;
+            margin-top: 0;
+            margin-bottom: 0;
+            vertical-align: middle;
+            line-height: 2;
+        }
+        .sahito-invoice-notes p{
+            font-size: .83em;
+            margin-bottom: 0;
+        }
+        .sahito-invoice-notes ol{
+            padding-left: 15px;
+            font-size: .83em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="content-page">
+        <div class="sahito-invoice-pdf">
+            <div class="ribbon"><span>Paid</span></div>
+
+            <div class="row sahito-invoice-content p-15">
+                <div class="col-md-4 pt-20">
+                    <img class="img-responsive" src="assets/images/gallery/2.jpg">
+                </div>
+                <div class="col-md-8 text-right">
+                    <h1>INVOICE</h1>
+                    <p class="inv-code">#inv-0000008</p>
+                    <p class="inv-balance">Balance Due</p>
+                    <h4>IDR0.00</h4>
+                </div>
+            </div>
+            <div class="row sahito-invoice-content p-15">
+                <div class="col-md-4">
+                    <div class="office-desc">
+                        <h4>DeSahito</h4>
+                        <p>Indonesia</p>
+                    </div>
+                    <div class="billto">
+                        <p>Bill To</p>
+                        <h4>Mitosis</h4>
+                        <h4>Jalan Bima no. 2A</h4>
+                        <h4>Sokowaten</h4>
+                        <h4>Bantul 55198</h4>
+                        <h4>Indonesia</h4>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="col-md-9 col-md-offset-3 invoice-date">
+                        <div class="form-group">
+                            <div class="col-md-6">Invoice Date:</div>
+                            <div class="col-md-6 invoice-date-term">
+                                01 Sept 2016
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">Terms:</div>
+                            <div class="col-md-6 invoice-date-term">
+                                Due on Receipt
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">Due Date:</div>
+                            <div class="col-md-6 invoice-date-term">
+                                01 Sept 2016
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">P.O.#:</div>
+                            <div class="col-md-6 invoice-date-term">
+                                SO-00001
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row sahito-invoice-content p-15 pt-0 m-b-20">
+                <div class="col-md-12">
+                    <div class="border-1 table-responsive mt-20">
+                        <table class="table table-hover sahito-invoice-table-inside">
+                            <thead>
+                                <tr class="dark-grey-background">
+                                    <th>#</th>
+                                    <th id="item">Item & Description</th>
+                                    <th id="qty">Qty</th>
+                                    <th id="rate">Rate</th>
+                                    <th id="amount">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td id="item">Baju Guess-green/L</td>
+                                    <td id="qty">
+                                        <p class="qty-amount">1.00</p>
+                                        <p class="qty-type">buah</p>
+                                    </td>
+                                    <td id="rate">0.00</td>
+                                    <td id="amount">0.00</td>
+                                </tr>
+                                <tr class="sub-total">
+                                    <td colspan="4">Sub Total</td>
+                                    <td>0.00</td>
+                                </tr>
+                                <tr class="total">
+                                    <td colspan="4">Total</td>
+                                    <td>IDR0.00</td>
+                                </tr>
+                                <tr class="balance-due">
+                                    <td colspan="2" class="no-bgr"></td>
+                                    <td colspan="2" >Balance Due</td>
+                                    <td>IDR0.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row sahito-invoice-content p-15">
+                <div class="col-md-12">
+                    <div class="sahito-invoice-notes m-b-20">
+                        <h3>Notes</h3>
+                        <p>Thanks for your business</p>
+                    </div>
+                    <div class="sahito-invoice-notes">
+                        <h3>Terms & Condition</h3>
+                        <p>This is the terms and conditions:</p> 
+                        <ol>
+                            <li>Yada Yada Yada</li>
+                            <li>Yada Yada Yada</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

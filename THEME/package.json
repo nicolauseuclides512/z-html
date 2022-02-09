@@ -1,0 +1,27 @@
+{
+  "name": "Moltran",
+  "version": "1.3.0",
+  "description": "Admin template and App UI Kit",
+  "private": "true",
+  "author": "coderthemes.com",
+  "url": "http://coderthemes.com/moltran",
+  "keywords": [
+    "bootstrap",
+    "admin",
+    "dashboard",
+    "frontend",
+    "template",
+    "theme"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-less": "^1.3.6",
+    "path": "^0.12.7",
+    "gulp-minify-css": "^1.2.1",
+    "rimraf": "~2.4.3",
+    "gulp-rimraf": "~0.2.0",
+    "gulp-ignore": "~2.0.1"
+  }
+}

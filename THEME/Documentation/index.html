@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Moltran - Responsive Admin Dashboard Template</title>
+
+	<!-- Google-Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600,700,900,400italic' rel='stylesheet'>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/prettify.css" />
+
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Moltran Documentation 1.5</a>
+			</div>
+
+			<!--div><a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a></div-->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div id="wrapper">
+
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li>
+					<a href="#intro">Introduction</a>
+				</li>
+				<li>
+					<a href="#structure">Structure</a>
+				</li>
+				<li>
+					<a href="#utilities">Utilities</a>
+				</li>
+				<li>
+					<a href="#plugins">Plugins &amp; Resources</a>
+				</li>
+				<li>
+					<a href="#credits">Credits</a>
+				</li>
+				<li>
+					<a href="#support">Support</a>
+				</li>
+				<li><a href="#changelog">Change Log</a></li>
+			</ul>
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="right-bar">
+
+							<div id="intro" class="com-container">
+
+								<div id="structure" class="com-container">
+									<h3 class="page-header">Thank you very much for your purchase!</h3>
+									<div class="p-t-20">
+											<div class="alert alert-info alert-dismissable">
+												<p>If you have any questions that are beyond the scope of this documentation, please feel free to email or contact us via my page.</p>
+											</div>
+									</div>
+								</div>
+
+								<h4 class="page-header">Introduction</h4>
+
+								<p>Moltran is a fully featured 	premium admin template built on top of awesome <strong>Bootstrap 3.3.5</strong>,
+									modern web technologies <strong>HTML5, CSS3 and jQuery</strong>. The theme includes beautiful dashboards including 
+									many ready to use hand crafted components. The components can be used very easy on any page. The theme is fully responsive and customizable.
+								</p>
+								<p>
+									We really care for our buyers and so in case if you have any question or feedback, please feel free to get back to us.
+								</p>
+
+
+
+								<h4 class="page-header">Upgrade</h4>
+
+								<p>
+You will receive many free updates in the future adding many new awesome features, new apps related pages, third party plugin updates and many more new styles. Sometimes updating things makes it more difficult. And I understand the effort required to do it, so as a first step for this upgraded version, <b class="text-warning">please note the significant changes in less and css structure. I have removed the grunt based automation from this version as many of the other buyer complained about grunt (mostly because of uncompitable version of grunt and jquery). Instead of that I have started integrating gulp.</b> Gulp is another great and open source build management tool for frontend. It works great and now many people are moving to it. Note that in this version the gulp only provides support to convert less files into css. In next release the fully automated flow will be released. All the changes are explained below in details, but in case if you find it difficult, please feel free to get back to me.
+								</p>
+
+								<p>
+									<div class="alert alert-warning alert-dismissable">
+										In case if you find it difficult to upgrade your existing integrated version, feel free to get back to me, I'll help you to install new changes.
+									</div>
+								</p>
+
+
+								
+
+
+
+									<div id="structure" class="com-container">
+										<h4 class="page-header">Structure</h4>
+										<p>I have tried to follow the standards and modular structure while developing the theme. Following sections are explaining the theme File &amp; Folder, structure, html file struture and plugins.</p>
+
+										<div class="row p-t-20">
+											<div class="col-sm-12">
+												<h4>File &amp; Folder Structure</h4>
+												<hr/>
+
+												<pre class="prettyprint">
+Theme Directory
+├── gulpfile.js
+├── package.json
+Src
+├── html files
+Src/assets/
+├── less/
+│   └── All LESS files
+├── css/
+│   └── All css files.
+├── fonts/
+├── pages/
+│   └── All the pages related scripts
+├── images/
+│   └── All images
+├── plugins/
+│   └── The plugins files - which are not available through bower
+├── vendor/
+│   └── The third party plugins - these are available through bower
+└── js/
+    └── All common Javascripts files
+
+</pre>
+										
+
+											<div class="col-sm-12 p-t-30">
+												<h4>HTML Structure</h4>
+												<hr/>
+												<p>
+													<iframe src="html_str.html" width="100%" height="1040" style="border: none"></iframe>
+												</p>
+											</div>
+
+											<div class="col-sm-12 p-t-30">
+												<h4>CSS &amp; LESS</h4>
+												<hr/>
+												
+												<p class="m-t-20">
+                                                    Less is a CSS pre-processor and it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable. Less runs inside Node, in the browser and inside Rhino.
+                                                </p>
+                                                <p>
+                                                    All the css files are pre-compiled using less compiler and provided inside the <code>assets/css/</code> folder. In case if you are not familiar with less or
+                                                    don't have any environment setup which can be used to compile the less files, then you can use these CSS files directly.
+                                                    But if you are familiar with less, then I'll suggest you to use the less files.
+                                                </p>
+                                                <p>Files are explained below: </p>
+
+                                                <table class="table table-bordered m-0">
+													<thead>
+														<tr>
+															<th style="width: 20%;"><i class="ti-file"></i> File</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+                                                                <code>bootstrap.css</code>
+                                                            </td>
+                                                            <td>
+                                                                Moltran uses the bootstrap v3.3.5. The core bootstrap file is being used in all the pages.
+                                                            </td>
+														</tr>
+                                                        <tr>
+															<td>
+                                                                <code>elements.less</code>
+                                                            </td>
+                                                            <td>
+                                                                This file is containing some of the utility functions or mixins for less. This file is from Joel Sutherland.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>core.less</code>/<code>core.css</code>
+                                                            </td>
+                                                            <td>
+                                                                This file is containing all common styles for all the pages.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>pages.less</code>/<code>pages.css</code>
+                                                            </td>
+                                                            <td>
+                                                                Pages contains the styles for all supported third-party JS/CSS plugins. It has overwritten version of styles.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>components.less</code>/<code>components.css</code>
+                                                            </td>
+                                                            <td>
+                                                                This is the one of the core and important file. It contains the styles for all the components, ui elements, and some other parts of the theme.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>responsive.less</code>/<code>responsive.css</code>
+                                                            </td>
+                                                            <td>
+                                                                This file is containing the styles related to responsiveness support.
+                                                            </td>
+														</tr>
+
+                                                         <tr>
+															<td>
+                                                                <code>icons.less</code>/<code>icons.css</code>
+                                                            </td>
+                                                            <td>
+                                                                Combines various font icons. You should remove the fonts you don't plan to use from this file and recompile it.
+                                                            </td>
+														</tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <p class="text-primary">
+                                                        <strong>Heads up! </strong>
+                                                        Please note that if you would like to compile the LessCSS files, you can use provided gulp configuration file.
+                                                        NOTE that the less structure is still required some more changes. So un case if you have any suggestion on this, please contact me. I'll appreciate your valuable suggestion and feedback.
+
+                                                </p>
+											</div>
+										</div>
+
+										<div class="col-sm-12 p-t-30">
+												<h4>Javascript</h4>
+												<hr/>
+												<p class="m-t-20">
+                                                    Moltran uses jQuery, Bootstrap JS framework(at its core) and some of the third-party plugins. There are may more third party plugin which you can use according to your needs. The css is already containing matching style for these plugins so you will not need to do anything around it.
+                                                </p>
+
+                                                <p>Files are explained below: </p>
+
+                                                <table class="table table-bordered m-0">
+													<thead>
+														<tr>
+															<th style="width: 20%;"><i class="ti-file"></i> File</th>
+															<th>Description</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+                                                                <code>jquery.js</code>, <code>bootstrap.js</code>,
+                                                                <code>jquery.nicescroll</code>, <code>jquery.slimscroll</code>, etc.
+                                                                <!-- TODO -->
+
+                                                            </td>
+                                                            <td>
+                                                                These files are used at core of the theme.
+                                                            </td>
+														</tr>
+                                                        <tr>
+															<td>
+                                                                <code>jquery.app.js</code>
+                                                            </td>
+                                                            <td>
+                                                                This is a main js file. It contains the custom JS code needed for features including
+                                                                layout, sidebar, etc.
+                                                                Also it contains the definition of some of the key components (e.g. notifications, portlet, etc) and code (for self-initialization) related to some of the controls (e.g. modal, range-slider, switchery, multiselect, etc).
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>pages/*.js</code>
+                                                            </td>
+                                                            <td>
+                                                                These are the files containing pages specific code. They are mainly used for demo purpose.
+                                                            </td>
+														</tr>
+
+                                                        <tr>
+															<td>
+                                                                <code>plugins/**.js</code>
+                                                            </td>
+                                                            <td>
+                                                                All supported and integrated third-party plugins are included in here.
+                                                            </td>
+														</tr>
+                                                    </tbody>
+                                                </table>
+											</div>
+
+									</div>
+
+									<div class="alert alert-info alert-dismissable">
+										<strong>Why do we have separate folder for each color scheme? </strong>
+										<p>&nbsp;</p>
+										<p>I will ask you to check the demo again and request you to notice the colors used for each of the graphs. The colors which are used in most of the graphs, are matching with the primary color and based theme color. In order to did so, I required to write different markup and js code for each of them.
+									</div>
+
+									
+
+										<div id="utilities" class="com-container">
+											<h4 class="page-header">Utilities</h4>
+											<p>The theme contains various utilies including some helper classes, widgets, etc. Please see below some helper classes.</p>
+
+											<p><b>Helper Classes:</b></p>
+											<table class="table">
+								                <thead>
+								                  <tr>
+								                    <th>Class</th>
+								                    <th>Description</th>
+								                  </tr>
+								                </thead>
+
+								                <tbody>
+
+								                    <tr>
+									                    <td><b>.p-0</b>
+									                    </td>
+									                    <td>Removes all padding space</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.p-t-0</b></td>
+								                        <td>Remove top padding</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.p-t-10</b></td>
+								                        <td>Adds 10px top padding</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.p-b-10</b></td>
+								                        <td>Adds 10px bottom padding</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-0</b></td>
+								                        <td>Remove all margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-r-5</b></td>
+								                        <td>Adds 5px right margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-r-10</b></td>
+								                        <td>Adds 10px right margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-r-15</b></td>
+								                        <td>Adds 15px right margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-l-10</b></td>
+								                        <td>Adds 10px left margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-l-15</b></td>
+								                        <td>Adds 15px left margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-t-0</b></td>
+								                        <td>Remove top margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-t-10</b></td>
+								                        <td>Adds 10px top margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-t-15</b></td>
+								                        <td>Adds 15px top margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-t-20</b></td>
+								                        <td>Adds 20px top margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-t-30</b></td>
+								                        <td>Adds 30px top margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-t-40</b></td>
+								                        <td>Adds 40px top margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-b-0</b></td>
+								                        <td>Remove bottom margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-b-10</b></td>
+								                        <td>Adds 10px bottom margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-b-15</b></td>
+								                        <td>Adds 15px bottom margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.m-b-30</b></td>
+								                        <td>Adds 30px bottom margin</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.w-xs</b></td>
+								                        <td>Minimum width 80px</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.w-sm</b></td>
+								                        <td>Minimum width 95px</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.w-md</b></td>
+								                        <td>Minimum width 110px</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.w-lg</b></td>
+								                        <td>Minimum width 140px</td>
+									                </tr>
+
+									                <tr>
+									                	<td><b>.b-0</b></td>
+								                        <td>Removes all borders</td>
+									                </tr>
+
+								
+								                </tbody>
+								            </table>
+										</div>
+
+
+										
+
+
+										<div id="credits" class="com-container">
+											<h4 class="page-header">Credits &amp; Official Documentation</h4>
+											<p>We've used the following resources as listed. These are some awesome creation and we are thankful to the community.</p>
+
+											<ul class="">
+								                <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+								                <li><a href="https://jquery.com/">Jquery</a></li>
+								                <li><a href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a></li>
+								                <li><a href="http://ionicons.com/">Ionicons</a></li>
+								                <li><a href="http://daneden.github.io/animate.css/">Animate.css</a></li>
+								                <li><a href="https://github.com/matthieua/WOW">Wow.js</a></li>
+								                <li><a href="http://tristanedwards.me/sweetalert">Sweet-Alert</a></li>
+								                <li><a href="http://www.codrops.com">Codrops</a></li>
+								                <li><a href="http://dbushell.com/">Nestable</a></li>
+								                <li><a href="http://areaaperta.com/nicescroll/">Nicescroll</a></li>
+								                <li><a href="http://arshaw.com/fullcalendar/">Full Calendar</a></li>
+								                <li><a href="http://jqueryvalidation.org/">Form Validator</a></li>
+								                <li><a href="https://github.com/xoxco/jQuery-Tags-Input">Tags Input</a></li>
+								                <li><a href="http://simontabor.com/labs/toggles">Toggels</a></li>
+								                <li><a href="http://jdewit.github.com/bootstrap-timepicker">Bootstrap-timepicker</a></li>
+								                <li><a href="http://www.eyecon.ro/bootstrap-colorpicker">Bootstrap Colorpicker</a></li>
+								                <li><a href="http://loudev.com/">Multi-select</a></li>
+								                <li><a href="https://select2.github.io/">Select2</a></li>
+								                <li><a href="http://bootstrapvalidator.com">Bootstrapvalidator</a></li>
+								                <li><a href="http://www.jquery-steps.com">Jquery-steps</a></li>
+								                <li><a href="https://github.com/xing/wysihtml5">Wysihtml5</a></li>
+								                <li><a href="https://github.com/summernote/summernote">Summernote</a></li>
+								                <li><a href="https://codemirror.net/">Codemirror</a></li>
+								                <li><a href="http://www.dropzonejs.com/">Dropzonejs</a></li>
+								                <li><a href="https://github.com/fengyuanchen/cropper">Cropper</a></li>
+								                <li><a href="https://www.datatables.net">Datatables</a></li>
+								                <li><a href="http://morrisjs.github.io/morris.js/">Morris</a></li>
+								                <li><a href="http://chartjs.org/">Chartjs</a></li>
+								                <li><a href="http://benpickles.github.io/peity">Peity Chart</a></li>
+								                <li><a href="http://omnipotent.net/jquery.sparkline/">Sparkline</a></li>
+								                <li><a href="https://github.com/aterrien/jQuery-Knob">JQuery-Knob</a></li>
+								                <li><a href="http://robert-fleischmann.de">Robert-fleischmann</a></li>
+								                <li><a href="https://hpneo.github.io/gmaps/">Gmaps</a></li>
+								                <li><a href="http://jqvmap.com">Vector Maps</a></li>
+								                <li><a href="http://uifaces.com/">Uifaces (images)</a></li>
+								                <li><a href="https://stocksnap.io/">Stocksnap (images)</a></li>
+								                <li><a href="http://www.flotcharts.org/">Flot-charts</a></li>
+								                <li><a href="http://ionden.com/">Ion-Slider</a></li>
+								                <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific-popup</a></li>
+								                <li><a href="http://isotope.metafizzy.co">Isotope</a></li>
+								                <li><a href="http://www.charlesmudy.com/respmail/">Email-template</a></li>
+								                <li><a href="http://materializecss.com/">Materialdesign Js</a></li>
+								                <li><a href="https://github.com/peachananr/simple-text-rotator">Simple-text-rotator</a></li>
+								                <li><a href="http://github.com/rendro/countdown/">Jquery.countdown.js</a></li>
+								                <li><a href="https://github.com/fians/Waves">Waves Effect</a></li>
+								                <li><a href="http://codepen.io/">Codepen</a></li>
+								                <li><a href="https://plus.google.com/photos/+BrianParkerson/albums/6079410227152958097?sort=1">Profile background image</a></li>
+								            </ul>
+										</div>
+
+										<div id="support" class="com-container">
+											<h4 class="page-header">Support</h4>
+											<p class="m-t-20">
+                                                    Once again thank you for your purchase. I'll be happy to answer the the questions you have related to the theme.
+                                                    In case if you have any suggestion or feature, request please feel free to contact me, I'll try to implement it and will release as part of future updates.
+                                                </p>
+
+                                                <p>
+                                                    Stay Awesome!
+                                                </p>
+                                                <p class="text-primary">
+                                                    - <strong>Coderthemes</strong>
+                                                </p>
+										</div>
+
+										<div id="changelog" class="com-container">
+											<h4 class="page-header">Change Log</h4>
+
+											<p style="text-decoration: underline; font-weight: 900;"><strong>Version 1.5.0 </strong></p>
+											
+											<ul>
+												<li>
+													Added new layout with horizontal menu
+												</li>
+											</ul>
+
+
+											<p style="text-decoration: underline; font-weight: 900; margin-top: 20px;"><strong>Version 1.4.0 </strong></p>
+											
+											<ul>
+												<li>
+													Added new color scheme with dark topbar
+												</li>
+												<li>
+													Fixed crucial issue with mobile devices. In earlier version, sidebar was broken in some of mobile devices.
+												</li>
+												<li>
+													Updated datatable. Added more examples with different options.
+												</li>
+												<li>
+													Invoice page is updated. Now it's printer friendly.
+												</li>
+												<li>
+													Upgraded bootstrap from 3.3.5 to 3.3.6
+												</li>
+												<li>
+													Updated select2(made it mobile friendly) and timepicker plugin, replaced spinner with bootstrp touch spins for better mobile support. 
+												</li>
+											</ul>
+
+
+											<p style="text-decoration: underline; font-weight: 900; margin-top: 20px;"><strong>Version 1.3.0 </strong></p>
+											
+											<ul>
+												<li>
+													Simplified the LESS structure and CSS.
+												</li>
+												<li>
+													Removed grunt based flow, insteaed added very basic gulp based automation flow.
+												</li>
+												<li>
+													Added new color scheme (purple). 
+												</li>
+												<li>
+													Some bugs are fix. 
+												</li>
+											</ul>
+
+											
+
+											<p style="text-decoration: underline; font-weight: 900; margin-top: 20px;"><strong>Version 1.2.0 </strong></p>
+											
+											<ul>
+												<li>
+													Added simple HTML version.
+												</li>
+												<li>
+													Some bugs are fix. 
+												</li>
+											</ul>
+
+											<p style="text-decoration: underline; font-weight: 900; margin-top: 20px;"><strong>Version 1.1.0 </strong></p>
+											
+											<ul>
+												<li>
+													Added Grunt, Bower, LESS, etc support.
+												</li>
+												<li>
+													New dark sidebar style. 
+												</li>
+											</ul>
+											
+											<p>&nbsp;</p>
+											<p style="text-decoration: underline; font-weight: 900;"><strong>Version 1.0.0 </strong></p>
+											
+											<ul>
+												<li>
+													Initial released
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /#page-content-wrapper -->
+
+					<div class="text-center">
+						<p class="copy">Copyright © 2015 Moltran.</p>
+					</div>
+				</div>
+				<!-- /#wrapper -->
+
+				<!-- jQuery -->
+				<script src="js/jquery.js"></script>
+
+				<!-- Bootstrap Core JavaScript -->
+				<script src="js/bootstrap.min.js"></script>
+
+				<script src="js/jquery.easing.min.js"></script>
+
+				<script type="text/javascript" src="js/prettify.js"></script>
+
+				<!-- Menu Toggle Script -->
+				<script>
+
+					//jQuery for page scrolling feature - requires jQuery Easing plugin
+					$(function() {
+					    $('.sidebar-nav a').bind('click', function(event) {
+					        var $anchor = $(this);
+					        $('html, body').stop().animate({
+					            scrollTop: $($anchor.attr('href')).offset().top - 100
+					        }, 1500, 'easeInOutExpo');
+					        event.preventDefault();
+					    });
+					});
+				</script>
+
+			</body>
+
+			</html>

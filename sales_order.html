@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+	<meta name="author" content="Coderthemes">
+
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<title>Invoice Kilat - Instant Invoice</title>
+
+	<link href="assets/css/core.min.css" rel="stylesheet">
+	<link href="assets/css/custom.min.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body class="fixed-left">
+
+	<div id="wrapper">
+
+		<div class="topbar">
+			<div class="topbar-left">
+				<div class="text-center">
+					<a href="index.html" class="logo">
+						<span class="putih">invoicekilat.com</span>
+					</a>
+				</div>
+			</div>
+
+			<div role="navigation" class="navbar navbar-default">
+				<div class="container">
+					<div class="">
+						<div class="pull-left">
+							<button class="button-menu-mobile open-left">
+								<i class="fa fa-bars"></i>
+							</button>
+							<span class="clearfix"></span>
+						</div>
+						<ul class="nav navbar-nav navbar-right pull-right">
+							<li class="dropdown pull-left open">
+								<li class="dropdown">
+									<a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true">
+										<p class="profile-email">agnesshinta@ontelstudio.com</p>
+										<i class="fa fa-gear"></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="profile.html">
+												<i class="fa fa-user"></i> Account</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="setting_new.html">
+												<i class="fa fa-cog"></i> Settings</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="javascript:void(0)" tag="li" id="nav-top-logout">
+												<i class="md md-settings-power"></i>Logout</a>
+										</li>
+									</ul>
+								</li>
+							</li>
+						</ul>
+						<form role="search" class="navbar-form pull-left" style="position: relative; margin: 0">
+							<div class="input-group">
+								<div class="input-group-btn">
+									<div class="btn-group">
+										<button class="btn btn-clear dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+											<i class="fa fa-search"></i>
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li>
+												<a href="search_page.html">Contacts</a>
+											</li>
+											<li>
+												<a href="search_page.html">Items</a>
+											</li>
+											<li>
+												<a href="search_page.html">Sales Orders</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<input type="search" id="nav-top-search" placeholder="Type here for search..." class="form-control search-bar">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="left side-menu">
+			<div class="left side-menu">
+				<div id="sidebar-menu">
+					<ul>
+						<li class="" id="nev-left-orders">
+							<a href="sales_order.html" class="waves-effect waves-light active">
+								<i class="md-shopping-cart"></i>
+								Sales Orders
+							</a>
+						</li>
+						<li class="" id="nev-left-items">
+							<a href="items.html" class="waves-effect">
+								<i class="ion-folder"></i>
+								<span> Items </span>
+							</a>
+						</li>
+						<li>
+							<a href="contact.html" class="waves-effect waves-light" id="nev-left-contacts">
+								<i class="md md-perm-contact-cal"></i>
+								<span> Contacts </span>
+							</a>
+						</li>
+						<li class="router-link-exact-active router-link-active" id="nev-left-settings">
+							<a href="report.html" class="waves-effect waves-light">
+								<i class="md md-assessment"></i>
+								<span>Report</span>
+							</a>
+						</li>
+						<li class="router-link-exact-active router-link-active" id="nev-left-settings">
+							<a href="setting_new.html" class="waves-effect waves-light">
+								<i class="md md-settings"></i>
+								<span>Settings</span>
+							</a>
+						</li>
+					</ul>
+					<div class="clearfix">
+
+					</div>
+				</div>
+				<div class="clearfix">
+
+				</div>
+			</div>
+		</div>
+
+		<!-- ============================================================== -->
+		<!-- Start right Content here -->
+		<!-- ============================================================== -->
+		<div class="content-page">
+			<!-- Start content-->
+			<div class="content">
+				<!-- Page-Title Section 1-->
+				<div id="full-list">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12" id="mark_default">
+								<a href="#" class="dropdown-toggle pull-left page-title" data-toggle="dropdown" aria-expanded="false">
+									<h4>All Sales Orders
+										<span class="caret"></span>
+									</h4>
+								</a>
+								<ul class="dropdown-menu" role="menu" style="top: 35px;">
+									<li class="active">
+										<a href="#">All</a>
+									</li>
+									<li>
+										<a href="#">Draft</a>
+									</li>
+									<li>
+										<a href="#">Awaiting Payment</a>
+									</li>
+									<li>
+										<a href="#">Overdue</a>
+									</li>
+									<li>
+										<a href="#">Awaiting Shipment</a>
+									</li>
+									<li>
+										<a href="#">Fulfilled</a>
+									</li>
+									<li>
+										<a href="#">Dropshipment</a>
+									</li>
+									<li>
+										<a href="#">Void</a>
+									</li>
+								</ul>
+
+								<div class="pull-right">
+									<a href="new_order.html" class="btn btn-info waves-effect waves-light m-b-5">
+										<span>New </span>
+										<i class="ion-plus"></i>
+									</a>
+									<button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false">
+										<i class="fa fa-bars"></i>
+									</button>
+									<ul class="dropdown-menu" role="menu" style="top: 35px;">
+										<li class="dropdown-header">SORT BY</li>
+										<li class="active">
+											<a href="#">Created Time</a>
+										</li>
+										<li>
+											<a href="#">Last Modified Time</a>
+										</li>
+										<li>
+											<a href="#">Date</a>
+										</li>
+										<li>
+											<a href="#">Invoice#</a>
+										</li>
+										<li>
+											<a href="#">Customer Name</a>
+										</li>
+										<li>
+											<a href="#">Due Date</a>
+										</li>
+										<li>
+											<a href="#">Amount</a>
+										</li>
+										<li>
+											<a href="#">Balance Due</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">
+												<i class="md-file-download"></i> Import Invoices</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="md-file-upload"></i> Export Invoices</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">
+												<i class="md-file-download"></i> Import Payments</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="md-file-upload"></i> Export Payments</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">
+												<i class="fa fa-cog"></i> Invoice Preferences</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">
+												<i class="md-refresh"></i> Refresh List</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12" id="mark_active" style="display: none;">
+								<div class="pull-left">
+									<a href="#" class="btn btn-default waves-effect waves-light m-b-5">Print Invoice</a>
+									<a href="#" class="btn btn-default waves-effect waves-light m-b-5">Print Packing</a>
+								</div>
+								<div class="pull-right pt-10">
+									<a href="#">
+										<i class="ion-android-close"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ============================================START OF TABLE============================================ -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-md-12 col-sm-12 col-xs-12">
+											<table class="table table-hover default-table sahito-list-item-group-list--table sahito-sales-order-table">
+												<thead>
+													<tr>
+														<th class="col-checkbox">
+															<div class="checkbox checkbox-single checkbox-success">
+															</div>
+														</th>
+														<th id="icon_collapse">
+															<div class="placeholder-collapse"></div>
+														</th>
+														<th id="invoice-date">Invoice Date</th>
+														<th id="invoice-id">Invoice ID</th>
+														<th id="customer">Customer</th>
+														<th id="status">Status </th>
+														<th id="due-date">Due Date</th>
+														<th id="total">Total</th>
+														<th id="balance-due">Balance Due</th>
+														<th id="action">Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="col-checkbox">
+															<div class="checkbox checkbox-single checkbox-success">
+																<input type="checkbox" id="list-1">
+																<label></label>
+															</div>
+														</td>
+														<td>
+															<a data-toggle="collapse" href="#item_list1" aria-expanded="false" class="collapsed">
+																<i class="ion-plus-circled text-green"></i>
+															</a>
+														</td>
+														<td id="date">17 Jun 2016</td>
+														<td id="orderId">
+															<a href="#" onclick="customer()">INV/2017/3251</a>
+														</td>
+														<td id="ref">PT. Hura-Hura</td>
+														<td id="customer">
+															<a href="#">Draft</a>
+														</td>
+														<td id="status">31 Dec 2017</td>
+														<td id="total">1.500.000</td>
+														<td id="paid">1.500.000</td>
+														<td id="action">
+															<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+																<span class="fa fa-cog"></span>
+															</a>
+															<ul class="dropdown-menu" role="menu" style="right: 70px;top: 70px;left: initial;">
+																<li>
+																	<a href="#">Edit</a>
+																</li>
+																<li>
+																	<a href="#">Record Payment</a>
+																</li>
+																<li>
+																	<a href="#">Print Invoice</a>
+																</li>
+																<li>
+																	<a href="#">Print Packing List</a>
+																</li>
+																<li>
+																	<a href="#">Email Invoice</a>
+																</li>
+																<li>
+																	<a href="#">Create Shipment</a>
+																</li>
+															</ul>
+														</td>
+													</tr>
+													<tr id="item_list1" class="panel-collapse collapse">
+														<td colspan="11" class="p-0 bt-0">
+															<table class="table sales-order-inner-table">
+																<tr>
+																	<td class="col-checkbox">
+																	</td>
+																	<th>Shipping Address</th>
+																	<th>Customer</th>
+																	<th>Order Details</th>
+																</tr>
+																<tr>
+																	<td class="col-checkbox">
+																	</td>
+																	<td>
+																		<p>Jalan Kaliurang km 5</p>
+																		<p>Sleman, DIY</p>
+																		<p>Indonesia, 55284</p>
+																	</td>
+																	<td>
+																		<p>Hura-Hura, PT</p>
+																		<p>Ahmad Dhani</p>
+																		<p>0812312312</p>
+																		<p>hura@gmail.com</p>
+																	</td>
+																	<td rowspan="3" style="border-left:1px solid #ddd;">
+																		<div class="border-1 table-responsive">
+																			<table class="table sahito-invoice-table-inside">
+																				<thead>
+																					<tr class="dark-grey-background">
+																						<th id="item">Item & Description</th>
+																						<th id="qty">Qty</th>
+																						<th id="rate">Disc</th>
+																						<th id="amount">Amount</th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td id="item">Baju Guess-green/L</td>
+																						<td id="qty">
+																							<p class="qty-amount">1.00</p>
+																						</td>
+																						<td id="rate">0.00</td>
+																						<td id="amount">0.00</td>
+																					</tr>
+																					<tr class="sub-total">
+																						<td colspan="3">Sub Total</td>
+																						<td>0.00</td>
+																					</tr>
+																					<tr class="sub-total">
+																						<td colspan="3">Shipping Charge</td>
+																						<td>0.00</td>
+																					</tr>
+																					<tr class="sub-total">
+																						<td colspan="3">Adjustment</td>
+																						<td>IDR0.00</td>
+																					</tr>
+																					<tr class="balance-due">
+																						<td colspan="1" class="no-bgr"></td>
+																						<td colspan="2">Grand Total</td>
+																						<td>IDR0.00</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<th class="col-checkbox">
+																	</th>
+																	<th>Tracking</th>
+																	<th>Payment Method</th>
+																</tr>
+																<tr>
+																	<td class="col-checkbox">
+																	</td>
+																	<td>
+																		<p>Courier: JNE</p>
+																		<p>No Resi: 0123123123</p>
+																		<a href="#">History Pengiriman</a>
+																	</td>
+																	<td>
+																		<p>Bank Transfer</p>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+													<tr>
+														<td class="col-checkbox">
+															<div class="checkbox checkbox-single checkbox-success">
+																<input type="checkbox" id="list-1">
+																<label></label>
+															</div>
+														</td>
+														<td>
+															<a data-toggle="collapse" href="#item_list2" aria-expanded="false" class="collapsed">
+																<i class="ion-plus-circled text-green"></i>
+															</a>
+														</td>
+														<td id="date">17 Aug 2017</td>
+														<td id="orderId">
+															<a href="#" onclick="customer()">INV/2017/5484</a>
+														</td>
+														<td id="ref">PT. Humoris</td>
+														<td id="customer">
+															<a href="#">Partially Paid</a>
+														</td>
+														<td id="status">5 Nov 2017</td>
+														<td id="total">7.500.000</td>
+														<td id="paid">3.500.000</td>
+														<td id="action">
+															<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+																<span class="fa fa-cog"></span>
+															</a>
+															<ul class="dropdown-menu" role="menu" style="right: 70px;top: 70px;left: initial;">
+																<li>
+																	<a href="#">Edit</a>
+																</li>
+																<li>
+																	<a href="#">Record Payment</a>
+																</li>
+																<li>
+																	<a href="#">Print Invoice</a>
+																</li>
+																<li>
+																	<a href="#">Print Packing List</a>
+																</li>
+																<li>
+																	<a href="#">Email Invoice</a>
+																</li>
+																<li>
+																	<a href="#">Create Shipment</a>
+																</li>
+															</ul>
+														</td>
+													</tr>
+													<tr id="item_list2" class="panel-collapse collapse">
+														<td colspan="11" class="p-0 bt-0">
+															<table class="table sales-order-inner-table">
+																<tr>
+																	<td class="col-checkbox">
+																	</td>
+																	<th>Shipping Address</th>
+																	<th>Customer</th>
+																	<th>Order Details</th>
+																</tr>
+																<tr>
+																	<td class="col-checkbox">
+																	</td>
+																	<td>
+																		<p>Jalan Kaliurang km 5</p>
+																		<p>Sleman, DIY</p>
+																		<p>Indonesia, 55284</p>
+																	</td>
+																	<td>
+																		<p>Humoris, PT</p>
+																		<p>Ahmad Dhani</p>
+																		<p>0812312312</p>
+																		<p>hura@gmail.com</p>
+																	</td>
+																	<td rowspan="3" style="border-left:1px solid #ddd;">
+																		<div class="border-1 table-responsive">
+																			<table class="table sahito-invoice-table-inside">
+																				<thead>
+																					<tr class="dark-grey-background">
+																						<th id="item">Item & Description</th>
+																						<th id="qty">Qty</th>
+																						<th id="rate">Disc</th>
+																						<th id="amount">Amount</th>
+																					</tr>
+																				</thead>
+																				<tbody>
+																					<tr>
+																						<td id="item">Baju Guess-green/L</td>
+																						<td id="qty">
+																							<p class="qty-amount">1.00</p>
+																						</td>
+																						<td id="rate">0.00</td>
+																						<td id="amount">0.00</td>
+																					</tr>
+																					<tr class="sub-total">
+																						<td colspan="3">Sub Total</td>
+																						<td>0.00</td>
+																					</tr>
+																					<tr class="sub-total">
+																						<td colspan="3">Shipping Charge</td>
+																						<td>0.00</td>
+																					</tr>
+																					<tr class="sub-total">
+																						<td colspan="3">Adjustment</td>
+																						<td>IDR0.00</td>
+																					</tr>
+																					<tr class="balance-due">
+																						<td colspan="1" class="no-bgr"></td>
+																						<td colspan="2">Grand Total</td>
+																						<td>IDR0.00</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<th class="col-checkbox">
+																	</th>
+																	<th>Tracking</th>
+																	<th>Payment Method</th>
+																</tr>
+																<tr>
+																	<td class="col-checkbox">
+																	</td>
+																	<td>
+																		<p>Courier: JNE</p>
+																		<p>No Resi: 0123123123</p>
+																		<a href="#">History Pengiriman</a>
+																	</td>
+																	<td>
+																		<p>Bank Transfer</p>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-12 pr-20 text-right">
+										<div class="pull-right">
+											<ul class="pagination m-b-5">
+												<li>
+													<a href="#" aria-label="Previous">
+														<i class="fa fa-angle-left"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">1</a>
+												</li>
+												<li class="active">
+													<a href="#">2</a>
+												</li>
+												<li>
+													<a href="#">3</a>
+												</li>
+												<li class="disabled">
+													<a href="#">4</a>
+												</li>
+												<li>
+													<a href="#">5</a>
+												</li>
+												<li>
+													<a href="#" aria-label="Next">
+														<i class="fa fa-angle-right"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="half-list" style="display: none;">
+
+					<div class="row bgr-white">
+						<div class="col-md-4 col-sm-4 col-xs-4 left-side">
+
+							<div class="row p-20">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<a href="#" class="dropdown-toggle pull-left page-title" data-toggle="dropdown" aria-expanded="false">
+										<h4>All Sales Orders
+											<span class="caret"></span>
+										</h4>
+									</a>
+									<ul class="dropdown-menu" role="menu" style="top: 35px;">
+										<li class="active">
+											<a href="#">All</a>
+										</li>
+										<li>
+											<a href="#">Draft</a>
+										</li>
+										<li>
+											<a href="#">Awaiting Payment</a>
+										</li>
+										<li>
+											<a href="#">Overdue</a>
+										</li>
+										<li>
+											<a href="#">Awaiting Shipment</a>
+										</li>
+										<li>
+											<a href="#">Fulfilled</a>
+										</li>
+										<li>
+											<a href="#">Dropshipment</a>
+										</li>
+										<li>
+											<a href="#">Void</a>
+										</li>
+									</ul>
+									<div class="pull-right">
+										<a href="#" class="btn btn-info waves-effect waves-light m-b-5">
+											<span>New </span>
+											<i class="ion-plus"></i>
+										</a>
+										<button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false">
+											<i class="fa fa-bars"></i>
+										</button>
+										<ul class="dropdown-menu" role="menu" style="top: 35px;">
+											<li class="dropdown-header">SORT BY</li>
+											<li class="active">
+												<a href="#">Created Time</a>
+											</li>
+											<li>
+												<a href="#">Last Modified Time</a>
+											</li>
+											<li>
+												<a href="#">Date</a>
+											</li>
+											<li>
+												<a href="#">Invoice#</a>
+											</li>
+											<li>
+												<a href="#">Customer Name</a>
+											</li>
+											<li>
+												<a href="#">Due Date</a>
+											</li>
+											<li>
+												<a href="#">Amount</a>
+											</li>
+											<li>
+												<a href="#">Balance Due</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#">
+													<i class="md-file-download"></i> Import Invoices</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="md-file-upload"></i> Export Invoices</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#">
+													<i class="md-file-download"></i> Import Payments</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="md-file-upload"></i> Export Payments</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#">
+													<i class="fa fa-cog"></i> Invoice Preferences</a>
+											</li>
+											<li class="divider"></li>
+											<li>
+												<a href="#">
+													<i class="md-refresh"></i> Refresh List</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="row sahito-list">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<div class="sahito-list-contact table-responsive">
+										<table class="table table-hover default-table sahito-list-contact--table">
+											<tbody>
+												<tr class="active">
+													<td class="col-checkbox">
+														<div class="checkbox checkbox-single checkbox-success">
+															<input type="checkbox" id="list-1">
+															<label></label>
+														</div>
+													</td>
+													<td>
+														<a href="#">Agnes Shinta</a>
+														<p>S0-0001 | 18 Feb 2016</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="col-checkbox">
+														<div class="checkbox checkbox-single checkbox-success">
+															<input type="checkbox" id="list-2">
+															<label></label>
+														</div>
+													</td>
+													<td>
+														<a href="#">Shinta Maharkesti</a>
+														<p>S0-0001 | 18 Feb 2016</p>
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-8 col-sm-8 col-xs-8 right-side">
+
+							<div class="row p-20">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<h3 class="pull-left page-title">S0-00001</h3>
+									<span class="label label-success">FULFILLED</span>
+									<span class="label label-info">FULFILLED</span>
+									<div class="pull-right">
+										<a href="" class="btn btn-default waves-effect waves-light m-b-5">
+											<span>Mark as Void </span>
+										</a>
+										<a href="contact_edit.html" class="btn btn-default waves-effect waves-light m-b-5">
+											<span>Edit </span>
+										</a>
+										<a href="#" data-toggle="modal" data-target="#payment" class="btn btn-default waves-effect waves-light m-b-5x">Record Payment</a>
+										<!--<ul class="dropdown-menu" role="menu" style="top: 35px;right: 15px;">
+											<li><a href="#" data-toggle="modal" data-target="#payment">Payment</a></li>
+											<li><a href="#" data-toggle="modal" data-target="#shipment">Shipment</a></li>
+										</ul>-->
+
+										<div id="payment" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+														<h4 class="modal-title">Add/Edit Payment</h4>
+													</div>
+													<div class="modal-body">
+														<div class="row">
+															<div class="col-md-12">
+																<form action="#" class="form-horizontal">
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Amount Receive</label>
+																		<div class="col-md-6">
+																			<div class="input-group">
+																				<span class="input-group-addon">IDR</span>
+																				<input type="text" id="amount" class="form-control form-trans">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Payment Date</label>
+																		<div class="col-md-6">
+																			<input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Payment Mode</label>
+																		<div class="col-md-4">
+																			<select id="payment" class="form-control">
+																				<option>Bank Transfer</option>
+																				<option>Credit Card</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Deposit To</label>
+																		<div class="col-md-6">
+																			<select id="deposit" class="form-control">
+																				<option>BCA no rek 121512321</option>
+																				<option>Mandiri no rek 121512321</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Reference#</label>
+																		<div class="col-md-4">
+																			<input type="text" class="form-control form-trans" id="reference">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Notes</label>
+																		<div class="col-md-8">
+																			<textarea class="form-control" rows="4"></textarea>
+																		</div>
+																	</div>
+																</form>
+															</div>
+														</div>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-info waves-effect waves-light m-t-15">Save</button>
+														<button type="button" class="btn btn-default waves-effect m-t-15" data-dismiss="modal">Cancel</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div id="shipment" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+														<h4 class="modal-title">Add/Edit Shipment</h4>
+													</div>
+													<div class="modal-body">
+														<div class="row">
+															<div class="col-md-12">
+																<form action="#" class="form-horizontal">
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Ship Date</label>
+																		<div class="col-md-6">
+																			<input type="text" class="form-control" placeholder="mm/dd/yyyy" id="shipdate">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Carrier</label>
+																		<div class="col-md-4">
+																			<select id="carrier" class="form-control">
+																				<option>JNE</option>
+																				<option>TIKI</option>
+																				<option>POS</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Tracking#</label>
+																		<div class="col-md-4">
+																			<input type="text" class="form-control form-trans" id="reference">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Notes</label>
+																		<div class="col-md-8">
+																			<textarea class="form-control" rows="4"></textarea>
+																		</div>
+																	</div>
+																</form>
+															</div>
+														</div>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-info waves-effect waves-light m-t-15">Save</button>
+														<button type="button" class="btn btn-default waves-effect m-t-15" data-dismiss="modal">Cancel</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<a href="#" id="close-btn" class="close-btn">
+											<i class="ion-android-close"></i>
+										</a>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 p-0">
+									<ul class="nav nav-tabs nav-tabs-clear btp-1 tabs">
+										<li class="active tab">
+											<a href="#invoice" data-toggle="tab" aria-expanded="false">
+												<span class="hidden-xs">INVOICE</span>
+											</a>
+										</li>
+										<li class="tab">
+											<a href="#shipment" data-toggle="tab" aria-expanded="false">
+												<span class="hidden-xs">SHIPPING</span>
+											</a>
+										</li>
+									</ul>
+
+									<div class="tab-content p-0 tab-content-clear tab-content--contact">
+										<div class="tab-pane active" id="invoice">
+											<div class="container">
+												<div class="row p-20 pb-0">
+													<div class="btn-toolbar" role="toolbar" aria-label="shipment">
+														<div class="btn-group" role="group" aria-label="shipment_group">
+															<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Print Shipment Label">
+																<i class="md md-print"></i>
+															</button>
+															<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Pdf Shipment Label">
+																<i class="fa fa-file-pdf-o"></i>
+															</button>
+															<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Print Package Slip">
+																<i class="fa fa-print"></i>
+															</button>
+															<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Pdf Package Slip">
+																<i class="fa fa-file-pdf-o"></i>
+															</button>
+														</div>
+														<div class="btn-group" role="group" aria-label="delete-shipment">
+															<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Delete Shipment">
+																<i class="fa fa-trash-o"></i>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="row p-15">
+													<div class="border-1 table-responsive mt-20">
+														<table class="table table-hover sahito-invoice-table">
+															<thead>
+																<tr class="grey-background">
+																	<th>Date</th>
+																	<th>Reference#</th>
+																	<th>Payment Mode</th>
+																	<th>Amount</th>
+																	<th></th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>04 May 2016</td>
+																	<td></td>
+																	<td>Cash</td>
+																	<td>AFN1,000.00</td>
+																	<td>
+																		<a href="#">
+																			<i class="fa fa-pencil"></i>
+																		</a>
+																		<a href="#">
+																			<i class="fa fa-trash"></i>
+																		</a>
+																	</td>
+																</tr>
+
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<div class="row p-15">
+													<div class="sahito-invoice">
+														<div class="ribbon">
+															<span>Paid</span>
+														</div>
+
+														<div class="row sahito-invoice-content p-15">
+															<div class="col-md-4 pt-20">
+																<img class="img-responsive" src="assets/images/gallery/2.jpg">
+															</div>
+															<div class="col-md-8 text-right">
+																<h1>INVOICE</h1>
+																<p class="inv-code">#inv-0000008</p>
+																<p class="inv-balance">Balance Due</p>
+																<h4>IDR0.00</h4>
+															</div>
+														</div>
+														<div class="row sahito-invoice-content p-15">
+															<div class="col-md-4">
+																<div class="office-desc">
+																	<h4>DeSahito</h4>
+																	<p>Jalan Bima no. 2A</p>
+																	<p>Sokowaten</p>
+																	<p>Bantul 55198</p>
+																	<p>Indonesia</p>
+																</div>
+																<div class="billto">
+																	<p>Bill To</p>
+																	<h4>Mitosis</h4>
+																</div>
+															</div>
+															<div class="col-md-8">
+																<div class="col-md-9 col-md-offset-3 invoice-date">
+																	<div class="form-group">
+																		<div class="col-md-6">Invoice Date:</div>
+																		<div class="col-md-6 invoice-date-term">
+																			01 Sept 2016
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="col-md-6">Terms:</div>
+																		<div class="col-md-6 invoice-date-term">
+																			Due on Receipt
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="col-md-6">Due Date:</div>
+																		<div class="col-md-6 invoice-date-term">
+																			01 Sept 2016
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<div class="col-md-6">P.O.#:</div>
+																		<div class="col-md-6 invoice-date-term">
+																			SO-00001
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row sahito-invoice-content p-15 pt-0">
+
+															<div class="col-md-12">
+																<div class="border-1 table-responsive mt-20">
+																	<table class="table table-hover sahito-invoice-table-inside">
+																		<thead>
+																			<tr class="dark-grey-background">
+																				<th>#</th>
+																				<th id="item">Item & Description</th>
+																				<th id="qty">Qty</th>
+																				<th id="rate">Rate</th>
+																				<th id="amount">Amount</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td>1</td>
+																				<td id="item">Baju Guess-green/L</td>
+																				<td id="qty">
+																					<p class="qty-amount">1.00</p>
+																					<p class="qty-type">buah</p>
+																				</td>
+																				<td id="rate">100.000.00</td>
+																				<td id="amount">100.000.00</td>
+																			</tr>
+																			<tr class="sub-total">
+																				<td colspan="4">Sub Total</td>
+																				<td>100.000.00</td>
+																			</tr>
+																			<tr class="total">
+																				<td colspan="4">Total</td>
+																				<td>IDR100.000.00</td>
+																			</tr>
+																			<tr class="balance-due">
+																				<td colspan="2" class="no-bgr"></td>
+																				<td colspan="2">Payment on 31 July 2017</td>
+																				<td>IDR65000.00</td>
+																			</tr>
+																			<tr class="balance-due">
+																				<td colspan="2" class="no-bgr"></td>
+																				<td colspan="2">Payment on 24 August 2017</td>
+																				<td>IDR35000.00</td>
+																			</tr>
+																			<tr class="balance-due">
+																				<td colspan="2" class="no-bgr"></td>
+																				<td colspan="2">Balance Due</td>
+																				<td>IDR0.00</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="tab-pane" id="shipment">
+											<div class="container">
+												<div class="row p-20 pb-0">
+													<div class="btn-toolbar" role="toolbar" aria-label="shipment">
+														<div class="btn-group" role="group" aria-label="shipment_group">
+															<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Print Shipment Label">
+																<i class="md md-print"></i>
+															</button>
+															<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Pdf Shipment Label">
+																<i class="fa fa-file-pdf-o"></i>
+															</button>
+															<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Print Package Slip">
+																<i class="fa fa-print"></i>
+															</button>
+															<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Pdf Package Slip">
+																<i class="fa fa-file-pdf-o"></i>
+															</button>
+														</div>
+														<div class="btn-group" role="group" aria-label="delete-shipment">
+															<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Delete Shipment">
+																<i class="fa fa-trash-o"></i>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="row p-20 m-b-20">
+													<div class="col-md-12">
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left">
+																<strong>Shipment Order#</strong>
+															</label>
+															<div class="col-md-7">
+																0001-123-56
+															</div>
+														</div>
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left">
+																<strong>Date of Shipment</strong>
+															</label>
+															<div class="col-md-7">
+																0001-123-56
+															</div>
+														</div>
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left">
+																<strong>Carrier</strong>
+															</label>
+															<div class="col-md-7">
+																0001-123-56
+															</div>
+														</div>
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left">
+																<strong>Tracking#</strong>
+															</label>
+															<div class="col-md-7">
+																0001-123-56
+															</div>
+														</div>
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left">
+																<strong>Status</strong>
+															</label>
+															<div class="col-md-7">
+																<span class="label label-info">Shipped</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row p-20 btop-1">
+													<div class="col-md-12">
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left">
+																<strong>Recipient</strong>
+															</label>
+															<div class="col-md-7">
+																<a href="#">Yusan Pul</a>
+															</div>
+														</div>
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left">
+																<strong>Shipping Address</strong>
+															</label>
+														</div>
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left light">Alamat</label>
+															<div class="col-md-7">
+																Ruko no.20 Jalan lingkar Luar barat
+															</div>
+														</div>
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left light">Kecamatan</label>
+															<div class="col-md-7">
+																Mlati
+															</div>
+														</div>
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left light">Kabupaten</label>
+															<div class="col-md-7">
+																Sleman
+															</div>
+														</div>
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left light">Propinsi</label>
+															<div class="col-md-7">
+																D.I Yogyakarta
+															</div>
+														</div>
+														<div class="row mb-15">
+															<label class="col-md-4 control-label text-left light">Kode Pos</label>
+															<div class="col-md-7">
+																55281
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer text-right">
+			2017 © Zuragan
+		</footer>
+
+		<script>
+			var resizefunc = [];
+		</script>
+
+		<script type="text/javascript" src="assets/scripts/scripts.min.js"></script>
+		<script type="text/javascript">
+			$('#datepicker').datepicker({
+				autoclose: true
+			});
+			$('#shipdate').datepicker({
+				autoclose: true
+			});
+			function customer() {
+				$('#full-list').toggle();
+				$('#half-list').toggle();
+				$('.full-width').toggleClass("half-column");
+			}
+			$('#close-btn').on('click', function () {
+				$('#half-list').toggle();
+				$('#full-list').toggle();
+				$('.full-width').toggleClass("half-column");
+			})
+			$('#list-1, #list-2').on("click", function () {
+				$('#mark_default').toggle();
+				$('#list-1').parent('tr').addClass('active');
+				$('#mark_active').toggle();
+			});
+		</script>
+
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <title>Invoice Kilat - Instant Invoice</title>
+
+    <link href="assets/css/core.min.css" rel="stylesheet">
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body class="fixed-left">
+
+    <div id="wrapper">
+
+        <div class="topbar">
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="index.html" class="logo">
+                        <span class="putih">invoicekilat.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <div role="navigation" class="navbar navbar-default">
+                <div class="container">
+                    <div class="">
+                        <div class="pull-left">
+                            <button class="button-menu-mobile open-left">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <span class="clearfix"></span>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li class="dropdown pull-left open">
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true">
+                                        <p class="profile-email">agnesshinta@ontelstudio.com</p>
+                                        <i class="fa fa-gear"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="profile.html">
+                                                <i class="fa fa-user"></i> Account</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="setting_new.html">
+                                                <i class="fa fa-cog"></i> Settings</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="javascript:void(0)" tag="li" id="nav-top-logout">
+                                                <i class="md md-settings-power"></i>Logout</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </li>
+                        </ul>
+                        <form role="search" class="navbar-form pull-left" style="position: relative; margin: 0">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <div class="btn-group">
+                                        <button class="btn btn-clear dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa fa-search"></i>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li>
+                                                <a href="search_page.html">Contacts</a>
+                                            </li>
+                                            <li>
+                                                <a href="search_page.html">Items</a>
+                                            </li>
+                                            <li>
+                                                <a href="search_page.html">Sales Orders</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input type="search" id="nav-top-search" placeholder="Type here for search..." class="form-control search-bar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="left side-menu">
+        <div class="left side-menu">
+            <div id="sidebar-menu">
+                <ul>
+                    <li class="" id="nev-left-orders">
+                        <a href="sales_order.html" class="waves-effect waves-light">
+                            <i class="md-shopping-cart"></i>
+                            Sales Orders
+                        </a>
+                    </li>
+                    <li class="" id="nev-left-items">
+                        <a href="items.html" class="waves-effect">
+                            <i class="ion-folder"></i>
+                            <span> Items </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="waves-effect waves-light" id="nev-left-contacts">
+                            <i class="md md-perm-contact-cal"></i>
+                            <span> Contacts </span>
+                        </a>
+                    </li>
+                    <li class="router-link-exact-active router-link-active" id="nev-left-settings">
+                        <a href="report.html" class="waves-effect waves-light">
+                            <i class="md md-assessment"></i>
+                            <span>Report</span>
+                        </a>
+                    </li>
+                    <li class="router-link-exact-active router-link-active" id="nev-left-settings">
+                        <a href="setting_new.html" class="waves-effect waves-light">
+                            <i class="md md-settings"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="clearfix">
+
+                </div>
+            </div>
+            <div class="clearfix">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content-page">
+        <div class="content full-width sahito-user bgr-white" style="min-height: 500px;">
+            <div id="full-list">
+                <div class="container full-width-header bt-1 p-b-10">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="mark_default">
+                            <a href="#" class="dropdown-toggle pull-left page-title" data-toggle="dropdown" aria-expanded="false">
+                                <h4>All Contacts
+                                    <span class="caret"></span>
+                                </h4>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                                <li class="active">
+                                    <a href="#">All</a>
+                                </li>
+                                <li>
+                                    <a href="#">Customers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vendors</a>
+                                </li>
+                                <li>
+                                    <a href="#">CRM Contacts</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">Active</a>
+                                </li>
+                                <li>
+                                    <a href="#">Inactive</a>
+                                </li>
+                            </ul>
+
+                            <div class="pull-right">
+                                <a href="contact_add.html" class="btn btn-info waves-effect waves-light m-b-5">
+                                    <span>New </span>
+                                    <i class="ion-plus"></i>
+                                </a>
+                                <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" style="top: 35px;">
+                                    <li class="dropdown-header">SORT BY</li>
+                                    <li class="active">
+                                        <a href="#">Name</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Company Name</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Receivables</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Payables</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="md-file-download"></i> Import Customers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="md-file-download"></i> Import Vendors</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="md-file-upload"></i> Export Customers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="md-file-upload"></i> Export Vendors</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="md-refresh"></i> Refresh List</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12" id="mark_active" style="display: none;">
+                            <div class="pull-left">
+                                <a href="item_add.html" class="btn btn-default waves-effect waves-light m-b-5">Mark as Active</a>
+                                <div class="btn-group">
+                                    <button class="btn btn-default waves-effect waves-light m-b-5" data-toggle="dropdown" aria-expanded="false"> More Actions
+                                        <i class="caret"></i>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                            <a href="#">Merge</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mark as Inactive</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Delete</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pull-right pt-10">
+                                <a href="#" id="close-btn" class="close-btn">
+                                    <i class="ion-android-close"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container p-0 bgr-light-grey" id="search-page-block">
+                    <div class="col-md-12 p-20 search-page-block">
+                        <div class="pull-right">
+                            <a href="#" id="close-block-btn" class="close-btn">
+                                <i class="ion-android-close"></i>
+                            </a>
+                        </div>
+                        <p class="text-green">
+                            <i class="fa fa-search"></i> Search Criteria</p>
+
+                        <p class="pl-10" id="notes">
+                            <i class="ion-arrow-right-a text-green"></i> Notes contains
+                            <strong>shinta</strong> (or) </p>
+                        <p class="pl-10" id="display_name">
+                            <i class="ion-arrow-right-a text-green"></i> Display Name contains
+                            <strong>shinta</strong> (or) </p>
+                        <p class="pl-10" id="company_name">
+                            <i class="ion-arrow-right-a text-green"></i> Company Name contains
+                            <strong>shinta</strong>(or) </p>
+                    </div>
+                </div>
+                <div class="container p-0">
+                    <div class="row sahito-list">
+                        <div class="col-md-12 p-0">
+                            <div class="sahito-list-contact border-1 table-responsive">
+                                <table class="table table-hover default-table sahito-list-contact--table">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-checkbox">
+                                                <div class="checkbox checkbox-single checkbox-success">
+                                                    <input type="checkbox" id="all">
+                                                    <label></label>
+                                                </div>
+                                            </th>
+                                            <th>Name
+                                                <i class="fa fa-sort"></i>
+                                            </th>
+                                            <th>Company Name</th>
+                                            <th>Email</th>
+                                            <th>Work Phone</th>
+                                            <th>Receivables</th>
+                                            <th>Payables</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-checkbox">
+                                                <div class="checkbox checkbox-single checkbox-success">
+                                                    <input type="checkbox" id="list-1">
+                                                    <label></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="customer()">Agnes Shinta (Customer)</a>
+                                            </td>
+                                            <td>Shinta Inc,</td>
+                                            <td>agnesshinta@gmail.com</td>
+                                            <td>+628122993113</td>
+                                            <td>IDR30,000</td>
+                                            <td>IDR30,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-checkbox">
+                                                <div class="checkbox checkbox-single checkbox-success">
+                                                    <input type="checkbox" id="list-2">
+                                                    <label></label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="vendor()">Agnes Shinta (Vendor)</a>
+                                            </td>
+                                            <td>Shinta Inc,</td>
+                                            <td>agnesshinta@gmail.com</td>
+                                            <td>+628122993113</td>
+                                            <td>IDR30,000</td>
+                                            <td>IDR30,000</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-12 pr-20 text-right">
+                            <ul class="pagination m-b-5">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <i class="fa fa-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li class="disabled">
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer text-right">
+                2017 © Zuragan
+            </footer>
+
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var resizefunc = [];
+    </script>
+
+    <script type="text/javascript" src="assets/scripts/scripts.min.js"></script>
+    <script type="text/javascript">
+        $('#close-block-btn').on("click", function () {
+            $('#search-page-block').hide();
+        });
+    </script>
+
+</body>
+
+</html>

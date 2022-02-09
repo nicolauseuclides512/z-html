@@ -1,0 +1,31 @@
+@import "../plugins/select2/dist/css/select2";
+@import "../plugins/select2/dist/css/select2-bootstrap";
+@import "../plugins/x-editable/dist/bootstrap3-editable/css/bootstrap-editable";
+@import "../plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker";
+@import "../components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "vendor/froala/froala_editor.min";
+@import "vendor/froala/froala_style.min";
+@import "vendor/froala/plugins/image.min";
+@import "vendor/froala/plugins/video.min";
+@import "vendor/animate/animate";
+
+@import "vendor/theme/core";
+@import "vendor/theme/components";
+@import "vendor/theme/elements";
+@import "vendor/theme/icons";
+@import "vendor/theme/menu";
+@import "vendor/theme/pages";
+@import "vendor/theme/responsive";
+@import "vendor/theme/variables";
+
+@import "../plugins/sweetalert/dist/sweetalert";
+@import "../plugins/nestable/jquery.nestable";
+@import "../plugins/dropzone/dist/dropzone";
+@import "../plugins/tagsinput/jquery.tagsinput";
+@import "../plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin";
+@import "../plugins/summernote/src/sass/summernote";
+@import "../plugins/jquery-editable-select-master/source/jquery.editable-select";
+@import "../plugins/toggles/toggles";
+@import "vendor/chartist/custom";
+@import "../components/chartist/dist/scss/chartist";

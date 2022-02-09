@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+
+    <title>Sahito - Responsive Admin Dashboard Template</title>
+
+    <link href="assets/css/core.min.css" rel="stylesheet">
+    <link href="assets/css/custom.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+
+<body class="fixed-left">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <div class="topbar">
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="index.html" class="logo"><i class="md md-terrain"></i> <span>Sahito </span></a>
+                </div>
+            </div>
+
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="">
+                        <div class="pull-left">
+                            <button class="button-menu-mobile open-left">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <span class="clearfix"></span>
+                        </div>
+                        <form class="navbar-form pull-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control search-bar" placeholder="Type here for search...">
+                            </div>
+                            <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+                        </form>
+
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="md md-notifications"></i> <span class="badge badge-xs badge-danger">3</span>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li class="text-center notifi-title">Notification</li>
+
+                                    <li class="list-group">
+                                        <a href="javascript:void(0);" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <em class="fa fa-user-plus fa-2x text-info"></em>
+                                                </div>
+                                                <div class="media-body clearfix">
+                                                    <div class="media-heading">New user registered</div>
+                                                    <p class="m-0">
+                                                        <small>You have 10 unread messages</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0);" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <em class="fa fa-diamond fa-2x text-primary"></em>
+                                                </div>
+                                                <div class="media-body clearfix">
+                                                    <div class="media-heading">New settings</div>
+                                                    <p class="m-0">
+                                                        <small>There are new settings available</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0);" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <em class="fa fa-bell-o fa-2x text-danger"></em>
+                                                </div>
+                                                <div class="media-body clearfix">
+                                                    <div class="media-heading">Updates</div>
+                                                    <p class="m-0">
+                                                        <small>There are <span class="text-primary">2</span> new updates available </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0);" class="list-group-item">
+                                            <small>See all notifications</small>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="hidden-xs">
+                                <a href="#" id="btn-fullscreen" class="waves-effect"><i class="md md-crop-free"></i></a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle"> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="profile.html"><i class="md md-face-unlock"></i> Profile</a></li>
+                                    <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="left side-menu">
+            <div class="sidebar-inner slimscrollleft">
+                <div class="user-details">
+                    <div class="pull-left">
+                        <img src="assets/images/users/avatar-1.jpg" alt="" class="thumb-md img-circle">
+                    </div>
+                    <div class="user-info">
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">John Doe <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="profile.html"><i class="md md-face-unlock"></i> Profile<div class="ripple-wrapper"></div></a></li>
+                                <li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
+                            </ul>
+                        </div>
+
+                        <p class="text-muted m-0">Active</p>
+                    </div>
+                </div>
+
+                <div id="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="waves-effect waves-light"><i class="md md-home"></i><span> Dashboard </span></a>
+                        </li>                
+                        <li>
+                            <a href="contact.html" class="waves-effect waves-light"><i class="md md-perm-contact-cal"></i><span> Contacts </span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="waves-effect waves-light active"><i class="md-shopping-basket"></i><span> Items </span></a>
+                        </li>
+                        <li class="has_sub">
+                            <a href="#" class="waves-effect waves-light"><i class="ion-folder"></i><span> Inventories </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Item Groups</a></li>
+                                <li><a href="#">Items</a></li>
+                                <li><a href="#">Price List</a></li>
+                            </ul>
+                        </li>                
+                        <li class="has_sub">
+                            <a href="#" class="waves-effect waves-light"><i class="md md-shopping-cart"></i><span> Sales </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Quotations</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><a href="#">Invoices Credit Note</a></li>
+                            </ul>
+                        </li>                
+                        <li class="has_sub">
+                            <a href="#" class="waves-effect waves-light"><i class="ion-android-promotion"></i><span> Purchases </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">RFQs</a></li>
+                                <li><a href="#">Orders</a></li>
+                            </ul>
+                        </li>                
+                        <li class="has_sub">
+                            <a href="#" class="waves-effect waves-light"><i class="md md-settings"></i><span> Settings </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="user_list.html">User</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="content-page ">
+            <div class="content sahito-user full-width bgr-white">
+                <div class="container full-width-header bt-1 p-b-10 m-b-20">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="pull-left page-title">Edit Item</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-sm-10 col-xs-12 p-b-20">
+                            <div class="form-horizontal">
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left text-danger">Name</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">Description</label>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" rows="3" style="resize: none"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left text-danger">UOM</label>
+                                    <div class="col-md-3">
+                                        <select id="uom" class="form-control" placeholder="Select or Type to Add">
+                                            <option>Pcs</option>
+                                            <option>Buah</option>
+                                        </select>
+                                    </div>
+                                    <label class="col-md-2 control-label text-right">Tax</label>
+                                    <div class="col-md-3">
+                                        <select id="tax" class="form-control" placeholder="Select tax">
+                                            <option>10%</option>
+                                            <option>10%</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">Manufacturer</label>
+                                    <div class="col-md-3">
+                                        <select id="manufacturer" class="form-control" placeholder="Select or Type to Add">
+                                            <option>Huawei</option>
+                                            <option>Xiaomi</option>
+                                        </select>
+                                    </div>
+                                    <label class="col-md-2 control-label text-right">Brand</label>
+                                    <div class="col-md-3">
+                                        <select id="brand" class="form-control" placeholder="Select or Type to Add">
+                                            <option>Asus</option>
+                                            <option>Mi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <form action="#" class="dropzone custom-dropzone" id="dropzone">
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple="multiple">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row" id="isbn-row">
+                        <div class="col-md-10 col-xs-10 col-xs-12 pt-pb-20 btop-1">
+                            <div class="form-horizontal">
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">UPC</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <label class="col-md-2 control-label text-right">MPN</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">EAN</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <label class="col-md-2 control-label text-right">ISBN</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">Price</label>
+                                    <div class="col-md-3">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+
+                                    <label class="col-md-2 control-label text-right">Weight</label>
+                                    <div class="col-md-1">
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="col-md-2">
+                                        <select id="tax" class="form-control" placeholder="Select Tax">
+                                            <option>kg</option>
+                                            <option>gram</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-3 control-label text-left">Product Type</label>
+                                    <div class="col-md-3">
+                                        <select id="tax" class="form-control" placeholder="Select Tax">
+                                            <option>Shirt</option>
+                                            <option>Electronic</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="form-horizontal">
+                                <div class="form-group form-general m-b-20">
+                                    <label class="col-md-6 control-label text-left">VARIANTS
+                                        <p class="help-text">Does this product come in multiple variations like size or color?</p>
+                                    </label>
+                                    <div class="col-md-3 pull-left">
+                                        <a href="#" class="btn btn-primary waves-effect waves-light" onclick="showVariant()">Add Variants</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="attribut-row">
+                        <div class="col-md-12 pnb-20">
+                            <div class="form-group form-general m-b-20">
+                                <div class="bgr-border p-20">
+                                    <div class="row mt-20">
+                                        <div class="col-md-4">
+                                            <div class="form-group r-ml-mt">
+                                                <label for="attributes" class="text-danger pl-0">Attributes</label>
+                                                <input type="text" class="form-control form-white" id="attributes" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group r-ml-mt custom-tags">
+                                                <label for="options" class="text-danger pl-0">Options</label>
+                                                <input name="options" id="options" class="form-control" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1 r-ml-mt">
+                                            <a href="#"><i class="ion-trash-a text-danger pt-25" style="font-size: 1.5em"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="row p-b-20">
+                                        <div class="col-md-12">
+                                            <a href="#"><i class="ion-plus-round"></i> Add more attribute</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bt-1 p-b-20">
+                                <div class="col-md-12">
+                                    <div class="checkbox checkbox-single checkbox-info">
+                                        <input type="checkbox" id="add_initial">
+                                        <label for="add_initial">Add initial inventory <span class="text-danger">*catatan: ketika checked maka Inital stock di tabel muncul</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container bt-1 p-b-25 m-b-20" id="table-attribut-row">
+                    <div class="row sahito-list">
+                        <div class="col-md-12">
+                            <div class="sahito-list-item-group border-1 table-responsive">
+                                <table class="table default-table sahito-list-item-group--table">
+                                    <thead>
+                                        <tr>
+                                            <th id="item_name" class="text-danger">ITEM NAME</th>
+                                            <th class="text-danger">SKU</th>
+                                            <th>INITIAL STOCK</th>
+                                            <th>
+                                                <p id="title">Cost Price (IDR)</p>
+                                                <p id="sub-title">PER UNIT</p>
+                                                <a href="">COPY TO ALL</a>
+                                            </th>
+                                            <th>
+                                                <p id="title" class="text-danger">Setting Price (IDR)</p>
+                                                <p id="sub-title">PER UNIT</p>
+                                                <a href="">COPY TO ALL</a>
+                                            </th>
+                                            <th>UPC</th>
+                                            <th>EAN</th>
+                                            <th>MPN</th>
+                                            <th>ISBN</th>
+                                            <th>REORDER LEVEL</th>
+                                            <th>WEIGHT</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td colspan="11"  class="text-center">
+                                                Please enter attributes
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control form-white" id="item_name" value="Handphone-blue/5"></td>
+                                            <td><input type="text" class="form-control form-white" id="sku"></td>
+                                            <td><input type="text" class="form-control form-white" id="initial_stock"></td>
+                                            <td><input type="text" class="form-control form-white" id="cost_price" value="0"></td>
+                                            <td><input type="text" class="form-control form-white" id="setting_price" value="0"></td>
+                                            <td><input type="text" class="form-control form-white" id="upc"></td>
+                                            <td><input type="text" class="form-control form-white" id="ean"></td>
+                                            <td><input type="text" class="form-control form-white" id="mpn"></td>
+                                            <td><input type="text" class="form-control form-white" id="isbn"></td>
+                                            <td><input type="text" class="form-control form-white" id="reorder-lever"></td>
+                                            <td><input type="text" class="form-control form-white" id="weight"></td>
+                                            <td><a href="#"><i class="ion-trash-a text-danger pt-10" style="font-size: 1.5em"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" class="form-control form-white" id="item_name" value="Handphone-blue/5"></td>
+                                            <td><input type="text" class="form-control form-white" id="sku"></td>
+                                            <td><input type="text" class="form-control form-white" id="initial_stock"></td>
+                                            <td><input type="text" class="form-control form-white" id="cost_price" value="0"></td>
+                                            <td><input type="text" class="form-control form-white" id="setting_price" value="0"></td>
+                                            <td><input type="text" class="form-control form-white" id="upc"></td>
+                                            <td><input type="text" class="form-control form-white" id="ean"></td>
+                                            <td><input type="text" class="form-control form-white" id="mpn"></td>
+                                            <td><input type="text" class="form-control form-white" id="isbn"></td>
+                                            <td><input type="text" class="form-control form-white" id="reorder-lever"></td>
+                                            <td><input type="text" class="form-control form-white" id="weight"></td>
+                                            <td><a href="#"><i class="ion-trash-a text-danger pt-10" style="font-size: 1.5em"></i></a></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container p-b-10 m-b-20">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-info waves-effect waves-light">Save</button>
+                            <button class="btn btn-default waves-effect" type="button">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer text-right">
+                    2015 © Sahito.
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var resizefunc = [];
+    </script>
+
+    <script type="text/javascript" src="assets/scripts/scripts.min.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $('#options').tagsInput({
+                'height':'34px',
+                'width' : 'auto'
+            });
+            $('.select2').select2();
+            $('#uom').editableSelect({ effects: 'fade' });
+            $('#manufacturer').editableSelect({ effects: 'fade' });
+            $('#brand').editableSelect({ effects: 'fade' });
+            $(".dropzone").dropzone({ 
+                maxFiles : 1,
+                dictDefaultMessage : "<i class='ion-image'></i> Drag here to upload<p class='text-blue'>or Browse</p>"
+            });
+        });
+        function showVariant(){
+            $('#attribut-row, #table-attribut-row').toggle();
+        };
+    </script>
+</body>
+</html>
